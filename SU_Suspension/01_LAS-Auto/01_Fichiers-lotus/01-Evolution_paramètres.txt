@@ -1,0 +1,2 @@
+v01 : Invictus copié/collé
+v02 : Invictus aec paramètres du cdcf (hauteur CG, empattement, brake)
