@@ -1,0 +1,2 @@
+distance trou-trou = 5,77 mm
+distance verticale jusqu'à l'axe = 7,75 mm 

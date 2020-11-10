@@ -1,0 +1,46 @@
+PROM Pédalier Accélérateur : 
+
+Se munir de la butée positive de pédale d'accélérateur, préalablement soudée à la vis de fixation, la faire passer dans le trou oblong de réglage de la butée positive, placer une rondelle et visser en au fond du trou oblong. [accel1.png] Serrer à la main, le réglage fin sera réalisé une fois le pédalier totalement assemblé, et le câble relié à l’admission du véhicule.
+
+Réaliser la même opération avec la butée négative de pédale d’accélérateur, avec le trou oblong de réglage de la butée négative. [accel2.png] Serrer à la main, le réglage fin sera réalisé une fois le pédalier totalement assemblé, et le câble relié à l’admission du véhicule.
+
+Se munir de la tige de pédale d’accélérateur, du repose pied supérieur, de deux vis M4 à tête fraisée et de deux écrous M4 Nylstop, réaliser l’assemblage visible sur la figure [accel3.png]. Serrer à 1 N.m.
+
+Placer les paliers dans de part et d’autre de l’ensemble résultant de l’étape précédente. Réaliser l’assemblage de l’ensemble pédale et de l’ensemble châssis d’accélérateur à l’aide d’une vis épaulée, des deux rondelles de réglage, ainsi que d’un écrou Nylstop M10, placer les pièces de la même manière que sur la figure [accel4.png]. Serrer à 10 N.m.
+
+Insérer les deux paliers lisses dans la biellette de câble d’accélérateur. Assembler l’ensemble ainsi obtenu à la pédale d’accélérateur à l’aide d’une vis épaulée, d’une rondelle, d’un écrou Nylstop et de l’entretoise, positionner les pièces de la même manière que sur la figure [accel5.png]. Serrer à 2 N.m.
+
+Passer ensuite la gaine du câble d’accélérateur dans le trou correspondant, comme sur la figure [accel6.png].
+
+Passer ensuite le câble dans la rainure du tire câble et placer l’arrêt de câble dans le trou cylindrique correspondant. Assembler l’ensemble résultant à l’aide d’une vis épaulée, d’une rondelle et d’un écrou Nylstop, placer les pièces de même manière que sur la figure [accel7.png]. Serrer à 2 N.m.
+
+Assembler l’ensemble résultant de l’étape précédente avec la biellette de tire câble à l’aide d’une vis épaulée, d’une rondelle M5, d’une rondelle M4, d’un écrou M4 Nylstop, et de l’entretoise correspondante, de la même manière que sur la figure [accel8.png]. Serrer à 2 N.m.
+
+Assembler ensuite les rails latéraux avec le châssis de l’accélérateur comme sur la figure [accel9.png]. Serrer à 12 N.m.
+
+Enfin, assembler l’ensemble final sur le châssis, à l’aide du montage visible sur la figure [accel10.png]. Serrer à 12 N.m.
+
+
+PROM Pédalier Frein : 
+
+Se munir de la tige de pédale de frein, du repose pied supérieur, de deux vis M4 à tête fraisée et de deux écrous M4 Nylstop, réaliser l’assemblage visible sur la figure [frein1.png]. Serrer à 1 N.m.
+
+Placer les paliers dans de part et d’autre de l’ensemble résultant de l’étape précédente, comme sur la figure [frein2.png].
+
+Assembler l’ensemble précédent au châssis de frein à l’aide d’une vis épaulée, d’un écrou Nylstop et de 3 rondelles d’ajustage. Assembler les différentes pièces de la même manière que sur la figure [frein3.png]. Serrer à 10 N.m.
+
+Se munir du BOTS et de sa chappe, précédemment soudée à la vis correspondante, puis réaliser d’assemblage visible sur la figure [frein4.png] à l’aide d’une rondelle et d’un écrou Nylstop. Serrer à la main, le réglage fin sera réalisé une fois le pédalier totalement assemblé, et le câble relié à l’admission du véhicule.
+
+Assembler ensuite les maîtres cylindres sur le châssis de frein comme sur la figure [frein5.png].
+
+Réaliser l’assemblage de la figure [frein6.png], pour assembler les maîtres cylindres avec la pédale de frein, à l’aide d’une vis, de deux rondelles, d’un écrou Nylstop et de deux entretoises correspondantes. Serrer à 12 N.m.
+
+Assembler ensuite les rails latéraux avec le châssis de frein comme sur la figure [frein7.png]. Serrer à 12 N.m.
+
+Enfin, assembler l’ensemble final sur le châssis, à l’aide du montage visible sur la figure [frein8.png]. Serrer à 12 N.m.
+
+
+
+
+
+
