@@ -217,7 +217,7 @@ def Fy(Fz,slip_angle,camber):
 
 
 n_sa=500
-sa_min=-20*pi/180
+sa_min=-12*pi/180
 sa_max=0
 list_sa=np.linspace(sa_min,sa_max,n_sa)
 
@@ -308,11 +308,11 @@ plt.clf()
 #plt.plot(180/pi*list_sa,Fy(1400,list_sa,3*pi/180),label='Fz = 1400 N, camber = 3°')
 #plt.plot(180/pi*list_sa,Fy(1400,list_sa,4*pi/180),label='Fz = 1400 N, camber = 4°')
 
-plt.plot(180/pi*list_sa,Fy(100,list_sa,0),label='Fz = 100 N')
-plt.plot(180/pi*list_sa,Fy(200,list_sa,0),label='Fz = 200 N')
-plt.plot(180/pi*list_sa,Fy(300,list_sa,0),label='Fz = 300 N')
-plt.plot(180/pi*list_sa,Fy(400,list_sa,0),label='Fz = 400 N')
-plt.plot(180/pi*list_sa,Fy(500,list_sa,0),label='Fz = 500 N')
+plt.plot(180/pi*list_sa,Fy(1200,list_sa,0),label='outter tire, Fz = 1200 N')
+plt.plot(180/pi*list_sa,Fy(230,list_sa,0),label='inner tire, Fz = 230 N')
+#plt.plot(180/pi*list_sa,Fy(300,list_sa,0),label='Fz = 300 N')
+#plt.plot(180/pi*list_sa,Fy(400,list_sa,0),label='Fz = 400 N')
+#plt.plot(180/pi*list_sa,Fy(500,list_sa,0),label='Fz = 500 N')
 #plt.plot(180/pi*list_sa,Fy(600,list_sa,0),label='Fz = 600 N')
 #plt.plot(180/pi*list_sa,Fy(700,list_sa,0),label='Fz = 700 N')
 #plt.plot(180/pi*list_sa,Fy(800,list_sa,0),label='Fz = 800 N')
