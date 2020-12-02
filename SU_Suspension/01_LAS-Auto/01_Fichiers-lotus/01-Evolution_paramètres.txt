@@ -1,2 +1,9 @@
 v01 : Invictus copié/collé
-v02 : Invictus aec paramètres du cdcf (hauteur CG, empattement, brake)
+v02 : Invictus avec paramètres du cdcf (hauteur CG, empattement, brake)
+v03 : Baisse de tous les points de 5cm (Suppression de la sur-marge mise sur Invictus pour l'aéro)
+v04 : y11mm/° en roll front
+v05 : y10mm/° en roll front et hCG 89mm (élevé)
+v06 : élargissement à l'arrière de 30mm
+v07 : Réduction camber à 2.7° en bump 35mm ; y1mm/°roll ; Zrf/Zrr=100/48=2
+=>continuer de réduire le camber
+=>vérifier toe
