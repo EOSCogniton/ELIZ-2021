@@ -7,3 +7,4 @@ v06 : élargissement à l'arrière de 30mm
 v07 : Réduction camber à 2.7° en bump 35mm ; y1mm/°roll ; Zrf/Zrr=100/48=2
 =>continuer de réduire le camber
 =>vérifier toe
+v08 : Motion ratio Front 1.15->1.2 71mm amplitude d'amortisseur, distance rotule pull bar 31mm
