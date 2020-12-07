@@ -167,43 +167,31 @@ list_tau=[max(Fy(z,list_SA,0))/z for z in list_Fz]
 list_SA=np.linspace(-15*pi/180,15*pi/180,50)
 list_Fz=np.linspace(500,1400,50)
 
-plt.figure(1)
-
-plt.clf()
-
-plt.plot(list_Fz,[max(Fy(z,list_SA,0))/z for z in list_Fz],label='camber = 0 °')
-plt.plot(list_Fz,[max(Fy(z,list_SA,1*pi/180))/z for z in list_Fz],label='camber = 1 °')
-plt.plot(list_Fz,[max(Fy(z,list_SA,2*pi/180))/z for z in list_Fz],label='camber = 2 °')
-plt.plot(list_Fz,[max(Fy(z,list_SA,3*pi/180))/z for z in list_Fz],label='camber = 3 °')
-plt.plot(list_Fz,[max(Fy(z,list_SA,4*pi/180))/z for z in list_Fz],label='camber = 4 °')
-
-plt.ylabel('Lateral coefficient of friction')
-plt.xlabel('Vertical Load (N)')
-plt.grid(True)
-plt.legend()
+#plt.figure(1)
+#
+#plt.clf()
+#
+#plt.plot(list_Fz,[max(Fy(z,list_SA,0))/z for z in list_Fz],label='camber = 0 °')
+#plt.plot(list_Fz,[max(Fy(z,list_SA,1*pi/180))/z for z in list_Fz],label='camber = 1 °')
+#plt.plot(list_Fz,[max(Fy(z,list_SA,2*pi/180))/z for z in list_Fz],label='camber = 2 °')
+#plt.plot(list_Fz,[max(Fy(z,list_SA,3*pi/180))/z for z in list_Fz],label='camber = 3 °')
+#plt.plot(list_Fz,[max(Fy(z,list_SA,4*pi/180))/z for z in list_Fz],label='camber = 4 °')
+#
+#plt.ylabel('Lateral coefficient of friction')
+#plt.xlabel('Vertical Load (N)')
+#plt.grid(True)
+#plt.legend()
 
 
 plt.figure(2)
 
 plt.clf()
-
-plt.plot(180/pi*list_SA,Fy(1400,list_SA,0),label='Fz = 1400 N, camber = 0°')
-plt.plot(180/pi*list_SA,Fy(1400,list_SA,1*pi/180),label='Fz = 1400 N, camber = 1°')
-plt.plot(180/pi*list_SA,Fy(1400,list_SA,2*pi/180),label='Fz = 1400 N, camber = 2°')
-plt.plot(180/pi*list_SA,Fy(1400,list_SA,3*pi/180),label='Fz = 1400 N, camber = 3°')
-plt.plot(180/pi*list_SA,Fy(1400,list_SA,4*pi/180),label='Fz = 1400 N, camber = 4°')
-
-
-plt.plot(180/pi*list_SA,Fy(500,list_SA,0),label='Fz = 500 N, camber = 0°')
-plt.plot(180/pi*list_SA,Fy(500,list_SA,1*pi/180),label='Fz = 500 N, camber = 1°')
-plt.plot(180/pi*list_SA,Fy(500,list_SA,2*pi/180),label='Fz = 500 N, camber = 2°')
-plt.plot(180/pi*list_SA,Fy(500,list_SA,3*pi/180),label='Fz = 500 N, camber = 3°')
-plt.plot(180/pi*list_SA,Fy(500,list_SA,4*pi/180),label='Fz = 500 N, camber = 4°')
+for k in range(8):
+    plt.plot(180/pi*list_SA,Fy(100+k*150,list_SA,0),color='r',label='Fz = 1400 N')
 
 plt.ylabel('Lateral grip force (N)')
 plt.xlabel('Slip angle (°)')
 plt.grid(True)
-plt.legend()
 
 
 plt.show()

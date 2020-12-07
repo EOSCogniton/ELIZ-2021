@@ -14,15 +14,15 @@ rho=1.18 # masse volumique air
 #%% CAR DATAS
         
 #masses
-m_car=217
+m_car=225
 m_pilot=75
 m_wheel=6.374
 m=m_car+m_pilot
 ms= m - 4*m_wheel #masse suspendue
 
 
-w=1.575 #wheelbase
-xf=0.53*w #distance centre de gravité jusqua train avant
+w=1.570 #wheelbase
+xf=0.56*w #distance centre de gravité jusqua train avant
 xr= w-xf
 
 #voies
@@ -31,15 +31,15 @@ tr=1.200
 
 #hauteur des centres de roulis et axe de roulis
 h_wheel = 0.235 #hauteur de la masse non suspendue ~ rayon du pneu
-h_stat=0.36 #hauteur du centre gravité en statique
-hrc_f=0.115 #hauteur du centre de roulis avant
-hrc_r=0.152 #hauteur du centre de roulis arrière
+h_stat=0.30 #hauteur du centre gravité en statique
+hrc_f=0.1 #hauteur du centre de roulis avant
+hrc_r=0.1 #hauteur du centre de roulis arrière
 
 dh= h_stat - (xr/w)*hrc_f - (xf/w)*hrc_r # m
 ha = np.cos(np.arctan((hrc_r-hrc_f)/w))*dh
 #motion ratio
-MR_f = 1.156
-MR_r = 1.275
+MR_f = 1.1
+MR_r = 1.1
 
 lt = 0.205 #largeur du pneu
 
@@ -53,7 +53,7 @@ KT = 80000 #tire rate N/m
 b= 175.1865165354331 # 1 N/m in lbs/inch
 
 #spring rates
-Ks_f = 200*b # N/m
+Ks_f = 175*b # N/m
 Ks_r = 300*b # N/m
 
 #wheel rates
@@ -75,11 +75,11 @@ Qsr=Kr_r*tr**2/2 # Nm/rad #raideur en roulis arrière dues au ressorts, basculeu
 
 Qs=Qsf+Qsr # Nm/rad
 
-Qarb = 25000 # Nm/rad
+Qarb = 12000 # Nm/rad
 
 RR=ms*ha/(Qarb+Qs)
 
-MN = 0.80 # magic number répartition de raideur anti-roulis à l'avant
+MN = 1 # magic number répartition de raideur anti-roulis à l'avant
 
 Qarb_f= MN*Qarb
 Qarb_r= (1-MN)*Qarb
@@ -88,7 +88,7 @@ Qarb_r= (1-MN)*Qarb
 
 #Les données aéros sont données pour Optimus
 S= 1.14 #surface effective pour la déportance en m²
-Cz= 2.13 #coefficient de portance
+Cz= 0 #coefficient de portance
 
 #répartition aéro
 af = 0.5
@@ -244,12 +244,16 @@ SA_optimum = lambda Fz:func(Fz,popt[0],popt[1],popt[2])
 
 Z_m=0
 
+#def SA_optimum(Fz):
+#    [a,b,c]=popt
+#    if Fz>Z_m:
+#        return max(func(Fz,a,b,c),-10*pi/180)
+#    else:
+#        return b*a*np.exp(b*Z_m)*(Fz-Z_m) + func(Z_m,a,b,c)
+    
 def SA_optimum(Fz):
     [a,b,c]=popt
-    if Fz>Z_m:
-        return max(func(Fz,a,b,c),-10*pi/180)
-    else:
-        return b*a*np.exp(b*Z_m)*(Fz-Z_m) + func(Z_m,a,b,c)
+    return func(Fz,a,b,c)
 
 #%% Lateral coefficient of friction tau
 
