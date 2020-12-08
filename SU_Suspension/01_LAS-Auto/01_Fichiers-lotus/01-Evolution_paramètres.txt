@@ -10,3 +10,6 @@ v07 : Réduction camber à 2.7° en bump 35mm ; y1mm/°roll ; Zrf/Zrr=100/48=2
 v08 : Motion ratio Front 1.15->1.2 71mm amplitude d'amortisseur, distance rotule pull bar 31mm
 v09 et v10 : deplacement point 11 et 12 pour satisfaire les conditions voulues
 v11 : placement 11, 12 pour avoir un angle de steering de 22,95 + deplacement cremaillère -->21,975
+v12 : déplacement front damper pour vérifier collision =>le faire sur catia
+v13 : rear limitation camber en bump et variations roll center y
+v14 : rear perfect toe angle
