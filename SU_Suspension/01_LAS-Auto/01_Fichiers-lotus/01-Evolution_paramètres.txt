@@ -13,3 +13,4 @@ v11 : placement 11, 12 pour avoir un angle de steering de 22,95 + deplacement cr
 v12 : déplacement front damper pour vérifier collision =>le faire sur catia
 v13 : rear limitation camber en bump et variations roll center y
 v14 : rear perfect toe angle
+v15 : Modification point 12
