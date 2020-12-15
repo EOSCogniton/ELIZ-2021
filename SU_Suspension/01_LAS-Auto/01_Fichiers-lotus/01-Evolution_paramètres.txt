@@ -14,3 +14,8 @@ v12 : déplacement front damper pour vérifier collision =>le faire sur catia
 v13 : rear limitation camber en bump et variations roll center y
 v14 : rear perfect toe angle
 v15 : Modification point 12
+v16 : camber static -1/-1.1 °
+v17 : descente du centre de roulis avant 
+v18 : évite le contact damper pullrod
+v19 : premier placement amo arrière
+v20 : test de placement
