@@ -19,3 +19,5 @@ v17 : descente du centre de roulis avant
 v18 : évite le contact damper pullrod
 v19 : premier placement amo arrière
 v20 : test de placement
+v21 : déplacement vers l'extérieur rear front pivot pour que la cellule arrière soit mieux
+v22 : deuxième placement amo arrière
