@@ -21,3 +21,7 @@ v19 : premier placement amo arrière
 v20 : test de placement
 v21 : déplacement vers l'extérieur rear front pivot pour que la cellule arrière soit mieux
 v22 : deuxième placement amo arrière
+v22b : Mise en place amo arrière en prise directe
+v23a : symétrisation des triangles arrières
+v24a : symétrisation des triangles avant
+v24b : symétrisation version b
