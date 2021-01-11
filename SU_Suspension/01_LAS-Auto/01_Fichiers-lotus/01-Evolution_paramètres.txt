@@ -25,3 +25,7 @@ v22b : Mise en place amo arrière en prise directe
 v23a : symétrisation des triangles arrières
 v24a : symétrisation des triangles avant
 v24b : symétrisation version b
+v25a : Point invictus avant pour réutilisation carrosserie
+v26a : Front damper to body point mieux placé
+v27a : Remise en place triangle arrière pour élevé centre de roulis
+v28a : Placement rear damper with rocker
