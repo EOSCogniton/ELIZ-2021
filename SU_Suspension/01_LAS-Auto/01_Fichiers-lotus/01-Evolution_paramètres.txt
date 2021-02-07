@@ -29,7 +29,8 @@ v25a : Point invictus avant pour réutilisation carrosserie
 v26a : Front damper to body point mieux placé
 v27a : Remise en place triangle arrière pour élevé centre de roulis
 v28a : Placement rear damper with rocker
-v29a-v30a :
+v29a : Modification point 11 des points front pour corriger le bump et le roll 
+v30a : Modification points 11 et 12 front pour relever la cremaillère et éviter les collisions avec le chassis 
 v31a : Remontage du centre de roulis arrière pour être le plus au dessus de l'avant. et réduction de l'amplitude du carrossage.
 v32a : Replacement biellette de pince
 v33a : Placement damper arrière motion ratio 1.1
