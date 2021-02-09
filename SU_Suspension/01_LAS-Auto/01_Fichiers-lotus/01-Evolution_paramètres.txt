@@ -34,3 +34,4 @@ v30a : Modification points 11 et 12 front pour relever la cremaillère et évite
 v31a : Remontage du centre de roulis arrière pour être le plus au dessus de l'avant. et réduction de l'amplitude du carrossage.
 v32a : Replacement biellette de pince
 v33a : Placement damper arrière motion ratio 1.1
+v34a : Amortisseur 175mm en static
