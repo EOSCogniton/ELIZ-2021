@@ -14,7 +14,7 @@ B12B=[19.05,1.16,28900]
 
 #%% Calcul
 
-chain=B10B
+chain=B08B
 
 p=chain[0]/1000
 M=chain[1]
@@ -22,7 +22,7 @@ Frup=chain[2]
 
 #Pignon & moteur
 C=230
-Z=15
+Z=13
 omega_max=5500*2*pi/60
 
 #Couronne
@@ -32,7 +32,7 @@ Zc=round(3.23*Z)
 
 alpha=2*pi/Z
 phi=pi*(1/6-1/Z)
-Dp= p/np.sin(pi/Z)
+Dp = p/np.sin(pi/Z)
 
 e=0.2
 L=2*e+p*(Z+Zc)/2+p**2/e*((Z-Zc)/(2*pi))**2
@@ -41,6 +41,12 @@ L=2*e+p*(Z+Zc)/2+p**2/e*((Z-Zc)/(2*pi))**2
 Fu= 2*C/Dp
 Fc= M*(Dp*omega_max/2)**2
 
+N = [100*i for i in range(60)]
+P = []
+for i in range(60):
+    P.append(((Fu*60/(p*Z*N[i]*2*(pi/60)))+M*(Dp*N[i]*2*pi/120)**2)*N[i]*2*(pi/60) - M*(N[i]*2*(pi/60))**3)
+    
+plt.plot(N, P)
 
 indice=np.array(range(1,Z))
 
