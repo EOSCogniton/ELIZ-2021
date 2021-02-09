@@ -35,3 +35,4 @@ v31a : Remontage du centre de roulis arrière pour être le plus au dessus de l'
 v32a : Replacement biellette de pince
 v33a : Placement damper arrière motion ratio 1.1
 v34a : Amortisseur 175mm en static
+v35a : Redescente du centre de roulis arrière
