@@ -12,14 +12,15 @@ import matplotlib.pyplot as plt
 #%% Geometry
 
 g = 9.81
-d_PA = np.linspace(0,0.10,50)
-d_AB = 0.0472
+d_PA = 0.033
+d_AB = 0.118
 
-m_rotor = 6
+m_rotor = 12.4
 
 #%% Loads
 
-T = 230*2/0.053
+dp=0.07636
+T = 230*2/dp
 
 ax = 1.8
 ay = 1.4
@@ -30,13 +31,21 @@ FR_A= (1+d_PA/d_AB)*T + m_rotor*ax*g/2
 FR_B= (d_PA/d_AB)*T + m_rotor*ax*g/2
 
 
+def L_rouleau(R):
+    C_A = 12600
+    C0_A = 40000
+    return (C_A/R)**(3)
+
+
+#*pi*0.470/reduc/1000
+
 #%% Roulement A
 
 #ref 6206
 
 def L_A(X,Y):
-    C_A = 20300
-    C0_A = 11200
+    C_A = 42500
+    C0_A = 40000
     alpha='25°'
     e_lim=0.68
     
@@ -74,24 +83,27 @@ def L(X,Y):
     return L_10
 
 
-reduc=170/53
+reduc=3.23
 
 #distance=pi*0.470*L/reduc
-
-#print('durée de vie roulement A:',round(L_10_A*10)/10, 'millions de tours')
-#print('durée de vie roulement B:',round(L_10_B*10)/10, 'millions de tours')
+#
+#print('durée de vie roulement A:',round(L_A(FR_A,Y)*10)/10, 'millions de tours')
+#print('durée de vie roulement B:',round(L_B(FR_B,Y)*10)/10, 'millions de tours')
 #print('durée de vie ensemble des roulement:',round(L_10*10)/10, 'millions de tours')
 #print('durée de vie moteur:',round(distance*1000),'km parcourus par la voiture')
 
-plt.figure(1)
+print('durée de vie roulement à rouleau:',round(L_rouleau(FR_A)*10)/10, 'millions de tours')
+print('durée de vie roulement à rouleau:',round(L_rouleau(FR_A)*1000000*pi*0.470/reduc*10/1000)/10, 'km parcourus par la voiture')
 
-plt.clf()
-plt.plot(1000*np.array(d_PA),[L_A(X,Y) for X in d_PA],label='roulement A')
-plt.plot(1000*np.array(d_PA),[L_B(X,Y) for X in d_PA],label='roulement B')
-plt.plot(1000*np.array(d_PA),[L(X,Y) for X in d_PA],label='ensemble des roulement')
-plt.xlabel('Distance du pignon au roulement A (mm)')
-plt.ylabel('Durée de vie (km parcouru par la voiture)')
-plt.legend()
-#plt.yscale('log')
-plt.grid(True)
-plt.show()
+#plt.figure(1)
+#
+#plt.clf()
+#plt.plot(1000*np.array(d_PA),[L_A(X,Y) for X in d_PA],label='roulement A')
+#plt.plot(1000*np.array(d_PA),[L_B(X,Y) for X in d_PA],label='roulement B')
+#plt.plot(1000*np.array(d_PA),[L(X,Y) for X in d_PA],label='ensemble des roulement')
+#plt.xlabel('Distance du pignon au roulement A (mm)')
+#plt.ylabel('Durée de vie (km parcouru par la voiture)')
+#plt.legend()
+##plt.yscale('log')
+#plt.grid(True)
+#plt.show()
