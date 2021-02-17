@@ -36,4 +36,5 @@ v32a : Replacement biellette de pince
 v33a : Placement damper arrière motion ratio 1.1
 v34a : Amortisseur 175mm en static
 v35a : Redescente du centre de roulis arrière
-v36a : Allongement de l'empattement de 35mm
+v36a : (Allongement de l'empattement de 35mm) FAUX
+v37a : Erratum, véritable allongement de l'empattement de 35mm pour permettre plus de place dans la celule arrière
