@@ -8,6 +8,7 @@ from scipy.interpolate import RegularGridInterpolator
 #%% Materiau
 
 Re=850*10**6
+p_matage=80*10**6
 
 #%% Calcul cannelures flancs en développantes
 
@@ -52,7 +53,49 @@ def von_mises(sigma,tau_x,tau_y):
 
 
 
+list_m=np.array([1,1.25,1.5,1.667])*0.001
+list_z=np.array(range(8,25))
+GW=0.02
 
+plt.figure(1)
 
+plt.clf()
+
+for m in list_m:
+    m_label= 'm = ' + str(m*1000) + ' mm'
+    s=stress(m,list_z,GW)
+    vm=von_mises(s[0],s[1],s[2])/10**6
+    plt.plot(list_z,vm,'.',label=m_label)
+plt.ylabel('Contrainte de Von Mises (MPa)')
+plt.xlabel('Nombre de dents')
+plt.grid(True)
+plt.legend()
+
+plt.figure(2)
+
+plt.clf()
+
+for m in list_m:
+    m_label= 'm = ' + str(m*1000) + ' mm'
+    s=stress(m,list_z,GW)
+    vm=von_mises(s[0],s[1],s[2])
+    plt.plot(list_z,Re/vm,'.',label=m_label)
+plt.ylabel('Coeff de sécurité / déformation plastique')
+plt.xlabel('Nombre de dents')
+plt.grid(True)
+plt.legend()
+
+plt.figure(3)
+
+plt.clf()
+
+for m in list_m:
+    m_label= 'm = ' + str(m*1000) + ' mm'
+    s=stress(m,list_z,GW)[0]
+    plt.plot(list_z,p_matage/s,'.',label=m_label)
+plt.ylabel('Coeff de sécurité / matage')
+plt.xlabel('Nombre de dents')
+plt.grid(True)
+plt.legend()
 
 
