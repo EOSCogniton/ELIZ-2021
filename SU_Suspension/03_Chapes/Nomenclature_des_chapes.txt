@@ -1,0 +1,16 @@
+Nomenclature pour les chapes de triangles de Valkyriz :
+
+Chape_Jw_Ka_Lp_N
+
+J = F ou R pour Front ou Rear wheel
+K = U ou L pour Upper ou Lower A-Arm
+L = F ou R pour Front ou Rear pivot
+N = Low ou Up (Chape du haut ou chape du bas)
+
+Exemple :
+Chape_Fw_Ua_Fp_Low =
+La chape
+Roue avant 
+Du triangle du haut
+Du pivot avant 
+Chape du bas par rapport à la rotule
