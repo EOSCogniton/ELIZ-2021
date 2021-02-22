@@ -38,3 +38,4 @@ v34a : Amortisseur 175mm en static
 v35a : Redescente du centre de roulis arrière
 v36a : (Allongement de l'empattement de 35mm) FAUX
 v37a : Erratum, véritable allongement de l'empattement de 35mm pour permettre plus de place dans la celule arrière
+v38a : Modification de la hauteur du point 12 (crémaillère) suite à la mise à jour de la cellule avant 
