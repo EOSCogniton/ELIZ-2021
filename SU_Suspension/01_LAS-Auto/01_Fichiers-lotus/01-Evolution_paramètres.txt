@@ -39,3 +39,5 @@ v35a : Redescente du centre de roulis arrière
 v36a : (Allongement de l'empattement de 35mm) FAUX
 v37a : Erratum, véritable allongement de l'empattement de 35mm pour permettre plus de place dans la celule arrière
 v38a : Modification de la hauteur du point 12 (crémaillère) suite à la mise à jour de la cellule avant 
+v39a : Relève légèrment le centre de roulis de 10mm pour prendre de la marge sur le centre de l'avant et ainsi éviter que l'avant passe au dessu sde l'arrière
+v40a : damper ratio >1.1 <1.2
