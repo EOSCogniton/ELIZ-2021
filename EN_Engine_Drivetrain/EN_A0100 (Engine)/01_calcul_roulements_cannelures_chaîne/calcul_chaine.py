@@ -14,14 +14,14 @@ B12B=[19.05,1.16,28900]
 
 #%% Calcul
 
-chain=B08B
+chain=B10B
 
 p=chain[0]/1000
 M=chain[1]
 Frup=chain[2]
 
 #Pignon & moteur
-C=230
+C=240
 Z=13
 omega_max=5500*2*pi/60
 

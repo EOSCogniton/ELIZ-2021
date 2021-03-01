@@ -7,9 +7,9 @@ import matplotlib.pyplot as plt
 
 Re=850*10**6    
 
-C=230 #couple moteur
+C=240 #couple moteur
 
-T=6935 #traction de la chaîne
+T=7240 #traction de la chaîne
 l=16.45 #bras de levier entre point d'application de la traction et gorge (mm)
 
 
@@ -29,6 +29,7 @@ def K_tor(D,d,r,t):
 
 def von_mises(T,l,D,r):
     
+    d=D-2*r
     Mf=T*l
     sigma=Mf*32/(pi*d**3)
     Kf=K_flex(D,D-2*r,r,r)

@@ -12,7 +12,7 @@ p_matage=80*10**6
 
 #%% Calcul cannelures flancs en développantes
 
-C=230
+C=240
 
 def inv(x):
     return np.tan(x)-x
