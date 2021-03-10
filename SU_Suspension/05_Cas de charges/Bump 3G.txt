@@ -1,53 +1,53 @@
-Applied  loads   :                    |    Fx   |    Fy   |    Fz   |    Cx   |    Cy   |    Cz    
+  Applied  loads   :                    |    Fx   |    Fy   |    Fz   |    Cx   |    Cy   |    Cz    
   --|-----------------|-----------------|---------|---------|---------|---------|---------|--------- 
-  FO ground            frame                  .000      .000-12200.000      .000      .000      .000 
+  FO ground            frame                  .000      .000-12600.000      .000      .000      .000 
   -------------------------------------------------------------------------------------------------- 
                                                                                                      
   Loads in the linkages:                |    Rx   |    Ry   |    Rz   |    Mx   |    My   |    Mz    
   --|-----------------|-----------------|---------|---------|---------|---------|---------|--------- 
-  BJ fr upright        fr lr a-arm         -98.700  -258.593   -28.294      .000      .000      .000 
-  BJ fr upright        fr lf a-arm         187.189  -490.436   -53.661      .000      .000      .000 
-  BJ frame             fr lr a-arm          98.700   258.593    28.294      .000      .000      .000 
-  BJ frame             fr lf a-arm        -187.189   490.436    53.661      .000      .000      .000 
-  BJ fr upright        fr ur a-arm         709.267  1713.589    93.056      .000      .000      .000 
-  BJ fr upright        fr uf a-arm        -789.677  1907.859   103.606      .000      .000      .000 
-  BJ frame             fr ur a-arm        -709.267 -1713.589   -93.056      .000      .000      .000 
-  BJ frame             fr uf a-arm         789.677 -1907.859  -103.606      .000      .000      .000 
-  BJ fr upright        fr pullrod             .000 -2943.636  2562.337      .000      .000      .000 
-  BJ fr rocker         fr pullrod             .000  2943.636 -2562.337      .000      .000      .000 
-  BJ fr rocker         fr absorber            .000   681.516  2988.188      .000      .000      .000 
-  BJ frame             fr absorber            .000  -681.516 -2988.188      .000      .000      .000 
-  PI frame             fr rocker              .000  3625.153   425.851      .000      .000      .000 
-  BJ fr upright        fr tie rod           -8.080    71.218     6.957      .000      .000      .000 
-  BJ frame             fr tie rod            8.080   -71.218    -6.957      .000      .000      .000 
-  SS fr upright        fr wheel               .000   -76.276 -4241.136      .000      .000      .000 
-  SS fr upright        fr wheel               .000    28.021  1558.004      .000      .000      .000 
-  PO fr upright        fr wheel               .000    48.256     -.868      .000      .000      .000 
+  BJ fr upright        fr lr a-arm        -101.936  -267.072   -29.222      .000      .000      .000 
+  BJ fr upright        fr lf a-arm         193.327  -506.516   -55.420      .000      .000      .000 
+  BJ frame             fr lr a-arm         101.936   267.072    29.222      .000      .000      .000 
+  BJ frame             fr lf a-arm        -193.327   506.516    55.420      .000      .000      .000 
+  BJ fr upright        fr ur a-arm         732.522  1769.773    96.107      .000      .000      .000 
+  BJ fr upright        fr uf a-arm        -815.568  1970.411   107.002      .000      .000      .000 
+  BJ frame             fr ur a-arm        -732.522 -1769.773   -96.107      .000      .000      .000 
+  BJ frame             fr uf a-arm         815.568 -1970.411  -107.002      .000      .000      .000 
+  BJ fr upright        fr pullrod             .000 -3040.149  2646.347      .000      .000      .000 
+  BJ fr rocker         fr pullrod             .000  3040.149 -2646.347      .000      .000      .000 
+  BJ fr rocker         fr absorber            .000   703.861  3086.161      .000      .000      .000 
+  BJ frame             fr absorber            .000  -703.861 -3086.161      .000      .000      .000 
+  PI frame             fr rocker              .000  3744.010   439.813      .000      .000      .000 
+  BJ fr upright        fr tie rod           -8.345    73.553     7.185      .000      .000      .000 
+  BJ frame             fr tie rod            8.345   -73.553    -7.185      .000      .000      .000 
+  SS fr upright        fr wheel               .000   -78.777 -4380.189      .000      .000      .000 
+  SS fr upright        fr wheel               .000    28.939  1609.086      .000      .000      .000 
+  PO fr upright        fr wheel               .000    49.838     -.896      .000      .000      .000 
   PO fr upright        fr wheel               .000      .000      .000      .000      .000      .000 
-  PO fr wheel          ground                 .000      .000 -2684.000      .000      .000      .000 
-  PO frame             ground                 .000      .000 -2684.000      .000      .000      .000 
-  BJ frame             re uf a-arm       -1202.763  1598.510  -135.020      .000      .000      .000 
-  BJ frame             re ur a-arm        1202.763  1598.512  -135.020      .000      .000      .000 
-  BJ re upright        re uf a-arm        1202.763 -1598.510   135.020      .000      .000      .000 
-  BJ re upright        re ur a-arm       -1202.763 -1598.512   135.020      .000      .000      .000 
-  BJ frame             re lf a-arm        -264.087   547.380    49.424      .000      .000      .000 
-  BJ frame             re lr a-arm         264.087   547.380    49.424      .000      .000      .000 
-  BJ re upright        re lf a-arm         264.087  -547.380   -49.424      .000      .000      .000 
-  BJ re upright        re lr a-arm        -264.087  -547.380   -49.424      .000      .000      .000 
+  PO fr wheel          ground                 .000      .000 -2772.000      .000      .000      .000 
+  PO frame             ground                 .000      .000 -2772.000      .000      .000      .000 
+  BJ frame             re uf a-arm       -1242.198  1650.920  -139.447      .000      .000      .000 
+  BJ frame             re ur a-arm        1242.198  1650.922  -139.447      .000      .000      .000 
+  BJ re upright        re uf a-arm        1242.198 -1650.920   139.447      .000      .000      .000 
+  BJ re upright        re ur a-arm       -1242.198 -1650.922   139.447      .000      .000      .000 
+  BJ frame             re lf a-arm        -272.745   565.327    51.045      .000      .000      .000 
+  BJ frame             re lr a-arm         272.745   565.327    51.045      .000      .000      .000 
+  BJ re upright        re lf a-arm         272.745  -565.327   -51.045      .000      .000      .000 
+  BJ re upright        re lr a-arm        -272.745  -565.327   -51.045      .000      .000      .000 
   BJ frame             re tie rod             .000      .000      .000      .000      .000      .000 
   BJ re upright        re tie rod             .000      .000      .000      .000      .000      .000 
-  BJ re upright        re pushrod             .000  4291.782  3244.809      .000      .000      .000 
-  BJ re rocker         re pushrod             .000 -4291.782 -3244.809      .000      .000      .000 
-  BJ re rocker         re absorber            .000  3801.464  -832.273      .000      .000      .000 
-  BJ frame             re absorber            .000 -3801.464   832.273      .000      .000      .000 
-  PI frame             re rocker              .000  -490.319 -4077.082      .000      .000      .000 
-  SS re upright        re wheel               .000  -105.098 -5425.346      .000      .000      .000 
-  SS re upright        re wheel               .000    38.949  2010.630      .000      .000      .000 
-  PO re upright        re wheel               .000    66.149    -1.281      .000      .000      .000 
+  BJ re upright        re pushrod             .000  4432.497  3351.196      .000      .000      .000 
+  BJ re rocker         re pushrod             .000 -4432.497 -3351.196      .000      .000      .000 
+  BJ re rocker         re absorber            .000  3926.102  -859.561      .000      .000      .000 
+  BJ frame             re absorber            .000 -3926.102   859.561      .000      .000      .000 
+  PI frame             re rocker              .000  -506.395 -4210.757      .000      .000      .000 
+  SS re upright        re wheel               .000  -108.544 -5603.227      .000      .000      .000 
+  SS re upright        re wheel               .000    40.226  2076.552      .000      .000      .000 
+  PO re upright        re wheel               .000    68.317    -1.323      .000      .000      .000 
   PO re upright        re wheel               .000      .000     -.002      .000      .000      .000 
-  PO re wheel          ground                 .000      .000 -3416.000      .000      .000      .000 
-  PO frame             ground                 .000      .000 -3416.000      .000      .000      .000 
+  PO re wheel          ground                 .000      .000 -3528.000      .000      .000      .000 
+  PO frame             ground                 .000      .000 -3528.000      .000      .000      .000 
   PO frame             ground                 .000      .000      .000      .000      .000      .000 
   PO frame             ground                 .000      .000      .000      .000      .000      .000 
   PO frame             ground                 .000      .000      .000      .000      .000      .000 
-  -------------------------------------------------------------------------------------------------- 
+  --------------------------------------------------------------------------------------------------
