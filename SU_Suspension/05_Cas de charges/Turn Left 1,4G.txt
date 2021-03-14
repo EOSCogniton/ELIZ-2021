@@ -1,0 +1,56 @@
+  Applied  loads   :                    |    Fx   |    Fy   |    Fz   |    Cx   |    Cy   |    Cz    
+  --|-----------------|-----------------|---------|---------|---------|---------|---------|--------- 
+  FO ground            frame                  .000      .000 -3150.000      .000      .000      .000 
+  FO ground            frame                  .000  4410.000      .000      .000      .000      .000 
+  FO ground            front wheel            .000  -375.213      .000      .000      .000      .000 
+  FO ground            rear wheel             .000  -375.213      .000      .000      .000      .000 
+  -------------------------------------------------------------------------------------------------- 
+                                                                                                     
+  Loads in the linkages:                |    Rx   |    Ry   |    Rz   |    Mx   |    My   |    Mz    
+  --|-----------------|-----------------|---------|---------|---------|---------|---------|--------- 
+  BJ frame             front upper front   126.548  -305.740   -16.603      .000      .000      .000 
+  BJ frame             front upper rear   -119.158  -287.885   -15.633      .000      .000      .000 
+  BJ front upright     front upper front  -126.548   305.740    16.603      .000      .000      .000 
+  BJ front upright     front upper rear    119.158   287.885    15.633      .000      .000      .000 
+  BJ frame             front lower front  -141.855   371.661    40.665      .000      .000      .000 
+  BJ frame             front lower rear    125.292   328.264    35.917      .000      .000      .000 
+  BJ front upright     front lower front   141.855  -371.661   -40.665      .000      .000      .000 
+  BJ front upright     front lower rear   -125.292  -328.264   -35.917      .000      .000      .000 
+  BJ frame             front tie rod         9.173   -80.850    -7.898      .000      .000      .000 
+  BJ front upright     front tie rod        -9.173    80.850     7.898      .000      .000      .000 
+  BJ front upright     front pullrod          .000  -349.763   304.457      .000      .000      .000 
+  BJ front rocker      front pullrod          .000   349.763  -304.457      .000      .000      .000 
+  BJ frame             front absorber         .000   -80.978  -355.056      .000      .000      .000 
+  BJ front rocker      front absorber         .000    80.978   355.056      .000      .000      .000 
+  PI front rocker      frame                  .000  -430.740   -50.600      .000      .000      .000 
+  SS front upright     front wheel            .000   -47.070 -2617.208      .000      .000      .000 
+  SS front upright     front wheel            .000    42.373  2356.032      .000      .000      .000 
+  PO front upright     front wheel            .000   379.910    -6.833      .000      .000      .000 
+  PO front wheel       front upright          .000      .000      .000      .000      .000      .000 
+  PO front wheel       ground                 .000      .000  -268.009      .000      .000      .000 
+  PO frame             ground                 .000      .000 -1117.991      .000      .000      .000 
+  BJ frame             rear upper front    -39.999    53.160    -4.490      .000      .000      .000 
+  BJ frame             rear upper rear a    39.999    53.160    -4.490      .000      .000      .000 
+  BJ rear upright      rear upper front     39.999   -53.160     4.490      .000      .000      .000 
+  BJ rear upright      rear upper rear a   -39.999   -53.160     4.490      .000      .000      .000 
+  BJ frame             rear lower front   -167.517   347.218    31.351      .000      .000      .000 
+  BJ frame             rear lower rear a   167.517   347.217    31.351      .000      .000      .000 
+  BJ rear upright      rear lower front    167.517  -347.218   -31.351      .000      .000      .000 
+  BJ rear upright      rear lower rear a  -167.517  -347.217   -31.351      .000      .000      .000 
+  BJ frame             rear tie rod           .000      .000      .000      .000      .000      .000 
+  BJ rear upright      rear tie rod           .000      .000      .000      .000      .000      .000 
+  BJ rear upright      rear pushrod           .000   425.541   321.731      .000      .000      .000 
+  BJ rear rocker       rear pushrod           .000  -425.541  -321.731      .000      .000      .000 
+  BJ frame             rear absorber          .000  -376.925    82.522      .000      .000      .000 
+  BJ rear rocker       rear absorber          .000   376.925   -82.522      .000      .000      .000 
+  PI rear rocker       frame                  .000    48.616   404.253      .000      .000      .000 
+  SS rear upright      rear wheel             .000   -50.724 -2618.488      .000      .000      .000 
+  SS rear upright      rear wheel             .000    45.675  2357.845      .000      .000      .000 
+  PO rear upright      rear wheel             .000   380.262    -7.366      .000      .000      .000 
+  PO rear upright      rear wheel             .000      .000      .000      .000      .000      .000 
+  PO rear wheel        ground                 .000      .000  -268.009      .000      .000      .000 
+  PO frame             ground                 .000      .000 -1495.991      .000      .000      .000 
+  PO ground            frame                  .000      .000      .000      .000      .000      .000 
+  PO ground            frame                  .000 -2094.387      .000      .000      .000      .000 
+  PO ground            frame                  .000 -1565.187      .000      .000      .000      .000 
+  --------------------------------------------------------------------------------------------------
