@@ -43,3 +43,4 @@ v39a : Relève légèrment le centre de roulis de 10mm pour prendre de la marge 
 v40a : damper ratio >1.1 <1.2
 v42a : allongement de la track rod pour meilleur PM
 v43a : décallage vers l'intérieur de 3mm des point 3 et 7 pour permettre à la vis du point 7 de ne pas toucher le congé
+v44a : oublie de déplacer le point 8
