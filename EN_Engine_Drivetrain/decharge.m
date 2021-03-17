@@ -14,7 +14,7 @@ a = 0.009; % Variation thermique de la resistance(en K^(-1))
 R0 = 6.8E3; V0 = 540; % Resistance(en Ohm) et tension(en V) intiales
 % Initialisation
 R=[R0];T=[T0];V=[V0];
-t_pas = min(0.5,t_charge/5);t=t_pas:t_pas:t_max;index = 1;
+t_pas = min(0.005,t_charge/5);t=t_pas:t_pas:t_max;index = 1;
 % Iteration de calcul
 for i = t
     % C*m*dT=(P_joule-P_newton)*dt
