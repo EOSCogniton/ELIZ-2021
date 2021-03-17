@@ -1,4 +1,5 @@
 Simulation:
+factuer de sécurité : 2
 
 Encastrement partout (sauf push rod) : 
  -max 4e8 premier jet du basculeur 1
