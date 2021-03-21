@@ -1,0 +1,8 @@
+﻿# encoding: utf-8
+# Release 18.1
+SetScriptVersion(Version="18.1.463")
+fileType1 = GetFileType(Name="GeometryFileType")
+ImportFile(
+    FilePath="C:/Users/theol/Desktop/EPSA/GIT/ELIZ-2021/FR_Frame_Body/FR_A0100 (Frame)/FR_Frame.CATProduct",
+    FileType=fileType1)
+Save(Overwrite=True)
