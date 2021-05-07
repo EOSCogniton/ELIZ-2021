@@ -17,5 +17,5 @@ merger = PdfFileMerger()
 for pdf in merge_list:
     merger.append(pdf)
 
-merger.write("D:/Robin Niermaréchal/Documents/EPSA/03-GIT/Valkyriz/ELIZ-2021/DE_Design-Event/00_Fusion/Rendu.pdf") #your output directory
+merger.write("D:/Robin Niermaréchal/Documents/EPSA/03-GIT/Valkyriz/ELIZ-2021/DE_Design-Event/00_Fusion/281_Ecurie Piston Sport Auto_Design_Report.pdf") #your output directory
 merger.close()
