@@ -38,6 +38,7 @@ hrc_r=0.10 #hauteur du centre de roulis arrière
 
 dh= h_stat*m/ms -mu/ms*h_wheel - (xr/w)*hrc_f - (xf/w)*hrc_r # m
 ha = np.cos(np.arctan((hrc_r-hrc_f)/w))*dh
+
 #motion ratio
 MR_f = 1.15
 MR_r = 1.15
@@ -63,18 +64,18 @@ Kw_r=Ks_r/(MR_r**2) # N/m
 
 #Ride frequencies
 
-Kr_f = Kw_f*KT/(Kw_f+KT)
-Kr_r = Kw_r*KT/(Kw_r+KT)
+Kr_f = Kw_f*KT/(Kw_f+KT) # Combined front stiffness or ride rate
+Kr_r = Kw_r*KT/(Kw_r+KT) # Combined rear stiffness or ride rate
 
 Ff = np.sqrt(Kr_f/m*2*(w/xr))/(2*pi)
 Fr = np.sqrt(Kr_r/m*2*(w/xf))/(2*pi)
 
 #ARB rates
 
-Qsf=Kr_f*tf**2/2 # Nm/rad #raideur en roulis avant dues au ressorts, basculeurs et pneus
-Qsr=Kr_r*tr**2/2 # Nm/rad #raideur en roulis arrière dues au ressorts, basculeurs et pneus
+Qsf=Kr_f*tf**2/2 # Nm/rad #raideur en roulis avant dues au ressorts, basculeurs et pneus = Front Roll rate
+Qsr=Kr_r*tr**2/2 # Nm/rad #raideur en roulis arrière dues au ressorts, basculeurs et pneus = Rear Roll rate
 
-Qs=Qsf+Qsr # Nm/rad
+Qs=Qsf+Qsr # Nm/rad = Roll rate
 
 Qarb = 16000 # Nm/rad
 
@@ -116,7 +117,9 @@ Fz_min,Fz_max = 230 , 1600
     
 pio=65000 #pressure from .tir file
 
-FzO=m*g/4
+# Coefficients
+
+FzO=m*g/4 # Nominal load
 
 PCY1= +1.725E+000
 PDY1= +2.733E+000
@@ -344,3 +347,4 @@ plt.grid(True)
 plt.legend()
 
 plt.show()
+
