@@ -1,5 +1,4 @@
 
-
 import numpy as np
 import matplotlib.pyplot as plt
 from math import pi
@@ -13,33 +12,36 @@ rho=1.18 # masse volumique air
 
 #%% CAR DATAS
         
-#masses
+# --> Variables du modèle à ajuster selon les configurations de la voiture
+
+# Masses
 m_car=225
 m_pilot=75
 m_wheel=6.374
-m=m_car+m_pilot
+m=m_car+m_pilot #masse totale
 ms= m - 4*m_wheel #masse suspendue
-mu= 4*m_wheel
+mu= 4*m_wheel #masse non-suspendue
 
 
 w=1.570 #wheelbase
-xf=0.56*w #distance centre de gravité jusqua train avant
-xr= w-xf
+xf=0.56*w #distance centre de gravité jusqu'au train avant
+xr= w-xf #distance centre de gravité jusqu'au train arrière
 
-#voies
-tf=1.254
-tr=1.200
+# Voies
+tf=1.254 #largeur de voies avant
+tr=1.200  #largeur de voies arrière
 
-#hauteur des centres de roulis et axe de roulis
+# Hauteur des centres de roulis et axe de roulis
 h_wheel = 0.235 #hauteur de la masse non suspendue ~ rayon du pneu
 h_stat=0.30 #hauteur du centre gravité en statique
-hrc_f=0.1 #hauteur du centre de roulis avant
+hrc_f=0.10 #hauteur du centre de roulis avant
 hrc_r=0.10 #hauteur du centre de roulis arrière
 
-dh= h_stat*m/ms -mu/ms*h_wheel - (xr/w)*hrc_f - (xf/w)*hrc_r # m
-ha = np.cos(np.arctan((hrc_r-hrc_f)/w))*dh
-#motion ratio
-MR_f = 1.15
+dh= h_stat*m/ms -mu/ms*h_wheel - (xr/w)*hrc_f - (xf/w)*hrc_r #distance verticale entre le centre de gravité et l'axe de roulis (en m)
+ha = np.cos(np.arctan((hrc_r-hrc_f)/w))*dh #distance minimum entre le centre de gravité et l'axe de roulis (en m)
+
+# Motion ratio #Rapport de la distance de compression de la suspension sur la distance parcourue par la roue #Donné par LOTUS
+MR_f = 1.15 
 MR_r = 1.15
 
 lt = 0.205 #largeur du pneu
@@ -49,13 +51,13 @@ lt = 0.205 #largeur du pneu
 phi_max = np.arctan(2*hrc_f/(2*lt+tf))-np.arctan(2*(hrc_f-0.05)/(2*lt+tf)) #angle de roulis max pour voiture avec aéro
 
 
-KT = 80000 #tire rate N/m
+KT = 80000 #tire rate N/m, obtenu grâce à l'exploitation des courbes de pneu Continental
 
-b= 175.1865165354331 # 1 N/m in lbs/inch
+b= 175.1865165354331 # Conversion : 1 N/m in lbs/inch
 
-#spring rates
-Ks_f = 175*b # N/m
-Ks_r = 300*b # N/m
+#Spring rates
+Ks_f = 175*b #Spring rates des suspensions avant, données fournisseurs, N/m
+Ks_r = 300*b #Spring rates des suspensions arrière, données fournisseurs, N/m
 
 #wheel rates
 Kw_f=Ks_f/(MR_f**2) # N/m
@@ -63,24 +65,26 @@ Kw_r=Ks_r/(MR_r**2) # N/m
 
 #Ride frequencies
 
-Kr_f = Kw_f*KT/(Kw_f+KT)
-Kr_r = Kw_r*KT/(Kw_r+KT)
+Kr_f = Kw_f*KT/(Kw_f+KT) # Combined front stiffness or ride rate OU "comment ton chassis bouge par rapport à la route, cette raideur combine tout les effets"
+Kr_r = Kw_r*KT/(Kw_r+KT) # Combined rear stiffness or ride rate OU "comment ton chassis bouge par rapport à la route, cette raideur combine tout les effets"
 
 Ff = np.sqrt(Kr_f/m*2*(w/xr))/(2*pi)
 Fr = np.sqrt(Kr_r/m*2*(w/xf))/(2*pi)
+#Empiriquement on cherche à obtenir une fréquence avant et arrière avec 10% plus élevé sur l'arrière (Race Car Design)
+
 
 #ARB rates
 
-Qsf=Kr_f*tf**2/2 # Nm/rad #raideur en roulis avant dues au ressorts, basculeurs et pneus
-Qsr=Kr_r*tr**2/2 # Nm/rad #raideur en roulis arrière dues au ressorts, basculeurs et pneus
+Qsf=Kr_f*tf**2/2 # Nm/rad #raideur en roulis avant dues au ressorts, basculeurs et pneus 
+Qsr=Kr_r*tr**2/2 # Nm/rad #raideur en roulis arrière dues au ressorts, basculeurs et pneus 
 
-Qs=Qsf+Qsr # Nm/rad
+Qs=Qsf+Qsr # Nm/rad #Roll rate total des suspensions
 
-Qarb = 16000 # Nm/rad
+Qarb = 16000 # Nm/rad #Raideur de l'ensemble des bars anti-roulis (Sommation des deux raideurs avant-arrière)
 
-RR=ms*ha/(Qarb+Qs)
+RR=ms*ha/(Qarb+Qs) #Roll rate total de la voiture OU "Combien tu prends de degrés de roulis par accélération latéral
 
-MN = 1 # magic number répartition de raideur anti-roulis à l'avant
+MN = 1 #magic number répartition de raideur anti-roulis à l'avant #Choisis arbitrairement ici à 1 car pas de bar anti-roulis à l'arrière
 
 Qarb_f= MN*Qarb
 Qarb_r= (1-MN)*Qarb
@@ -116,7 +120,9 @@ Fz_min,Fz_max = 230 , 1600
     
 pio=65000 #pressure from .tir file
 
-FzO=m*g/4
+# Coefficients issus de la documentation continental C19 (.tir à ouvrir comme un txt) pour 65kPa
+
+FzO=m*g/4 # Nominal load
 
 PCY1= +1.725E+000
 PDY1= +2.733E+000
@@ -344,3 +350,4 @@ plt.grid(True)
 plt.legend()
 
 plt.show()
+
