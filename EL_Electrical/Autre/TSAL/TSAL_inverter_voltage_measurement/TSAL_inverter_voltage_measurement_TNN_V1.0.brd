@@ -1710,12 +1710,6 @@ design rules under a new name.</description>
 <attribute name="SPICEPREFIX" value="R" x="49.784" y="33.528" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="8.509" y="3.937" size="0.6096" layer="27"/>
 </element>
-<element name="R13" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="10kΩ" x="15.494" y="6.858" smashed="yes" rot="R90">
-<attribute name="NAME" x="14.605" y="4.699" size="0.6096" layer="25"/>
-<attribute name="POPULARITY" value="77" x="59.944" y="43.688" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="SPICEPREFIX" value="R" x="59.944" y="43.688" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="14.351" y="3.937" size="0.6096" layer="27"/>
-</element>
 <element name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="100kΩ" x="10.414" y="24.13" smashed="yes" rot="R270">
 <attribute name="NAME" x="9.779" y="25.527" size="0.6096" layer="25" rot="R180"/>
 <attribute name="POPULARITY" value="77" x="-17.526" y="-13.97" size="1.778" layer="27" rot="R270" display="off"/>
@@ -1950,22 +1944,20 @@ design rules under a new name.</description>
 <contactref element="IC2" pad="5"/>
 <contactref element="C5" pad="2"/>
 <contactref element="R12" pad="2"/>
-<contactref element="R13" pad="1"/>
 <contactref element="IC3" pad="8"/>
 <wire x1="7.874" y1="7.708" x2="9.144" y2="7.708" width="0.1524" layer="1"/>
 <wire x1="9.144" y1="7.708" x2="10.414" y2="7.708" width="0.1524" layer="1"/>
 <wire x1="12.797" y1="9.628" x2="10.877" y2="7.708" width="0.1524" layer="1"/>
 <wire x1="10.877" y1="7.708" x2="10.414" y2="7.708" width="0.1524" layer="1"/>
-<wire x1="15.494" y1="6.008" x2="15.279" y2="6.008" width="0.1524" layer="1"/>
-<wire x1="15.279" y1="6.008" x2="14.2494" y2="4.9784" width="0.1524" layer="1"/>
+<wire x1="14.2494" y1="4.9784" x2="15.279" y2="6.008" width="0.1524" layer="1"/>
 <wire x1="9.6266" y1="4.9784" x2="9.144" y2="5.461" width="0.1524" layer="1"/>
 <wire x1="9.144" y1="5.461" x2="9.144" y2="7.708" width="0.1524" layer="1"/>
 <wire x1="14.2494" y1="4.9784" x2="9.6266" y2="4.9784" width="0.1524" layer="1"/>
 <wire x1="20.3962" y1="13.335" x2="16.637" y2="13.335" width="0.1524" layer="1"/>
 <wire x1="16.637" y1="13.335" x2="16.383" y2="13.081" width="0.1524" layer="1"/>
 <wire x1="16.383" y1="13.081" x2="16.383" y2="6.604" width="0.1524" layer="1"/>
-<wire x1="16.383" y1="6.604" x2="15.787" y2="6.008" width="0.1524" layer="1"/>
-<wire x1="15.787" y1="6.008" x2="15.494" y2="6.008" width="0.1524" layer="1"/>
+<wire x1="15.787" y1="6.008" x2="16.383" y2="6.604" width="0.1524" layer="1"/>
+<wire x1="15.279" y1="6.008" x2="15.787" y2="6.008" width="0.1524" layer="1"/>
 </signal>
 <signal name="N$11">
 <contactref element="IC2" pad="3"/>
@@ -1983,11 +1975,8 @@ design rules under a new name.</description>
 </signal>
 <signal name="VOLTAGE_ON_INVERTER_ISO">
 <contactref element="IC2" pad="1"/>
-<contactref element="R13" pad="2"/>
 <contactref element="IC3" pad="7"/>
 <wire x1="15.397" y1="9.628" x2="15.397" y2="8.763" width="0.1524" layer="1"/>
-<wire x1="15.397" y1="8.763" x2="15.397" y2="7.805" width="0.1524" layer="1"/>
-<wire x1="15.397" y1="7.805" x2="15.494" y2="7.708" width="0.1524" layer="1"/>
 <wire x1="20.3962" y1="14.605" x2="16.256" y2="14.605" width="0.1524" layer="1"/>
 <wire x1="16.256" y1="14.605" x2="15.621" y2="13.97" width="0.1524" layer="1"/>
 <via x="15.621" y="13.97" extent="1-16" drill="0.35"/>

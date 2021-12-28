@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="mm" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="mm"/>
+<grid distance="2.54" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.254" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -8830,13 +8830,11 @@ Source: &lt;a href="https://datasheet.datasheetarchive.com/originals/distributor
 <part name="P+8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
 <part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R27" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="10kΩ"/>
-<part name="R28" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="10kΩ"/>
-<part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="GND10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="SUPPLY" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="22-23-2021" device="" package3d_urn="urn:adsk.eagle:package:8078633/1"/>
 <part name="SC_OUT" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="22-23-2041" device="" package3d_urn="urn:adsk.eagle:package:8078635/1" value="SC_OUT"/>
 <part name="SC" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="22-23-2041" device="" package3d_urn="urn:adsk.eagle:package:8078635/1"/>
+<part name="R27" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="100Ω"/>
+<part name="R28" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="100Ω"/>
 </parts>
 <sheets>
 <sheet>
@@ -9092,20 +9090,6 @@ Source: &lt;a href="https://datasheet.datasheetarchive.com/originals/distributor
 <instance part="GND8" gate="1" x="220.98" y="121.92" smashed="yes">
 <attribute name="VALUE" x="218.44" y="119.38" size="1.778" layer="96"/>
 </instance>
-<instance part="R27" gate="G$1" x="203.2" y="182.88" smashed="yes" rot="R90">
-<attribute name="NAME" x="201.7014" y="179.07" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="206.502" y="179.07" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="R28" gate="G$1" x="203.2" y="144.78" smashed="yes" rot="R270">
-<attribute name="NAME" x="204.6986" y="148.59" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="199.898" y="148.59" size="1.778" layer="96" rot="R270"/>
-</instance>
-<instance part="GND9" gate="1" x="203.2" y="170.18" smashed="yes">
-<attribute name="VALUE" x="200.66" y="167.64" size="1.778" layer="96"/>
-</instance>
-<instance part="GND10" gate="1" x="203.2" y="157.48" smashed="yes" rot="R180">
-<attribute name="VALUE" x="205.74" y="160.02" size="1.778" layer="96" rot="R180"/>
-</instance>
 <instance part="SUPPLY" gate="-1" x="55.88" y="109.22" smashed="yes">
 <attribute name="NAME" x="58.42" y="108.458" size="1.524" layer="95"/>
 <attribute name="VALUE" x="55.118" y="100.457" size="1.778" layer="96"/>
@@ -9138,6 +9122,14 @@ Source: &lt;a href="https://datasheet.datasheetarchive.com/originals/distributor
 </instance>
 <instance part="SC" gate="-4" x="55.88" y="86.36" smashed="yes">
 <attribute name="NAME" x="58.42" y="85.598" size="1.524" layer="95"/>
+</instance>
+<instance part="R27" gate="G$1" x="203.2" y="193.04" smashed="yes" rot="R180">
+<attribute name="NAME" x="207.01" y="191.5414" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="207.01" y="196.342" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="R28" gate="G$1" x="187.96" y="134.62" smashed="yes" rot="R180">
+<attribute name="NAME" x="191.77" y="133.1214" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="191.77" y="137.922" size="1.778" layer="96" rot="R180"/>
 </instance>
 </instances>
 <busses>
@@ -9363,16 +9355,6 @@ Source: &lt;a href="https://datasheet.datasheetarchive.com/originals/distributor
 <pinref part="C5" gate="G$1" pin="2"/>
 <pinref part="GND6" gate="1" pin="GND"/>
 <wire x1="172.72" y1="154.94" x2="172.72" y2="144.78" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="R27" gate="G$1" pin="1"/>
-<pinref part="GND9" gate="1" pin="GND"/>
-<wire x1="203.2" y1="177.8" x2="203.2" y2="172.72" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="GND10" gate="1" pin="GND"/>
-<pinref part="R28" gate="G$1" pin="1"/>
-<wire x1="203.2" y1="154.94" x2="203.2" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="NMOS" gate="G$1" pin="S"/>
@@ -9628,13 +9610,9 @@ Source: &lt;a href="https://datasheet.datasheetarchive.com/originals/distributor
 <pinref part="IC3" gate="G$1" pin="VOA"/>
 <wire x1="190.5" y1="193.04" x2="190.5" y2="213.36" width="0.1524" layer="91"/>
 <wire x1="190.5" y1="213.36" x2="175.26" y2="213.36" width="0.1524" layer="91"/>
-<pinref part="Q1" gate="G$1" pin="G"/>
-<wire x1="213.36" y1="193.04" x2="203.2" y2="193.04" width="0.1524" layer="91"/>
-<junction x="190.5" y="193.04"/>
 <pinref part="R27" gate="G$1" pin="2"/>
-<wire x1="203.2" y1="193.04" x2="190.5" y2="193.04" width="0.1524" layer="91"/>
-<wire x1="203.2" y1="187.96" x2="203.2" y2="193.04" width="0.1524" layer="91"/>
-<junction x="203.2" y="193.04"/>
+<wire x1="198.12" y1="193.04" x2="190.5" y2="193.04" width="0.1524" layer="91"/>
+<junction x="190.5" y="193.04"/>
 </segment>
 </net>
 <net name="N$12" class="0">
@@ -9666,14 +9644,10 @@ Source: &lt;a href="https://datasheet.datasheetarchive.com/originals/distributor
 </net>
 <net name="N$27" class="0">
 <segment>
-<pinref part="NMOS" gate="G$1" pin="G"/>
 <pinref part="COMPARATEUR" gate="G$1" pin="OUT"/>
-<wire x1="213.36" y1="134.62" x2="203.2" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="203.2" y1="134.62" x2="137.16" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="137.16" y1="134.62" x2="137.16" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="R28" gate="G$1" pin="2"/>
-<wire x1="203.2" y1="139.7" x2="203.2" y2="134.62" width="0.1524" layer="91"/>
-<junction x="203.2" y="134.62"/>
+<wire x1="137.16" y1="134.62" x2="182.88" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$28" class="0">
@@ -9706,6 +9680,20 @@ Source: &lt;a href="https://datasheet.datasheetarchive.com/originals/distributor
 <pinref part="SC_OUT" gate="-4" pin="S"/>
 <wire x1="53.34" y1="68.58" x2="45.72" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="68.58" x2="45.72" y2="71.12" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$29" class="0">
+<segment>
+<pinref part="R28" gate="G$1" pin="1"/>
+<pinref part="NMOS" gate="G$1" pin="G"/>
+<wire x1="193.04" y1="134.62" x2="213.36" y2="134.62" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$30" class="0">
+<segment>
+<pinref part="R27" gate="G$1" pin="1"/>
+<pinref part="Q1" gate="G$1" pin="G"/>
+<wire x1="208.28" y1="193.04" x2="213.36" y2="193.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

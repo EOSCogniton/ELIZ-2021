@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="2.54" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.254" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -8563,7 +8563,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="R12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="10kΩ"/>
 <part name="R13" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="100kΩ"/>
 <part name="IC6" library="ADUM5242ARZ" deviceset="ADUM5242ARZ" device=""/>
-<part name="R14" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="10kΩ"/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="100nF"/>
@@ -8708,10 +8707,6 @@ state</text>
 <instance part="IC6" gate="G$1" x="58.42" y="93.98" smashed="yes">
 <attribute name="NAME" x="67.31" y="101.6" size="1.778" layer="95" align="center-left"/>
 <attribute name="VALUE" x="67.31" y="99.06" size="1.778" layer="96" align="center-left"/>
-</instance>
-<instance part="R14" gate="G$1" x="134.62" y="154.94" smashed="yes" rot="R180">
-<attribute name="NAME" x="138.43" y="150.9014" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="138.43" y="153.162" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="GND3" gate="1" x="55.88" y="81.28" smashed="yes">
 <attribute name="VALUE" x="53.34" y="83.82" size="1.778" layer="96" rot="R180"/>
@@ -9060,11 +9055,6 @@ state</text>
 <pinref part="R13" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<wire x1="139.7" y1="154.94" x2="144.78" y2="154.94" width="0.1524" layer="91"/>
-<label x="144.78" y="154.94" size="1.778" layer="95" xref="yes"/>
-<pinref part="R14" gate="G$1" pin="1"/>
-</segment>
-<segment>
 <wire x1="88.9" y1="93.98" x2="91.44" y2="93.98" width="0.1524" layer="91"/>
 <label x="91.44" y="93.98" size="1.778" layer="95" xref="yes"/>
 <pinref part="IC6" gate="G$1" pin="VISO"/>
@@ -9154,10 +9144,7 @@ state</text>
 <wire x1="127" y1="139.7" x2="127" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="127" y1="154.94" x2="121.92" y2="154.94" width="0.1524" layer="91"/>
 <label x="121.92" y="154.94" size="1.778" layer="95" rot="R180" xref="yes"/>
-<wire x1="127" y1="154.94" x2="129.54" y2="154.94" width="0.1524" layer="91"/>
-<junction x="127" y="154.94"/>
 <pinref part="IC5" gate="G$1" pin="OUT"/>
-<pinref part="R14" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <wire x1="88.9" y1="91.44" x2="104.14" y2="91.44" width="0.1524" layer="91"/>

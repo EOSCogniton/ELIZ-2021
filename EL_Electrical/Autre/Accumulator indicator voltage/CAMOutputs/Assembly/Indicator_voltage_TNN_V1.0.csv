@@ -3,9 +3,9 @@
 "1";"1,8nF, 50V";"C-EUC0805";"C0805";"C7";"CAPACITOR, European symbol";"";"";"";"";"";"";"";"";"";"";"";"";"88";"C";
 "9";"100kΩ";"R-US_R0603";"R0603";"R11, R12, R13, R14, R15, R16, R17, R18, R19";"RESISTOR, American symbol";"";"";"";"";"";"";"";"";"";"";"";"";"77";"R";
 "1";"100nF, 50V";"C0805C104K5RACTU";"CAPC2012X88N";"C8";"0805 X7R ceramic capacitor,100nF 50V Kemet 0805 0.1";"C0805C104K5RACTU";"https://www.arrow.com/en/products/c0805c104k5ractu/kemet-corporation?region=nac";"0805 X7R ceramic capacitor,100nF 50V Kemet 0805 0.1";"0.88mm";"Kemet";"C0805C104K5RACTU";"";"80-C0805C104K5R";"https://www.mouser.co.uk/ProductDetail/KEMET/C0805C104K5RACTU?qs=Pc30aiB8zWUISNb2Qeyxfw%3D%3D";"";"";"";"";"";
+"1";"100Ω";"R-US_R0603";"R0603";"R10";"RESISTOR, American symbol";"";"";"";"";"";"";"";"";"";"";"";"";"77";"R";
 "1";"100Ω, 2W";"1,6/0,8";"1,6/0,8";"R9";"THROUGH-HOLE PAD";"";"";"";"";"";"";"";"";"";"";"";"";"15";"";
 "10";"10kΩ";"R-US_R0603";"R0603";"R21, R22, R23, R24, R25, R26, R27, R28, R29, R30";"RESISTOR, American symbol";"";"";"";"";"";"";"";"";"";"";"";"";"77";"R";
-"1";"10kΩ, 2W";"R-US_R0603";"R0603";"R10";"RESISTOR, American symbol";"";"";"";"";"";"";"";"";"";"";"";"";"77";"R";
 "1";"10μF, 25V";"ECA1VM100";"CAPPRD200W55D525H1200";"C6";"M radial Al elect cap,10uF 35V 85deg C Panasonic 10uF 35 V dc Aluminium Electrolytic Capacitor, M Series 2000h";"";"";"M radial Al elect cap,10uF 35V 85deg C Panasonic 10uF 35 V dc Aluminium Electrolytic Capacitor, M Series 2000h";"12mm";"Panasonic";"ECA1VM100";"";"";"";"";"";"";"";"";
 "1";"10μF, 35V";"ECA1VM100";"CAPPRD200W55D525H1200";"C9";"M radial Al elect cap,10uF 35V 85deg C Panasonic 10uF 35 V dc Aluminium Electrolytic Capacitor, M Series 2000h";"";"";"M radial Al elect cap,10uF 35V 85deg C Panasonic 10uF 35 V dc Aluminium Electrolytic Capacitor, M Series 2000h";"12mm";"Panasonic";"ECA1VM100";"";"";"";"";"";"";"";"";
 "2";"10μF, 450V";"7112129";"CAPPRD500W60D1300H2250";"C3, C4";"RS Pro 10uF 450 V dc Aluminium Electrolytic Capacitor 2000h 13 Dia. x 21mm";"";"";"RS Pro 10uF 450 V dc Aluminium Electrolytic Capacitor 2000h 13 Dia. x 21mm";"22.5mm";"RS Components";"7112129";"";"";"";"";"";"";"";"";

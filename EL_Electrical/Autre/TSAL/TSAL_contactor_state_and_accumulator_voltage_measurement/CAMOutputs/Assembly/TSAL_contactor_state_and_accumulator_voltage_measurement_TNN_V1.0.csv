@@ -2,7 +2,7 @@
 "2";"";"22-23-2061";"22-23-2061";"AUX_CONTACT, POWER_AND_TSAL_SIGNAL";".100" (2.54mm) Center Header - 6 Pin";"";"";"";"";"";"";"MOLEX";"";"";"22-23-2061";"1462922";"27C1933";"6";"";
 "10";"100kΩ";"R-US_R0603";"R0603";"R2, R3, R4, R5, R6, R7, R8, R9, R10, R13";"RESISTOR, American symbol";"";"";"";"";"";"";"";"";"";"";"";"";"77";"R";
 "4";"100nF";"C-EUC0603";"C0603";"C2, C3, C5, C6";"CAPACITOR, European symbol";"";"";"";"";"";"";"";"";"";"";"";"";"73";"C";
-"5";"10kΩ";"R-US_R0603";"R0603";"R1, R12, R14, R15, R16";"RESISTOR, American symbol";"";"";"";"";"";"";"";"";"";"";"";"";"77";"R";
+"4";"10kΩ";"R-US_R0603";"R0603";"R1, R12, R15, R16";"RESISTOR, American symbol";"";"";"";"";"";"";"";"";"";"";"";"";"77";"R";
 "2";"22-23-2021";"22-23-2021";"22-23-2021";"HV+, HV-";".100" (2.54mm) Center Header - 2 Pin";"";"";"";"";"";"";"MOLEX";"";"";"22-23-2021";"1462926";"25C3832";"40";"";
 "1";"7,5kΩ";"R-US_R0603";"R0603";"R11";"RESISTOR, American symbol";"";"";"";"";"";"";"";"";"";"";"";"";"77";"R";
 "1";"ADUM5242ARZ";"ADUM5242ARZ";"SOIC127P600X175-8N";"IC6";"Analog Devices ADUM5242ARZ PCB SMT 2-channel Digital Isolator, 2500 V, 8-Pin SOIC";"ADUM5242ARZ";"https://www.arrow.com/en/products/adum5242arz/analog-devices";"Analog Devices ADUM5242ARZ PCB SMT 2-channel Digital Isolator, 2500 V, 8-Pin SOIC";"mm";"Analog Devices";"ADUM5242ARZ";"";"584-ADUM5242ARZ";"https://www.mouser.co.uk/ProductDetail/Analog-Devices/ADUM5242ARZ?qs=WIvQP4zGanhQ0%252B41E0Savw%3D%3D";"";"";"";"";"";

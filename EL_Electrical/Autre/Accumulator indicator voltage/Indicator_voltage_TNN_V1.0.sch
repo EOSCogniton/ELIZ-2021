@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="2.54" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.254" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -9100,8 +9100,6 @@ Source: &lt;a href="https://datasheet.datasheetarchive.com/originals/distributor
 <part name="P+8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="P-7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="V-" device="" value="HV-"/>
 <part name="NMOS" library="DMN2041L-7" deviceset="DMN2041L-7" device="" value="SOT-23"/>
-<part name="R10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="10kΩ, 2W"/>
-<part name="P-8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="V-" device="" value="HV-"/>
 <part name="P-9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="V-" device="" value="HV-"/>
 <part name="R9" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="1,6/0,8" device="" package3d_urn="urn:adsk.eagle:package:30830/1" value="100Ω, 2W"/>
 <part name="PAD4" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="1,6/0,8" device="" package3d_urn="urn:adsk.eagle:package:30830/1"/>
@@ -9113,6 +9111,7 @@ Source: &lt;a href="https://datasheet.datasheetarchive.com/originals/distributor
 <part name="FRAME2" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device=""/>
 <part name="HV+" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="22-23-2021" device="" package3d_urn="urn:adsk.eagle:package:8078633/1"/>
 <part name="HV-" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="22-23-2021" device="" package3d_urn="urn:adsk.eagle:package:8078633/1"/>
+<part name="R10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="100Ω"/>
 </parts>
 <sheets>
 <sheet>
@@ -9368,13 +9367,6 @@ Source: &lt;a href="https://datasheet.datasheetarchive.com/originals/distributor
 <attribute name="NAME" x="191.77" y="339.09" size="1.778" layer="95" align="center-left"/>
 <attribute name="VALUE" x="191.77" y="336.55" size="1.778" layer="96" align="center-left"/>
 </instance>
-<instance part="R10" gate="G$1" x="175.26" y="325.12" smashed="yes" rot="R270">
-<attribute name="NAME" x="179.07" y="326.6186" size="1.778" layer="95"/>
-<attribute name="VALUE" x="179.07" y="324.358" size="1.778" layer="96"/>
-</instance>
-<instance part="P-8" gate="1" x="175.26" y="314.96" smashed="yes">
-<attribute name="VALUE" x="175.26" y="312.42" size="1.778" layer="96" rot="R180"/>
-</instance>
 <instance part="P-9" gate="1" x="187.96" y="314.96" smashed="yes">
 <attribute name="VALUE" x="187.96" y="312.42" size="1.778" layer="96" rot="R180"/>
 </instance>
@@ -9412,6 +9404,10 @@ Source: &lt;a href="https://datasheet.datasheetarchive.com/originals/distributor
 <attribute name="VALUE" x="29.718" y="306.197" size="1.778" layer="96"/>
 </instance>
 <instance part="HV-" gate="-2" x="30.48" y="302.26" smashed="yes"/>
+<instance part="R10" gate="G$1" x="170.18" y="335.28" smashed="yes" rot="R180">
+<attribute name="NAME" x="168.91" y="339.3186" size="1.778" layer="95"/>
+<attribute name="VALUE" x="168.91" y="337.058" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -9491,11 +9487,6 @@ Source: &lt;a href="https://datasheet.datasheetarchive.com/originals/distributor
 <pinref part="P-7" gate="1" pin="V-"/>
 <pinref part="COMPARATEUR" gate="G$1" pin="VCC-"/>
 <wire x1="154.94" y1="340.36" x2="154.94" y2="332.74" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="R10" gate="G$1" pin="2"/>
-<pinref part="P-8" gate="1" pin="V-"/>
-<wire x1="175.26" y1="320.04" x2="175.26" y2="317.5" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="P-9" gate="1" pin="V-"/>
@@ -9867,12 +9858,8 @@ Source: &lt;a href="https://datasheet.datasheetarchive.com/originals/distributor
 <segment>
 <pinref part="COMPARATEUR" gate="G$1" pin="OUT"/>
 <wire x1="157.48" y1="332.74" x2="157.48" y2="335.28" width="0.1524" layer="91"/>
-<pinref part="NMOS" gate="G$1" pin="G"/>
-<wire x1="157.48" y1="335.28" x2="175.26" y2="335.28" width="0.1524" layer="91"/>
-<pinref part="R10" gate="G$1" pin="1"/>
-<wire x1="175.26" y1="335.28" x2="180.34" y2="335.28" width="0.1524" layer="91"/>
-<wire x1="175.26" y1="335.28" x2="175.26" y2="330.2" width="0.1524" layer="91"/>
-<junction x="175.26" y="335.28"/>
+<pinref part="R10" gate="G$1" pin="2"/>
+<wire x1="165.1" y1="335.28" x2="157.48" y2="335.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$32" class="0">
@@ -9917,6 +9904,13 @@ Source: &lt;a href="https://datasheet.datasheetarchive.com/originals/distributor
 <pinref part="PAD2" gate="P" pin="P"/>
 <pinref part="L1" gate="P" pin="P"/>
 <wire x1="43.18" y1="441.96" x2="48.26" y2="441.96" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$33" class="0">
+<segment>
+<pinref part="R10" gate="G$1" pin="1"/>
+<pinref part="NMOS" gate="G$1" pin="G"/>
+<wire x1="175.26" y1="335.28" x2="180.34" y2="335.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
