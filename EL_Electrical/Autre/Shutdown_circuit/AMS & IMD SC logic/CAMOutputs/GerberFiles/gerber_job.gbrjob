@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2021-12-28T11:31:00Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.6.2"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.57,
+        "LayerNumber": 2,
+        "Name": {
+            "ProjectId": "Shutdown_circuit_logic_TNN_V1.0"
+        },
+        "Owner": "thibault nouvellon <thibault.nouvellon@ecl20.ec-lyon.fr>",
+        "Size": {
+            "X": 90.1702,
+            "Y": 69.6922
+        }
+    }
+}

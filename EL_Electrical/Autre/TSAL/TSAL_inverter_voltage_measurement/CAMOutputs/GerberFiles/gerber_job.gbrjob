@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2021-12-28T11:36:27Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.6.2"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.57,
+        "LayerNumber": 2,
+        "Name": {
+            "ProjectId": "TSAL_inverter_voltage_measurement_TNN_V1.0"
+        },
+        "Owner": "thibault nouvellon <thibault.nouvellon@ecl20.ec-lyon.fr>",
+        "Size": {
+            "X": 43.18,
+            "Y": 25.4
+        }
+    }
+}
