@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2021-12-28T16:22:52Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.6.2"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.57,
+        "LayerNumber": 2,
+        "Name": {
+            "ProjectId": "TSAL_contactor_state_and_accumulator_voltage_measurement_TNN_V1.0"
+        },
+        "Owner": "thibault nouvellon <thibault.nouvellon@ecl20.ec-lyon.fr>",
+        "Size": {
+            "X": 48.26,
+            "Y": 24.13
+        }
+    }
+}

@@ -1,7 +1,0 @@
-8x subdivision
-2x panneaux latéraux
-1x fond
-10x barete 3 421
-10x barete 75 421
-1x division mediane
-2x cote
