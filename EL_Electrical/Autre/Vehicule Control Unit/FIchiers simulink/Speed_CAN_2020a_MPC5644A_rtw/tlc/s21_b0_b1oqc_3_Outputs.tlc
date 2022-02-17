@@ -1,0 +1,53 @@
+%implements s21_b0_b1oqc_3_Outputs "C"
+
+%function Outputs(block, system) Output
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%openfile localVarDecl
+
+real32_T tmp;
+%closefile localVarDecl
+%assign tlcOutputsFcnOfS18B0 = OpaqueTLCBlockFcn("Outputs", 18, 0, 3, 1, 0)
+%assign tlcOutputsFcnOfS18B1 = OpaqueTLCBlockFcn("Outputs", 18, 1, 3, 1, 1)
+%assign tlcOutputsFcnOfS18B2 = OpaqueTLCBlockFcn("Outputs", 18, 2, 3, 1, 2)
+%if !WHITE_SPACE(tlcOutputsFcnOfS18B0)
+/* {S!d2260}S-Function (ADC): '<S30>/Read ADC Value' */
+%<SLibCG_DumpSSCode("/*@[13a2f*/",tlcOutputsFcnOfS18B0,"/*@]*/")>\
+%endif
+/* {S!d2262}DeadZone: '<S30>/Dead Zone' incorporates:
+ *  DataTypeConversion: '<S30>/Data Type Conversion'
+ */
+/*@>134de*/if (/*@>13898*/B_n./*@>13c57*/ReadADCValue/*@>13480*/ > /*@>13484*/5) {
+    /*@>134e2*/tmp/*@>134e1*/ = /*@>13486*/(real32_T)/*@>1389e*/B_n./*@>13c5a*/ReadADCValue/*@>13485*/ - /*@>13489*/5.0F;
+} else {
+    /*@>134d7*/tmp/*@>134d9*/ = /*@>1348a*/0.0F;
+}
+/* {E!d2262}End of DeadZone: '<S30>/Dead Zone' */
+
+/* {S!d2264}DataTypeConversion: '<S30>/Data Type Conversion2' incorporates:
+ *  Gain: '<S30>/Gain'
+ */
+/*@>138a4*/B_n./*@>13c5d*/DataTypeConversion2/*@>4e38*/ = /*@>1332d*/(int16_T)/*@>135f8*/(real32_T)/*@>136ff*/floor(/*@>13313*/7.99975586F/*@>13331*/ * /*@>134db*/tmp);
+%if !WHITE_SPACE(tlcOutputsFcnOfS18B1)
+/* {S!d2266}S-Function (CoderCAN_PackBit2Data): '<S30>/Pack Signals To CAN Data' incorporates:
+ *  Constant: '<S30>/Constant'
+ */
+%<SLibCG_DumpSSCode("/*@[13a33*/",tlcOutputsFcnOfS18B1,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS18B2)
+/* {S!d2268}S-Function (CAN_TxData): '<S30>/Send CAN Data' */
+%<SLibCG_DumpSSCode("/*@[13a35*/",tlcOutputsFcnOfS18B2,"/*@]*/")>\
+%endif
+%closefile cfgTxt
+%<cfgTxt>
+%<LibSetSystemField(system, "CachedOutputLocalVars", localVarDecl)>
+%endfunction
+%function OutputsFcnProtoType(block, system) Output
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Outputs(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(3, 1, fcnProtoType)>
+%endfunction

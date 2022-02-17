@@ -1,0 +1,42 @@
+%implements s19_b0_wszmc_3_TLCInterface "C"
+
+%function getOutputAddr_18_0_3_0_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGB_BOCSCAddr(block, 1, 1, "", lcv, ucv, sigIdx, reim)
+%endfunction
+
+%function getOutput_18_0_3_0_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGB_BOCSC(block, 1, 1, "", lcv, ucv, sigIdx, reim)
+%endfunction
+
+%function getOutputAddr_18_1_3_0_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<129b3*//*@>129ad*/B_n./*@>129b9*/ADC2Volt"
+%endfunction
+
+%function getOutput_18_1_3_0_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>129c9*/B_n./*@>129d6*/ADC2Volt"
+%endfunction
+
+%function getOutputAddr_18_0_3_1_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGB_BOCSCAddr(block, 1, 1, "", lcv, ucv, sigIdx, reim)
+%endfunction
+
+%function getOutput_18_0_3_1_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGB_BOCSC(block, 1, 1, "", lcv, ucv, sigIdx, reim)
+%endfunction
+
+%function getOutputAddr_18_1_3_1_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<12a18*//*@>12a12*/B_n./*@>12a1e*/ADC2Volt"
+%endfunction
+
+%function getOutput_18_1_3_1_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>12a2e*/B_n./*@>12a3b*/ADC2Volt"
+%endfunction
+

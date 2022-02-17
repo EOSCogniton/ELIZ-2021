@@ -1,0 +1,82 @@
+%implements s19_b0_wszmc_TLCInterface "C"
+
+%function getSystemSystemInitializeFcnCallInfo_19_8_4_0_17_0(opaqueBlk) void
+%assign _modelSS = ""
+%createrecord fcnInfo { Name "/*@>175a6*/SystemInitialize"; Args [] }
+%return fcnInfo
+%endfunction
+%function getSystemSystemResetFcnCallInfo_19_8_4_0_17_0(opaqueBlk) void
+%assign _modelSS = ""
+%createrecord fcnInfo { Name "/*@>175c8*/SystemReset"; Args [] }
+%return fcnInfo
+%endfunction
+%function getSystemOutputFcnCallInfo_19_8_4_0_17_0(opaqueBlk) void
+%assign _modelSS = ""
+%createrecord fcnInfo { Name "/*@>175ea*/Outputs"; Args [] }
+%return fcnInfo
+%endfunction
+%function getSystemOutputFcnCallInfo_19_0_4_0_2_0(opaqueBlk) void
+%assign _modelSS = ""
+%createrecord fcnInfo { Name "/*@>1760c*/Outputs"; Args [] }
+%return fcnInfo
+%endfunction
+%function getSystemOutputFcnCallInfo_19_10_4_0_18_0(opaqueBlk) void
+%assign _modelSS = ""
+%createrecord fcnInfo { Name "/*@>1762e*/Outputs"; Args [] }
+%return fcnInfo
+%endfunction
+%function getDWorkAddr_19_0_4_1_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<17913*//*@>1790d*/DW_l./*@>17919*/Task_Call_DWORK0"
+%endfunction
+
+%function getDWork_19_0_4_1_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>17929*/DW_l./*@>17936*/Task_Call_DWORK0"
+%endfunction
+
+%function getDWorkAddr_19_4_4_1_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<17989*//*@>17983*/DW_l./*@>1798f*/TaskTrigger_DWORK0"
+%endfunction
+
+%function getDWork_19_4_4_1_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>1799f*/DW_l./*@>179ac*/TaskTrigger_DWORK0"
+%endfunction
+
+%function getSystemOutputFcnCallInfo_19_0_4_1_2_0(opaqueBlk) void
+%assign _modelSS = ""
+%createrecord fcnInfo { Name "/*@>17462*/Outputs"; Args [] }
+%return fcnInfo
+%endfunction
+%function getSystemOutputFcnCallInfo_19_8_4_2_17_0(opaqueBlk) void
+%assign _modelSS = ""
+%createrecord fcnInfo { Name "/*@>1749f*/Outputs"; Args [] }
+%return fcnInfo
+%endfunction
+%function getSystemOutputFcnCallInfo_19_10_4_6_18_0(opaqueBlk) void
+%assign _modelSS = ""
+%createrecord fcnInfo { Name "/*@>174d5*/Outputs"; Args [] }
+%return fcnInfo
+%endfunction
+%function getDWorkAddr_19_0_4_10_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<17b58*//*@>17b52*/DW_l./*@>17b5e*/Task_Call_DWORK0"
+%endfunction
+
+%function getDWork_19_0_4_10_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>17b6e*/DW_l./*@>17b7b*/Task_Call_DWORK0"
+%endfunction
+
+%function getDWorkAddr_19_4_4_10_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<17ba4*//*@>17b9e*/DW_l./*@>17baa*/TaskTrigger_DWORK0"
+%endfunction
+
+%function getDWork_19_4_4_10_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>17bba*/DW_l./*@>17bc7*/TaskTrigger_DWORK0"
+%endfunction
+

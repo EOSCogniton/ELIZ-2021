@@ -1,0 +1,102 @@
+%implements s21_b0_b1oqc_5_TLCInterface "C"
+
+%function getOutputAddr_20_0_5_0_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<148bd*//*@>148b7*/B_n./*@>148c3*/ReceiveCANMessage_o1"
+%endfunction
+
+%function getOutput_20_0_5_0_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>148d3*/B_n./*@>148e0*/ReceiveCANMessage_o1"
+%endfunction
+
+%function getOutputAddr_20_0_5_0_0_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<148f4*//*@>148ee*/B_n./*@>148fa*/ReceiveCANMessage_o2"
+%endfunction
+
+%function getOutput_20_0_5_0_0_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>1490a*/B_n./*@>14917*/ReceiveCANMessage_o2"
+%endfunction
+
+%function getOutputAddr_20_0_5_0_0_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<1492b*//*@>14925*/B_n./*@>14931*/ReceiveCANMessage_o3"
+%endfunction
+
+%function getOutput_20_0_5_0_0_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>14941*/B_n./*@>1494e*/ReceiveCANMessage_o3"
+%endfunction
+
+%function getOutputAddr_20_0_5_0_0_3_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<14962*//*@>1495c*/B_n./*@>14968*/ReceiveCANMessage_o4"
+%endfunction
+
+%function getOutput_20_0_5_0_0_3_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>14978*/B_n./*@>14985*/ReceiveCANMessage_o4"
+%endfunction
+
+%function getOutputAddr_20_0_5_0_0_4_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<14999*//*@>14993*/B_n./*@>1499f*/ReceiveCANMessage_o5"
+%endfunction
+
+%function getOutput_20_0_5_0_0_4_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>149af*/B_n./*@>149bc*/ReceiveCANMessage_o5"
+%endfunction
+
+%function getOutputAddr_20_0_5_0_0_5_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<149d0*//*@>149ca*/B_n./*@>149d6*/ReceiveCANMessage_o6" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutput_20_0_5_0_0_5_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>149e6*/B_n./*@>149f3*/ReceiveCANMessage_o6" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_20_1_5_0_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<14a1c*//*@>14a16*/B_n./*@>14a22*/ReceiveCANMessage_o6" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_20_1_5_0_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>14a32*/B_n./*@>14a3f*/ReceiveCANMessage_o6" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutputAddr_20_1_5_0_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<14a53*//*@>14a4d*/B_n./*@>14a59*/UnpackCANDataToSignals_o1"
+%endfunction
+
+%function getOutput_20_1_5_0_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>14a69*/B_n./*@>14a76*/UnpackCANDataToSignals_o1"
+%endfunction
+
+%function getOutputAddr_20_1_5_0_1_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGB_BOCSCAddr(block, 0, 1, "", lcv, ucv, sigIdx, reim)
+%endfunction
+
+%function getOutput_20_1_5_0_1_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGB_BOCSC(block, 0, 1, "", lcv, ucv, sigIdx, reim)
+%endfunction
+
+%function getOutputAddr_20_1_5_0_1_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<14a8c*//*@>14a86*/B_n./*@>14a92*/UnpackCANDataToSignals_o3"
+%endfunction
+
+%function getOutput_20_1_5_0_1_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>14aa2*/B_n./*@>14aaf*/UnpackCANDataToSignals_o3"
+%endfunction
+

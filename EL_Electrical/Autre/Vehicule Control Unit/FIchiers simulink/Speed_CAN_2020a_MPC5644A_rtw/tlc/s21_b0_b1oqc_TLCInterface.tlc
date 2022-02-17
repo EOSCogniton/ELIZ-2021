@@ -1,0 +1,122 @@
+%implements s21_b0_b1oqc_TLCInterface "C"
+
+%function getSystemSystemInitializeFcnCallInfo_21_11_6_0_17_0(opaqueBlk) void
+%assign _modelSS = ""
+%createrecord fcnInfo { Name "/*@>1a58f*/SystemInitialize"; Args [] }
+%return fcnInfo
+%endfunction
+%function getSystemSystemResetFcnCallInfo_21_11_6_0_17_0(opaqueBlk) void
+%assign _modelSS = ""
+%createrecord fcnInfo { Name "/*@>1a5b1*/SystemReset"; Args [] }
+%return fcnInfo
+%endfunction
+%function getSystemOutputFcnCallInfo_21_11_6_0_17_0(opaqueBlk) void
+%assign _modelSS = ""
+%createrecord fcnInfo { Name "/*@>1a5d3*/Outputs"; Args [] }
+%return fcnInfo
+%endfunction
+%function getSystemOutputFcnCallInfo_21_0_6_0_2_0(opaqueBlk) void
+%assign _modelSS = ""
+%createrecord fcnInfo { Name "/*@>1a5f5*/Outputs"; Args [] }
+%return fcnInfo
+%endfunction
+%function getSystemOutputFcnCallInfo_21_13_6_0_18_0(opaqueBlk) void
+%assign _modelSS = ""
+%createrecord fcnInfo { Name "/*@>1a617*/Outputs"; Args [] }
+%return fcnInfo
+%endfunction
+%function getSystemOutputFcnCallInfo_21_2_6_0_19_0(opaqueBlk) void
+%assign _modelSS = ""
+%createrecord fcnInfo { Name "/*@>1a639*/Outputs"; Args [] }
+%return fcnInfo
+%endfunction
+%function getSystemOutputFcnCallInfo_21_15_6_0_20_0(opaqueBlk) void
+%assign _modelSS = ""
+%createrecord fcnInfo { Name "/*@>1a65b*/Outputs"; Args [] }
+%return fcnInfo
+%endfunction
+%function getDWorkAddr_21_0_6_1_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<1a9e9*//*@>1a9e3*/DW_l./*@>1a9ef*/Task_Call_DWORK0"
+%endfunction
+
+%function getDWork_21_0_6_1_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>1a9ff*/DW_l./*@>1aa0c*/Task_Call_DWORK0"
+%endfunction
+
+%function getDWorkAddr_21_2_6_1_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<1aa35*//*@>1aa2f*/DW_l./*@>1aa3b*/TaskTrigger1_DWORK0"
+%endfunction
+
+%function getDWork_21_2_6_1_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>1aa4b*/DW_l./*@>1aa58*/TaskTrigger1_DWORK0"
+%endfunction
+
+%function getDWorkAddr_21_4_6_1_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<1aa81*//*@>1aa7b*/DW_l./*@>1aa87*/TaskTrigger_DWORK0"
+%endfunction
+
+%function getDWork_21_4_6_1_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>1aa97*/DW_l./*@>1aaa4*/TaskTrigger_DWORK0"
+%endfunction
+
+%function getSystemOutputFcnCallInfo_21_0_6_1_2_0(opaqueBlk) void
+%assign _modelSS = ""
+%createrecord fcnInfo { Name "/*@>1a3e5*/Outputs"; Args [] }
+%return fcnInfo
+%endfunction
+%function getSystemOutputFcnCallInfo_21_2_6_1_19_0(opaqueBlk) void
+%assign _modelSS = ""
+%createrecord fcnInfo { Name "/*@>1a40c*/Outputs"; Args [] }
+%return fcnInfo
+%endfunction
+%function getSystemOutputFcnCallInfo_21_11_6_2_17_0(opaqueBlk) void
+%assign _modelSS = ""
+%createrecord fcnInfo { Name "/*@>1a44f*/Outputs"; Args [] }
+%return fcnInfo
+%endfunction
+%function getSystemOutputFcnCallInfo_21_13_6_6_18_0(opaqueBlk) void
+%assign _modelSS = ""
+%createrecord fcnInfo { Name "/*@>1a485*/Outputs"; Args [] }
+%return fcnInfo
+%endfunction
+%function getSystemOutputFcnCallInfo_21_15_6_6_20_0(opaqueBlk) void
+%assign _modelSS = ""
+%createrecord fcnInfo { Name "/*@>1a4ac*/Outputs"; Args [] }
+%return fcnInfo
+%endfunction
+%function getDWorkAddr_21_0_6_10_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<1acec*//*@>1ace6*/DW_l./*@>1acf2*/Task_Call_DWORK0"
+%endfunction
+
+%function getDWork_21_0_6_10_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>1ad02*/DW_l./*@>1ad0f*/Task_Call_DWORK0"
+%endfunction
+
+%function getDWorkAddr_21_2_6_10_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<1ad38*//*@>1ad32*/DW_l./*@>1ad3e*/TaskTrigger1_DWORK0"
+%endfunction
+
+%function getDWork_21_2_6_10_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>1ad4e*/DW_l./*@>1ad5b*/TaskTrigger1_DWORK0"
+%endfunction
+
+%function getDWorkAddr_21_4_6_10_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<1ad84*//*@>1ad7e*/DW_l./*@>1ad8a*/TaskTrigger_DWORK0"
+%endfunction
+
+%function getDWork_21_4_6_10_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>1ad9a*/DW_l./*@>1ada7*/TaskTrigger_DWORK0"
+%endfunction
+

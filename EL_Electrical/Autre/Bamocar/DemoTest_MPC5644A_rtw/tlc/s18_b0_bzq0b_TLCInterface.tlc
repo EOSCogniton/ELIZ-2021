@@ -1,0 +1,72 @@
+%implements s18_b0_bzq0b_TLCInterface "C"
+
+%function getSystemSystemInitializeFcnCallInfo_18_9_3_0_17_0(opaqueBlk) void
+%assign _modelSS = ""
+%createrecord fcnInfo { Name "/*@>1609d*/SystemInitialize"; Args [] }
+%return fcnInfo
+%endfunction
+%function getSystemSystemResetFcnCallInfo_18_9_3_0_17_0(opaqueBlk) void
+%assign _modelSS = ""
+%createrecord fcnInfo { Name "/*@>160bf*/SystemReset"; Args [] }
+%return fcnInfo
+%endfunction
+%function getSystemOutputFcnCallInfo_18_9_3_0_17_0(opaqueBlk) void
+%assign _modelSS = ""
+%createrecord fcnInfo { Name "/*@>160e1*/Outputs"; Args [] }
+%return fcnInfo
+%endfunction
+%function getSystemOutputFcnCallInfo_18_0_3_0_2_0(opaqueBlk) void
+%assign _modelSS = ""
+%createrecord fcnInfo { Name "/*@>16103*/Outputs"; Args [] }
+%return fcnInfo
+%endfunction
+%function getDWorkAddr_18_0_3_1_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<163ad*//*@>163a7*/DWork./*@>163b3*/Task_Call_DWORK0"
+%endfunction
+
+%function getDWork_18_0_3_1_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>163c3*/DWork./*@>163d0*/Task_Call_DWORK0"
+%endfunction
+
+%function getDWorkAddr_18_2_3_1_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<163f9*//*@>163f3*/DWork./*@>163ff*/TaskTrigger_DWORK0"
+%endfunction
+
+%function getDWork_18_2_3_1_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>1640f*/DWork./*@>1641c*/TaskTrigger_DWORK0"
+%endfunction
+
+%function getSystemOutputFcnCallInfo_18_0_3_1_2_0(opaqueBlk) void
+%assign _modelSS = ""
+%createrecord fcnInfo { Name "/*@>15fac*/Outputs"; Args [] }
+%return fcnInfo
+%endfunction
+%function getSystemOutputFcnCallInfo_18_9_3_2_17_0(opaqueBlk) void
+%assign _modelSS = ""
+%createrecord fcnInfo { Name "/*@>15feb*/Outputs"; Args [] }
+%return fcnInfo
+%endfunction
+%function getDWorkAddr_18_0_3_10_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<165ce*//*@>165c8*/DWork./*@>165d4*/Task_Call_DWORK0"
+%endfunction
+
+%function getDWork_18_0_3_10_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>165e4*/DWork./*@>165f1*/Task_Call_DWORK0"
+%endfunction
+
+%function getDWorkAddr_18_2_3_10_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<1661a*//*@>16614*/DWork./*@>16620*/TaskTrigger_DWORK0"
+%endfunction
+
+%function getDWork_18_2_3_10_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>16630*/DWork./*@>1663d*/TaskTrigger_DWORK0"
+%endfunction
+

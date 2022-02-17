@@ -1,0 +1,22 @@
+%implements s19_b0_voeqc_2_Start "C"
+
+%function Start(block, system) Output
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%assign tlcStartFcnOfS17B15 = OpaqueTLCBlockFcn("Start", 17, 15, 2, 0, 0)
+%if !WHITE_SPACE(tlcStartFcnOfS17B15)
+/* Start for S-Function (DI_Key_In): '<S7>/SwitchInput_ReadKeyOn' */
+%<SLibCG_DumpSSCode("/*@[118f9*/",tlcStartFcnOfS17B15,"/*@]*/")>\
+%endif
+%closefile cfgTxt
+%<cfgTxt>
+%endfunction
+%function StartFcnProtoType(block, system) Output
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Start(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(2, 0, fcnProtoType)>
+%endfunction

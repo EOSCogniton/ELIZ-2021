@@ -1,0 +1,12 @@
+%implements s19_b0_wszmc_1_TLCInterface "C"
+
+%function getInputAddr_1_1_1_0_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<7a1b*//*@>7a15*/B_n./*@>7a21*/LogicalOperator_e"
+%endfunction
+
+%function getInput_1_1_1_0_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>7a31*/B_n./*@>7a3e*/LogicalOperator_e"
+%endfunction
+

@@ -1,0 +1,82 @@
+%implements s19_b0_voeqc_3_TLCInterface "C"
+
+%function getInputAddr_18_0_3_0_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGB_BOCSCAddr(block, 0, 1, "", lcv, ucv, sigIdx, reim)
+%endfunction
+
+%function getInput_18_0_3_0_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGB_BOCSC(block, 0, 1, "", lcv, ucv, sigIdx, reim)
+%endfunction
+
+%function getOutputAddr_18_0_3_0_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<12b17*//*@>12b11*/B_n./*@>12b1d*/PackSignalsToCANData" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutput_18_0_3_0_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>12b2d*/B_n./*@>12b3a*/PackSignalsToCANData" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_18_1_3_0_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<12b63*//*@>12b5d*/B_n./*@>12b69*/PackSignalsToCANData" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_18_1_3_0_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>12b79*/B_n./*@>12b86*/PackSignalsToCANData" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_18_2_3_0_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGIR_PVAddr(50, 0, 18, 1, "", -1, ucv, sigIdx)
+%endfunction
+
+%function getInput_18_2_3_0_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGIR_PV(50, 0, 18, 1, "", -1, ucv, sigIdx)
+%endfunction
+
+%function getInputAddr_18_2_3_0_2_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGIR_PVAddr(51, 0, 18, 1, "", -1, ucv, sigIdx)
+%endfunction
+
+%function getInput_18_2_3_0_2_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGIR_PV(51, 0, 18, 1, "", -1, ucv, sigIdx)
+%endfunction
+
+%function getInputAddr_18_2_3_0_2_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGIR_PVAddr(19, 0, 18, 1, "", -1, ucv, sigIdx)
+%endfunction
+
+%function getInput_18_2_3_0_2_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGIR_PV(19, 0, 18, 1, "", -1, ucv, sigIdx)
+%endfunction
+
+%function getInputAddr_18_2_3_0_2_3_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGIR_PVAddr(53, 0, 18, 1, "", -1, ucv, sigIdx)
+%endfunction
+
+%function getInput_18_2_3_0_2_3_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGIR_PV(53, 0, 18, 1, "", -1, ucv, sigIdx)
+%endfunction
+
+%function getInputAddr_18_2_3_0_2_4_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<12bb7*//*@>12bb1*/B_n./*@>12bbd*/PackSignalsToCANData" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_18_2_3_0_2_4_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>12bcd*/B_n./*@>12bda*/PackSignalsToCANData" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+

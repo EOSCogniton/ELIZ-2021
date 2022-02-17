@@ -1,0 +1,28 @@
+%implements s21_b0_b1oqc_5_Outputs "C"
+
+%function Outputs(block, system) Output
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%assign tlcOutputsFcnOfS20B0 = OpaqueTLCBlockFcn("Outputs", 20, 0, 5, 0, 0)
+%assign tlcOutputsFcnOfS20B1 = OpaqueTLCBlockFcn("Outputs", 20, 1, 5, 0, 1)
+%if !WHITE_SPACE(tlcOutputsFcnOfS20B0)
+/* S-Function (ecocoder_receive_msg): '<S32>/Receive CAN Message' */
+%<SLibCG_DumpSSCode("/*@[14860*/",tlcOutputsFcnOfS20B0,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS20B1)
+/* S-Function (CoderCAN_UnpackData2Bit): '<S32>/Unpack CAN Data To Signals' */
+%<SLibCG_DumpSSCode("/*@[14865*/",tlcOutputsFcnOfS20B1,"/*@]*/")>\
+%endif
+%closefile cfgTxt
+%<cfgTxt>
+%<LibSetSystemField(system, "CachedOutputLocalVars", localVarDecl)>
+%endfunction
+%function OutputsFcnProtoType(block, system) Output
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Outputs(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(5, 0, fcnProtoType)>
+%endfunction

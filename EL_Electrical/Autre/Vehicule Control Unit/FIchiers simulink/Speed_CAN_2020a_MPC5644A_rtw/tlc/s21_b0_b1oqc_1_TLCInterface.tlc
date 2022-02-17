@@ -1,0 +1,12 @@
+%implements s21_b0_b1oqc_1_TLCInterface "C"
+
+%function getInputAddr_1_1_1_0_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<85dc*//*@>85d6*/B_n./*@>85e2*/LogicalOperator_e"
+%endfunction
+
+%function getInput_1_1_1_0_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>85f2*/B_n./*@>85ff*/LogicalOperator_e"
+%endfunction
+

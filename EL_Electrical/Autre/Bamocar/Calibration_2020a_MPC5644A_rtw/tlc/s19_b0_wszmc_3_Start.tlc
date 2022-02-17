@@ -1,0 +1,27 @@
+%implements s19_b0_wszmc_3_Start "C"
+
+%function Start(block, system) Output
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%assign tlcStartFcnOfS18B0 = OpaqueTLCBlockFcn("Start", 18, 0, 3, 0, 0)
+%assign tlcStartFcnOfS18B1 = OpaqueTLCBlockFcn("Start", 18, 1, 3, 0, 1)
+%if !WHITE_SPACE(tlcStartFcnOfS18B0)
+/* Start for S-Function (ADC): '<S30>/Read ADC Value' */
+%<SLibCG_DumpSSCode("/*@[128f1*/",tlcStartFcnOfS18B0,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcStartFcnOfS18B1)
+/* Start for S-Function (ADC): '<S31>/ADC2Volt' */
+%<SLibCG_DumpSSCode("/*@[128f3*/",tlcStartFcnOfS18B1,"/*@]*/")>\
+%endif
+%closefile cfgTxt
+%<cfgTxt>
+%endfunction
+%function StartFcnProtoType(block, system) Output
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Start(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(3, 0, fcnProtoType)>
+%endfunction

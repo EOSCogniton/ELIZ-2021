@@ -1,0 +1,62 @@
+%implements s21_b0_b1oqc_3_TLCInterface "C"
+
+%function getOutputAddr_18_0_3_0_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<13ac1*//*@>13abb*/B_n./*@>13ac7*/ReadADCValue"
+%endfunction
+
+%function getOutput_18_0_3_0_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>13ad7*/B_n./*@>13ae4*/ReadADCValue"
+%endfunction
+
+%function getOutputAddr_18_0_3_1_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<13b0f*//*@>13b09*/B_n./*@>13b15*/ReadADCValue"
+%endfunction
+
+%function getOutput_18_0_3_1_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>13b25*/B_n./*@>13b32*/ReadADCValue"
+%endfunction
+
+%function getInputAddr_18_1_3_1_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGIR_PVAddr(52, 0, 18, 1, "", -1, ucv, sigIdx)
+%endfunction
+
+%function getInput_18_1_3_1_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGIR_PV(52, 0, 18, 1, "", -1, ucv, sigIdx)
+%endfunction
+
+%function getInputAddr_18_1_3_1_1_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<13b5d*//*@>13b57*/B_n./*@>13b63*/DataTypeConversion2"
+%endfunction
+
+%function getInput_18_1_3_1_1_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>13b73*/B_n./*@>13b80*/DataTypeConversion2"
+%endfunction
+
+%function getOutputAddr_18_1_3_1_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<13b94*//*@>13b8e*/B_n./*@>13b9a*/PackSignalsToCANData_o" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutput_18_1_3_1_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>13baa*/B_n./*@>13bb7*/PackSignalsToCANData_o" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_18_2_3_1_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<13be0*//*@>13bda*/B_n./*@>13be6*/PackSignalsToCANData_o" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_18_2_3_1_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>13bf6*/B_n./*@>13c03*/PackSignalsToCANData_o" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+

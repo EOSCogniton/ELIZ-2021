@@ -1,0 +1,78 @@
+%implements s18_b0_bzq0b_Update "C"
+
+%function UpdateForTID(block, system, tid) Output
+%if tid == 0
+%assign ::GlobalCurrentTID = 0
+%assign ::GlobalCurrentTID = []
+%endif
+%if tid == 1
+%assign ::GlobalCurrentTID = 1
+%assign ::GlobalCurrentTID = []
+%endif
+%if tid == 2
+%assign ::GlobalCurrentTID = 2
+%assign ::GlobalCurrentTID = []
+%endif
+%if tid == 3
+%assign ::GlobalCurrentTID = 3
+%assign ::GlobalCurrentTID = []
+%endif
+%if tid == 4
+%assign ::GlobalCurrentTID = 4
+%assign ::GlobalCurrentTID = []
+%endif
+%if tid == 5
+%assign ::GlobalCurrentTID = 5
+%assign ::GlobalCurrentTID = []
+%endif
+%if tid == 6
+%assign ::GlobalCurrentTID = 6
+%assign ::GlobalCurrentTID = []
+%endif
+%if tid == 7
+%assign ::GlobalCurrentTID = 7
+%assign ::GlobalCurrentTID = []
+%endif
+%if tid == 8
+%assign ::GlobalCurrentTID = 8
+%assign ::GlobalCurrentTID = []
+%endif
+%endfunction
+%function UpdateFcnProtoTypeForTID(block, system, tid) Output
+%if tid == 0
+%assign ::GlobalCurrentTID = 0
+%assign ::GlobalCurrentTID = []
+%endif
+%if tid == 1
+%assign ::GlobalCurrentTID = 1
+%assign ::GlobalCurrentTID = []
+%endif
+%if tid == 2
+%assign ::GlobalCurrentTID = 2
+%assign ::GlobalCurrentTID = []
+%endif
+%if tid == 3
+%assign ::GlobalCurrentTID = 3
+%assign ::GlobalCurrentTID = []
+%endif
+%if tid == 4
+%assign ::GlobalCurrentTID = 4
+%assign ::GlobalCurrentTID = []
+%endif
+%if tid == 5
+%assign ::GlobalCurrentTID = 5
+%assign ::GlobalCurrentTID = []
+%endif
+%if tid == 6
+%assign ::GlobalCurrentTID = 6
+%assign ::GlobalCurrentTID = []
+%endif
+%if tid == 7
+%assign ::GlobalCurrentTID = 7
+%assign ::GlobalCurrentTID = []
+%endif
+%if tid == 8
+%assign ::GlobalCurrentTID = 8
+%assign ::GlobalCurrentTID = []
+%endif
+%endfunction

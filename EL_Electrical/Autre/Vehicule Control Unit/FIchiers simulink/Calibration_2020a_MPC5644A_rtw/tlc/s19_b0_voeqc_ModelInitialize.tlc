@@ -1,0 +1,145 @@
+%implements s19_b0_voeqc_ModelInitialize "C"
+
+%function ModelInitialize(block, system) Output
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%assign tlcStartFcnOfS19B0 = OpaqueTLCBlockFcn("Start", 19, 0, 4, 10, 0)
+%assign tlcStartFcnOfS19B2 = OpaqueTLCBlockFcn("Start", 19, 2, 4, 10, 1)
+%assign tlcStartFcnOfS19B4 = OpaqueTLCBlockFcn("Start", 19, 4, 4, 10, 2)
+%assign tlcStartFcnOfS19B9 = OpaqueTLCBlockFcn("Start", 19, 9, 4, 10, 3)
+%assign tlcStartFcnOfS19B11 = OpaqueTLCBlockFcn("Start", 19, 11, 4, 10, 4)
+%<SLibInsertAsyncTaskInitializeCode(system)>
+%<SLibWriteMachineInitialize()>
+%<SLibCGIRDumpSystemUserCode(19, "Start", "Header")>\
+%<SLibCGIRDumpSystemUserCode(19, "Start", "Body")>\
+%assign   Start_open_Task_Call_19_0 = ""
+%openfile Start_open_Task_Call_19_0
+
+/* Start for S-Function (EcoCoder_Task): '<S2>/Task_Call' */
+%closefile Start_open_Task_Call_19_0
+
+%assign    Start_body_Task_Call_19_0 = ""
+%openfile  Start_body_Task_Call_19_0
+
+%<SLibCG_DumpSSCode("/*@[177d7*/",tlcStartFcnOfS19B0,"/*@]*/")>\
+%closefile Start_body_Task_Call_19_0
+
+%assign    Start_close_Task_Call_19_0 = ""
+%openfile  Start_close_Task_Call_19_0
+
+/* End of Start for S-Function (EcoCoder_Task): '<S2>/Task_Call' */
+%closefile Start_close_Task_Call_19_0
+%<SLibCG_DumpSSCode(Start_open_Task_Call_19_0, Start_body_Task_Call_19_0, Start_close_Task_Call_19_0)>
+
+
+%assign   Start_open_TaskTrigger_19_2 = ""
+%openfile Start_open_TaskTrigger_19_2
+
+/* Start for S-Function (EcoCoder_Task): '<S1>/Task Trigger' */
+%closefile Start_open_TaskTrigger_19_2
+
+%assign    Start_body_TaskTrigger_19_2 = ""
+%openfile  Start_body_TaskTrigger_19_2
+
+%<SLibCG_DumpSSCode("/*@[177da*/",tlcStartFcnOfS19B2,"/*@]*/")>\
+%closefile Start_body_TaskTrigger_19_2
+
+%assign    Start_close_TaskTrigger_19_2 = ""
+%openfile  Start_close_TaskTrigger_19_2
+
+/* End of Start for S-Function (EcoCoder_Task): '<S1>/Task Trigger' */
+%closefile Start_close_TaskTrigger_19_2
+%<SLibCG_DumpSSCode(Start_open_TaskTrigger_19_2, Start_body_TaskTrigger_19_2, Start_close_TaskTrigger_19_2)>
+
+%if !WHITE_SPACE(tlcStartFcnOfS19B4)
+
+/* Start for S-Function (ASW_Schedule): '<S1>/ASWSchedule_Conf' */
+%<SLibCG_DumpSSCode("/*@[177db*/",tlcStartFcnOfS19B4,"/*@]*/")>\
+%endif
+%assign   Start_open_Task_Call1_19_9 = ""
+%openfile Start_open_Task_Call1_19_9
+
+/* Start for S-Function (EcoCoder_Task): '<S2>/Task_Call1' incorporates:
+ *  SubSystem: '<S2>/Power Off Management'
+ */
+%closefile Start_open_Task_Call1_19_9
+
+%assign    Start_body_Task_Call1_19_9 = ""
+%openfile  Start_body_Task_Call1_19_9
+
+%if !SLibCGSysFcnIsEmptyForTid(CompiledModel.System[17], "Start",0)
+%<SLibCG_DumpSSCode("/*@[177e1*/",SLibCGIRGenReusableSysCall("Start", [], 17, 0, 0, 0, 19, 19),"/*@]*/")>\
+
+%endif
+%<SLibCG_DumpSSCode("/*@[177dd*/",tlcStartFcnOfS19B9,"/*@]*/")>\
+%closefile Start_body_Task_Call1_19_9
+
+%assign    Start_close_Task_Call1_19_9 = ""
+%openfile  Start_close_Task_Call1_19_9
+
+/* End of Start for S-Function (EcoCoder_Task): '<S2>/Task_Call1' */
+%closefile Start_close_Task_Call1_19_9
+%<SLibCG_DumpSSCode(Start_open_Task_Call1_19_9, Start_body_Task_Call1_19_9, Start_close_Task_Call1_19_9)>
+
+
+%assign   Start_open_TaskTrigger_j_19_11 = ""
+%openfile Start_open_TaskTrigger_j_19_11
+
+/* Start for S-Function (EcoCoder_Task): '<S3>/Task Trigger' */
+%closefile Start_open_TaskTrigger_j_19_11
+
+%assign    Start_body_TaskTrigger_j_19_11 = ""
+%openfile  Start_body_TaskTrigger_j_19_11
+
+%<SLibCG_DumpSSCode("/*@[177df*/",tlcStartFcnOfS19B11,"/*@]*/")>\
+%closefile Start_body_TaskTrigger_j_19_11
+
+%assign    Start_close_TaskTrigger_j_19_11 = ""
+%openfile  Start_close_TaskTrigger_j_19_11
+
+/* End of Start for S-Function (EcoCoder_Task): '<S3>/Task Trigger' */
+%closefile Start_close_TaskTrigger_j_19_11
+%<SLibCG_DumpSSCode(Start_open_TaskTrigger_j_19_11, Start_body_TaskTrigger_j_19_11, Start_close_TaskTrigger_j_19_11)>
+
+%<SLibCGIRDumpSystemUserCode(19, "Start", "Trailer")>\
+PrevZCX_p.ShutdownPower_Trig_ZCE = ZERO_ZCSIG;
+PrevZCX_p.SoftwareReset_Trig_ZCE = ZERO_ZCSIG;
+PrevZCX_p.StoreAllNVMData_Trig_ZCE = ZERO_ZCSIG;
+%assign   SystemInitialize_open_Task_Call1_19_9 = ""
+%openfile SystemInitialize_open_Task_Call1_19_9
+
+/* SystemInitialize for S-Function (EcoCoder_Task): '<S2>/Task_Call1' incorporates:
+ *  SubSystem: '<S2>/Power Off Management'
+ */
+%closefile SystemInitialize_open_Task_Call1_19_9
+
+%assign    SystemInitialize_body_Task_Call1_19_9 = ""
+%openfile  SystemInitialize_body_Task_Call1_19_9
+
+%if !SLibCGSysFcnIsEmptyForTid(CompiledModel.System[17], "SystemInitialize",0)
+%<SLibCG_DumpSSCode("/*@[177e2*/",SLibCGIRGenReusableSysCall("SystemInitialize", [], 17, 0, 4, 0, 19, 19),"/*@]*/")>\
+
+
+%endif
+%closefile SystemInitialize_body_Task_Call1_19_9
+
+%assign    SystemInitialize_close_Task_Call1_19_9 = ""
+%openfile  SystemInitialize_close_Task_Call1_19_9
+
+/* End of SystemInitialize for S-Function (EcoCoder_Task): '<S2>/Task_Call1' */
+%closefile SystemInitialize_close_Task_Call1_19_9
+%<SLibCG_DumpSSCode(SystemInitialize_open_Task_Call1_19_9, SystemInitialize_body_Task_Call1_19_9, SystemInitialize_close_Task_Call1_19_9)>
+
+%<SLibInsertInitPeriodicCStatesFcn(system)>
+%closefile cfgTxt
+%<cfgTxt>
+%endfunction
+%function ModelInitializeFcnProtoType(block, system) Output
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void ModelInitialize(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(4, 10, fcnProtoType)>
+%endfunction

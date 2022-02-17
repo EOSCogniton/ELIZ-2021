@@ -1,0 +1,368 @@
+%implements s21_b0_b1oqc_2_Outputs "C"
+
+%function Outputs(block, system) Output
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%openfile localVarDecl
+
+boolean_T UnitDelay7;
+boolean_T UnitDelay1_h;
+real_T MinMax1_o;
+boolean_T LogicalOperator_n;
+boolean_T LogicalOperator1_g;
+uint32_T PowerOffManagement_ELAPS_T;
+uint32_T PowerOffManagement_ELAPS_T_tmp_;
+%closefile localVarDecl
+%assign tlcOutputsFcnOfS5B0 = OpaqueTLCBlockFcn("Outputs", 5, 0, 2, 3, 0)
+%assign tlcOutputsFcnOfS11B0 = OpaqueTLCBlockFcn("Outputs", 11, 0, 2, 3, 1)
+%assign tlcOutputsFcnOfS12B0 = OpaqueTLCBlockFcn("Outputs", 12, 0, 2, 3, 2)
+%assign tlcOutputsFcnOfS13B1 = OpaqueTLCBlockFcn("Outputs", 13, 1, 2, 3, 3)
+%assign tlcOutputsFcnOfS15B1 = OpaqueTLCBlockFcn("Outputs", 15, 1, 2, 3, 4)
+%assign tlcOutputsFcnOfS17B15 = OpaqueTLCBlockFcn("Outputs", 17, 15, 2, 3, 5)
+/* {S!d2139}Outputs for Enabled SubSystem: '<S5>/KeyCycle' incorporates:
+ *  EnablePort: '<S8>/Enable'
+ */
+PowerOffManagement_ELAPS_T_tmp_/*@>f8d8*/ = %<(SLibCG_SE(LibGetClockTick(1)))>;
+/* {E!d2139}End of Outputs for SubSystem: '<S5>/KeyCycle' */
+PowerOffManagement_ELAPS_T = PowerOffManagement_ELAPS_T_tmp_ - DW_l.PowerOffManagement_PREV_T;
+DW_l.PowerOffManagement_PREV_T = PowerOffManagement_ELAPS_T_tmp_;
+/* {S!d2160}UnitDelay: '<S5>/Unit Delay7' */
+/*@>da6f*/UnitDelay7/*@>46e8*/ = /*@>119c8*/DW_l./*@>12ab7*/UnitDelay7_DSTATE;
+/* {S!d2162}Logic: '<S14>/Logical Operator2' incorporates:
+ *  Logic: '<S5>/Logical Operator'
+ *  UnitDelay: '<S5>/Unit Delay7'
+ */
+/*@>f8e6*/UnitDelay1_h/*@>f8e8*/ = !/*@<a771*//*@>119ce*/DW_l./*@>12aba*/UnitDelay7_DSTATE;
+/* {S!d2168}Switch: '<S27>/Switch' incorporates:
+ *  Constant: '<S5>/Parameter'
+ *  Logic: '<S14>/Logical Operator2'
+ *  Logic: '<S14>/Logical Operator5'
+ *  RelationalOperator: '<S14>/edge'
+ *  Sum: '<S27>/Sum1'
+ *  UnitDelay: '<S14>/Unit Delay'
+ *  UnitDelay: '<S27>/Unit Delay'
+ *  UnitDelay: '<S5>/Unit Delay7'
+ */
+/*@>4727*/if ((/*@>119d4*/DW_l./*@>12abd*/UnitDelay7_DSTATE/*@>a767*/ != /*@>119da*/DW_l./*@>12ac0*/UnitDelay_DSTATE_n)/*@>a5c5*/ && /*@>f8ea*/UnitDelay1_h) {
+    /*@>119e0*/DW_l./*@>12ac3*/UnitDelay_DSTATE/*@>471f*/ = /*@>d959*/0.5;
+} else {
+    /* {S!d2164}SampleTimeMath: '<S28>/sample time1'
+ *
+ * About '<S28>/sample time1':
+ *  y = K where K = ( w * Ts )
+ */
+    /*@>e117*/MinMax1_o/*@>e119*/ = /*@>dfab*/(real_T)/*@>d968*/PowerOffManagement_ELAPS_T/*@>dad7*/ * /*@>d967*/0.005;
+    /* {S!d2166}MinMax: '<S28>/MinMax' */
+    /*@>f2b6*/if (/*@>ed3b*/0.001/*@>ed3a*/ > /*@>ed3d*/MinMax1_o) {
+        /*@>f2ba*/MinMax1_o/*@>f2b9*/ = /*@>ed3e*/0.001;
+    }
+    /* {E!d2166}End of MinMax: '<S28>/MinMax' */
+    /*@>119ec*/DW_l./*@>12ac9*/UnitDelay_DSTATE/*@>128ed*/ -= /*@>f2a3*/MinMax1_o;
+}
+/* {E!d2168}End of Switch: '<S27>/Switch' */
+
+/* {S!d2170}MinMax: '<S27>/MinMax1' */
+/*@>f275*/if (/*@>e604*/0.5/*@>e163*/ < /*@>119e6*/DW_l./*@>12ac6*/UnitDelay_DSTATE) {
+    /*@>119f8*/DW_l./*@>12acc*/UnitDelay_DSTATE/*@>f278*/ = /*@>e606*/0.5;
+}
+/* {E!d2170}End of MinMax: '<S27>/MinMax1' */
+
+/* {S!d2172}MinMax: '<S27>/MinMax' */
+/*@>f27a*/if (/*@>119fe*/DW_l./*@>12acf*/UnitDelay_DSTATE/*@>e19c*/ > /*@>e608*/0.0) {
+} else {
+    /*@>11a04*/DW_l./*@>12ad2*/UnitDelay_DSTATE/*@>e1a2*/ = /*@>e60a*/0.0;
+}
+/* {E!d2172}End of MinMax: '<S27>/MinMax' */
+
+/* {S!d2174}Switch: '<S14>/debounce' incorporates:
+ *  Constant: '<S27>/Constant2'
+ *  RelationalOperator: '<S27>/Relational Operator2'
+ *  UnitDelay: '<S14>/Unit Delay1'
+ *  UnitDelay: '<S27>/Unit Delay'
+ *  UnitDelay: '<S5>/Unit Delay7'
+ */
+/*@>f27f*/if (/*@>11a0a*/DW_l./*@>12ad5*/UnitDelay_DSTATE/*@>a5ee*/ == /*@>d956*/0.0) {
+%<SLibCG_DumpSSCode("/*@[1253c*/",SLibCG_SetBOCSC(1, 1, "", -1, "", 0, "/*@>12bf6*/DW_l./*@>12bf5*/UnitDelay7_DSTATE"),"/*@]*/")>\
+} else {
+%<SLibCG_DumpSSCode("/*@[12478*/",SLibCG_SetBOCSC(1, 1, "", -1, "", 0, "/*@>12c0a*/DW_l./*@>12c09*/UnitDelay1_DSTATE"),"/*@]*/")>\
+}
+/* {E!d2174}End of Switch: '<S14>/debounce' */
+
+/* {S!d2141}Outputs for Enabled SubSystem: '<S5>/KeyCycle' incorporates:
+ *  EnablePort: '<S8>/Enable'
+ */
+/*@>45ce*/if (%<SLibCG_DumpSSCode("/*@[1243f*/",(SLibCG_BOCSC(1, 1, "", -1, "", 0)),"/*@]*/")>) {
+    /*@>da83*/PowerOffManagement_ELAPS_T/*@>45d3*/ = PowerOffManagement_ELAPS_T_tmp_/*@>45d2*/ - /*@>11a1c*/DW_l./*@>12ade*/KeyCycle_PREV_T;
+    /*@>11a28*/DW_l./*@>12ae4*/KeyCycle_PREV_T/*@>45d5*/ = PowerOffManagement_ELAPS_T_tmp_;
+    /* {S!d2180}Switch: '<S23>/Switch' incorporates:
+ *  Constant: '<S5>/Parameter3'
+ *  Logic: '<S21>/Logical Operator2'
+ *  Logic: '<S21>/Logical Operator5'
+ *  RelationalOperator: '<S21>/edge'
+ *  Sum: '<S23>/Sum1'
+ *  UnitDelay: '<S21>/Unit Delay'
+ *  UnitDelay: '<S23>/Unit Delay'
+ */
+    /*@>4a4f*/if ((UnitDelay1_h/*@>a79a*/ != /*@>11a2e*/DW_l./*@>12ae7*/UnitDelay_DSTATE_o)/*@>a614*/ && (!/*@<a7a4*/UnitDelay1_h)) {
+        /*@>da03*/MinMax1_o/*@>4a47*/ = /*@>d954*/0.1;
+    } else {
+        /* {S!d2176}SampleTimeMath: '<S24>/sample time1'
+ *
+ * About '<S24>/sample time1':
+ *  y = K where K = ( w * Ts )
+ */
+        /*@>e1c9*/MinMax1_o/*@>e1cb*/ = /*@>dfcc*/(real_T)/*@>d965*/PowerOffManagement_ELAPS_T/*@>dad0*/ * /*@>d964*/0.005;
+        /* {S!d2178}MinMax: '<S24>/MinMax' */
+        /*@>f2bb*/if (/*@>ed61*/0.001/*@>ed60*/ > /*@>ed63*/MinMax1_o) {
+            /*@>f2bf*/MinMax1_o/*@>f2be*/ = /*@>ed64*/0.001;
+        }
+        /* {E!d2178}End of MinMax: '<S24>/MinMax' */
+        /*@>da01*/MinMax1_o/*@>4a4d*/ = /*@>11a40*/DW_l./*@>12af0*/UnitDelay_DSTATE_h/*@>a633*/ - /*@>f2ab*/MinMax1_o;
+    }
+    /* {E!d2180}End of Switch: '<S23>/Switch' */
+
+    /* {S!d2182}MinMax: '<S23>/MinMax1' */
+    /*@>f284*/if (/*@>e610*/0.1/*@>e215*/ < /*@>ed10*/MinMax1_o) {
+        /*@>f288*/MinMax1_o/*@>f287*/ = /*@>e612*/0.1;
+    }
+    /* {E!d2182}End of MinMax: '<S23>/MinMax1' */
+
+    /* {S!d2184}MinMax: '<S23>/MinMax' */
+    /*@>f289*/if (/*@>ed14*/MinMax1_o/*@>e24e*/ > /*@>e614*/0.0) {
+        /*@>11a4c*/DW_l./*@>12af6*/UnitDelay_DSTATE_h/*@>f28c*/ = /*@>ed16*/MinMax1_o;
+    } else {
+        /*@>11a46*/DW_l./*@>12af3*/UnitDelay_DSTATE_h/*@>e254*/ = /*@>e616*/0.0;
+    }
+    /* {E!d2184}End of MinMax: '<S23>/MinMax' */
+
+    /* {S!d2186}Switch: '<S21>/debounce' incorporates:
+ *  Constant: '<S23>/Constant2'
+ *  RelationalOperator: '<S23>/Relational Operator2'
+ *  UnitDelay: '<S21>/Unit Delay1'
+ *  UnitDelay: '<S23>/Unit Delay'
+ */
+    /*@>d4e8*/if (/*@>11a52*/DW_l./*@>12af9*/UnitDelay_DSTATE_h/*@>a63d*/ == /*@>d951*/0.0) {
+        /*@>11a58*/DW_l./*@>12afc*/UnitDelay1_DSTATE_n/*@>d4eb*/ = UnitDelay1_h;
+    }
+    /* {E!d2186}End of Switch: '<S21>/debounce' */
+
+    /* {S!d2192}Switch: '<S25>/Switch' incorporates:
+ *  Constant: '<S5>/Parameter2'
+ *  Logic: '<S22>/Logical Operator5'
+ *  RelationalOperator: '<S22>/edge'
+ *  Sum: '<S25>/Sum1'
+ *  UnitDelay: '<S22>/Unit Delay'
+ *  UnitDelay: '<S25>/Unit Delay'
+ */
+    /*@>4afb*/if ((UnitDelay1_h/*@>a7cd*/ != /*@>11a5e*/DW_l./*@>12aff*/UnitDelay_DSTATE_na)/*@>a660*/ && UnitDelay1_h) {
+        /*@>d9f7*/MinMax1_o/*@>4af3*/ = /*@>d94f*/0.1;
+    } else {
+        /* {S!d2188}SampleTimeMath: '<S26>/sample time1'
+ *
+ * About '<S26>/sample time1':
+ *  y = K where K = ( w * Ts )
+ */
+        /*@>e27b*/MinMax1_o/*@>e27d*/ = /*@>dfef*/(real_T)/*@>d962*/PowerOffManagement_ELAPS_T/*@>dac9*/ * /*@>d961*/0.005;
+        /* {S!d2190}MinMax: '<S26>/MinMax' */
+        /*@>f2c0*/if (/*@>ed87*/0.001/*@>ed86*/ > /*@>ed89*/MinMax1_o) {
+            /*@>f2c4*/MinMax1_o/*@>f2c3*/ = /*@>ed8a*/0.001;
+        }
+        /* {E!d2190}End of MinMax: '<S26>/MinMax' */
+        /*@>d9f5*/MinMax1_o/*@>4af9*/ = /*@>11a64*/DW_l./*@>12b02*/UnitDelay_DSTATE_d/*@>a67f*/ - /*@>f2b3*/MinMax1_o;
+    }
+    /* {E!d2192}End of Switch: '<S25>/Switch' */
+
+    /* {S!d2194}MinMax: '<S25>/MinMax1' */
+    /*@>f28e*/if (/*@>e61c*/0.1/*@>e2c7*/ < /*@>ed18*/MinMax1_o) {
+        /*@>f292*/MinMax1_o/*@>f291*/ = /*@>e61e*/0.1;
+    }
+    /* {E!d2194}End of MinMax: '<S25>/MinMax1' */
+
+    /* {S!d2196}MinMax: '<S25>/MinMax' */
+    /*@>f293*/if (/*@>ed1c*/MinMax1_o/*@>e300*/ > /*@>e620*/0.0) {
+        /*@>11a7c*/DW_l./*@>12b0e*/UnitDelay_DSTATE_d/*@>f296*/ = /*@>ed1e*/MinMax1_o;
+    } else {
+        /*@>11a76*/DW_l./*@>12b0b*/UnitDelay_DSTATE_d/*@>e306*/ = /*@>e622*/0.0;
+    }
+    /* {E!d2196}End of MinMax: '<S25>/MinMax' */
+
+    /* {S!d2198}Switch: '<S22>/debounce' incorporates:
+ *  Constant: '<S25>/Constant2'
+ *  RelationalOperator: '<S25>/Relational Operator2'
+ *  UnitDelay: '<S22>/Unit Delay1'
+ *  UnitDelay: '<S25>/Unit Delay'
+ */
+    /*@>d4ed*/if (/*@>11a8e*/DW_l./*@>12b17*/UnitDelay_DSTATE_d/*@>a689*/ == /*@>d94c*/0.0) {
+        /*@>11a9a*/DW_l./*@>12b1d*/UnitDelay1_DSTATE_j/*@>d4f0*/ = UnitDelay1_h;
+    }
+    /* {E!d2198}End of Switch: '<S22>/debounce' */
+
+    /* {S!d2142}Outputs for Atomic SubSystem: '<S8>/ER_xxxx' */
+    /* {S!d2200}Logic: '<S17>/Logical Operator' incorporates:
+ *  Logic: '<S17>/Logical Operator1'
+ *  UnitDelay: '<S17>/Unit Delay'
+ *  UnitDelay: '<S22>/Unit Delay1'
+ */
+    /*@>d9e9*/LogicalOperator_n/*@>4b80*/ = (/*@>11aac*/DW_l./*@>12b26*/UnitDelay1_DSTATE_j/*@>4b7f*/ && (!/*@<a698*//*@>11ab2*/DW_l./*@>12b29*/UnitDelay_DSTATE_k));
+    /* {S!d2202}Update for UnitDelay: '<S17>/Unit Delay' incorporates:
+ *  UnitDelay: '<S22>/Unit Delay1'
+ */
+    /*@>11abe*/DW_l./*@>12b2f*/UnitDelay_DSTATE_k/*@>4ccf*/ = /*@>11ac4*/DW_l./*@>12b32*/UnitDelay1_DSTATE_j;
+    /* {E!d2142}End of Outputs for SubSystem: '<S8>/ER_xxxx' */
+
+    /* {S!d2144}Outputs for Atomic SubSystem: '<S8>/ER_xxxx1' */
+    /* {S!d2204}Logic: '<S18>/Logical Operator1' incorporates:
+ *  UnitDelay: '<S18>/Unit Delay'
+ */
+    /*@>d9e7*/LogicalOperator1_g/*@>4ba9*/ = !/*@<4ba8*//*@>11ad6*/DW_l./*@>12b3b*/UnitDelay_DSTATE_m;
+    /* {S!d2206}Update for UnitDelay: '<S18>/Unit Delay' */
+    /*@>11ae2*/DW_l./*@>12b41*/UnitDelay_DSTATE_m/*@>4cf1*/ = UnitDelay1_h;
+    /* {S!d2145}Outputs for Atomic SubSystem: '<S8>/RSFF_xxxx' */
+    /* {S!d2208}Switch: '<S19>/Switch' incorporates:
+ *  Constant: '<S19>/Constant2'
+ *  Logic: '<S18>/Logical Operator'
+ *  Switch: '<S19>/Switch1'
+ *  UnitDelay: '<S19>/Unit Delay1'
+ */
+    /*@>f298*/if (UnitDelay1_h/*@>a6b2*/ && /*@>d99a*/LogicalOperator1_g) {
+        /*@>11af4*/DW_l./*@>12b4a*/UnitDelay1_DSTATE_i/*@>f29b*/ = /*@>d94b*/false;
+    } else {
+        /*@>11ae8*/DW_l./*@>12b44*/UnitDelay1_DSTATE_i/*@>4d17*/ = (/*@>d998*/LogicalOperator_n || /*@>11aee*/DW_l./*@>12b47*/UnitDelay1_DSTATE_i);
+    }
+    /* {E!d2208}End of Switch: '<S19>/Switch' */
+    /* {E!d2145}End of Outputs for SubSystem: '<S8>/RSFF_xxxx' */
+    /* {E!d2144}End of Outputs for SubSystem: '<S8>/ER_xxxx1' */
+
+    /* {S!d2210}Logic: '<S8>/LogicAND1' incorporates:
+ *  Logic: '<S8>/LogicAND'
+ *  Logic: '<S8>/LogicNOT'
+ *  UnitDelay: '<S19>/Unit Delay1'
+ *  UnitDelay: '<S21>/Unit Delay1'
+ */
+    /*@>118e1*/B_n./*@>12a99*/LogicAND1/*@>47f0*/ = ((!/*@<a802*//*@>11afa*/DW_l./*@>12b4d*/UnitDelay1_DSTATE_n)/*@>a6da*/ && /*@>11b00*/DW_l./*@>12b50*/UnitDelay1_DSTATE_i);
+    /* {S!d2214}If: '<S8>/If2' */
+    /*@>47f3*/if (/*@>118e7*/B_n./*@>12a9c*/LogicAND1) {
+%if !WHITE_SPACE(tlcOutputsFcnOfS5B0)
+        /* {S!d2148}Outputs for IfAction SubSystem: '<S8>/Reset_Action' incorporates:
+ *  ActionPort: '<S20>/Action Port'
+ */
+        /* {S!d2212}S-Function (ResetSW): '<S20>/ResetSW' */
+%<SLibCG_DumpSSCode("/*@[1241c*/",tlcOutputsFcnOfS5B0,"/*@]*/")>\
+        /* {E!d2148}End of Outputs for SubSystem: '<S8>/Reset_Action' */
+%endif
+    }
+    /* {E!d2214}End of If: '<S8>/If2' */
+
+    /* {S!d2216}Update for UnitDelay: '<S21>/Unit Delay' */
+    /*@>11b06*/DW_l./*@>12b53*/UnitDelay_DSTATE_o/*@>4c12*/ = UnitDelay1_h;
+    /* {S!d2218}Update for UnitDelay: '<S22>/Unit Delay' */
+    /*@>11b0c*/DW_l./*@>12b56*/UnitDelay_DSTATE_na/*@>4c45*/ = UnitDelay1_h;
+}
+/* {E!d2141}End of Outputs for SubSystem: '<S5>/KeyCycle' */
+
+/* {S!d2220}UnitDelay: '<S5>/Unit Delay1' */
+/*@>da5f*/UnitDelay1_h/*@>47a5*/ = /*@>11a22*/DW_l./*@>12ae1*/UnitDelay1_DSTATE_g;
+/* {S!d2151}Outputs for Triggered SubSystem: '<S5>/Shutdown Power' incorporates:
+ *  TriggerPort: '<S9>/Trigger'
+ */
+/* {S!d2222}Logic: '<S5>/Logical Operator6' */
+/*@>f8fe*/LogicalOperator_n/*@>f900*/ = !/*@<a81a*//*@>d975*/UnitDelay1_h;
+/*@>45e1*/if (/*@>f902*/LogicalOperator_n/*@>a819*/ && (/*@>11935*/PrevZCX_p./*@>12a9f*/ShutdownPower_Trig_ZCE/*@>a81d*/ != /*@>e624*/0)) {
+%if !WHITE_SPACE(tlcOutputsFcnOfS11B0)
+    /* {S!d2224}S-Function (ecocoder_power_shutdwn): '<S9>/Shutdown Power' */
+%<SLibCG_DumpSSCode("/*@[1241d*/",tlcOutputsFcnOfS11B0,"/*@]*/")>\
+%endif
+}
+/*@>1193b*/PrevZCX_p./*@>12aa2*/ShutdownPower_Trig_ZCE/*@>45e6*/ = /*@>da7d*/UnitDelay1_h;
+/* {E!d2151}End of Outputs for SubSystem: '<S5>/Shutdown Power' */
+
+/* {S!d2226}Logic: '<S5>/Logical Operator2' incorporates:
+ *  Logic: '<S5>/Logical Operator3'
+ *  Logic: '<S5>/Logical Operator5'
+ *  Logic: '<S5>/Logical Operator7'
+ *  UnitDelay: '<S5>/Unit Delay3'
+ *  UnitDelay: '<S5>/Unit Delay4'
+ */
+/*@>da9b*/LogicalOperator_n/*@>45b5*/ = ((!/*@<a705*//*@>11a34*/DW_l./*@>12aea*/UnitDelay3_DSTATE)/*@>45ae*/ && LogicalOperator_n/*@>45b1*/ && (!/*@<fc94*/%<SLibCG_DumpSSCode("/*@[1251e*/",(SLibCG_SE(SLibCG_BOCSC(1, 1, "", -1, "", 0))),"/*@]*/")>)/*@>45b4*/ && (!/*@<a71d*//*@>11a3a*/DW_l./*@>12aed*/UnitDelay4_DSTATE));
+/* {S!d2153}Outputs for Enabled SubSystem: '<S5>/Shutdown Power Hold' incorporates:
+ *  EnablePort: '<S10>/Enable'
+ */
+/*@>45e8*/if (/*@>da79*/LogicalOperator_n) {
+%if !WHITE_SPACE(tlcOutputsFcnOfS12B0)
+    /* {S!d2228}S-Function (ecocoder_power_shutdwn): '<S10>/Shutdown Power' */
+%<SLibCG_DumpSSCode("/*@[1241e*/",tlcOutputsFcnOfS12B0,"/*@]*/")>\
+%endif
+}
+/* {E!d2153}End of Outputs for SubSystem: '<S5>/Shutdown Power Hold' */
+
+/* {S!d2155}Outputs for Triggered SubSystem: '<S5>/Software Reset' incorporates:
+ *  TriggerPort: '<S11>/Trigger'
+ */
+/*@>45f4*/if (/*@>11941*/PrevZCX_p./*@>12aa5*/SoftwareReset_Trig_ZCE/*@>a834*/ != /*@>e626*/0) {
+%if !WHITE_SPACE(tlcOutputsFcnOfS13B1)
+    /* {S!d2230}S-Function (ResetSW): '<S11>/ResetSW' incorporates:
+ *  Constant: '<S11>/Constant'
+ */
+%<SLibCG_DumpSSCode("/*@[12420*/",tlcOutputsFcnOfS13B1,"/*@]*/")>\
+%endif
+}
+/*@>11947*/PrevZCX_p./*@>12aa8*/SoftwareReset_Trig_ZCE/*@>45f9*/ = /*@>128ea*/0U;
+/* {E!d2155}End of Outputs for SubSystem: '<S5>/Software Reset' */
+
+/* {S!d2157}Outputs for Triggered SubSystem: '<S5>/Store All NVM Data' incorporates:
+ *  TriggerPort: '<S13>/Trigger'
+ */
+/* {S!d2234}Logic: '<S5>/Logical Operator4' */
+/*@>4607*/if ((!/*@<fca1*/%<SLibCG_DumpSSCode("/*@[1245a*/",(SLibCG_SE(SLibCG_BOCSC(1, 1, "", -1, "", 0))),"/*@]*/")>)/*@>a847*/ && (/*@>1194d*/PrevZCX_p./*@>12aab*/StoreAllNVMData_Trig_ZCE/*@>a84b*/ != /*@>e628*/0)) {
+%if !WHITE_SPACE(tlcOutputsFcnOfS15B1)
+    /* {S!d2232}S-Function (WriteBackData): '<S13>/Store NVM Data1' incorporates:
+ *  Constant: '<S13>/Constant'
+ */
+%<SLibCG_DumpSSCode("/*@[12422*/",tlcOutputsFcnOfS15B1,"/*@]*/")>\
+%endif
+}
+/*@>11953*/PrevZCX_p./*@>12aae*/StoreAllNVMData_Trig_ZCE/*@>460c*/ = %<SLibCG_DumpSSCode("/*@[12502*/",(SLibCG_SE(SLibCG_BOCSC(1, 1, "", -1, "", 0))),"/*@]*/")>;
+/* {E!d2234}End of Logic: '<S5>/Logical Operator4' */
+/* {E!d2157}End of Outputs for SubSystem: '<S5>/Store All NVM Data' */
+%if !WHITE_SPACE(tlcOutputsFcnOfS17B15)
+
+/* {S!d2236}S-Function (DI_Key_In): '<S7>/SwitchInput_ReadKeyOn' */
+%<SLibCG_DumpSSCode("/*@[12424*/",tlcOutputsFcnOfS17B15,"/*@]*/")>\
+%endif
+/* {S!d2238}Switch: '<S7>/Switch' */
+%<SLibCG_DumpSSCode("/*@[124e8*/",SLibCG_SetBOCSC(2, 1, "", -1, "", 0, "/*@>12c54*/B_n./*@>12c53*/SwitchInput_ReadKeyOn"),"/*@]*/")>\
+/* {S!d2240}Update for UnitDelay: '<S5>/Unit Delay7' */
+/*@>11a6a*/DW_l./*@>12b05*/UnitDelay7_DSTATE/*@>4968*/ = %<SLibCG_DumpSSCode("/*@[124ca*/",(SLibCG_SE(SLibCG_BOCSC(2, 1, "", -1, "", 0))),"/*@]*/")>;
+/* {S!d2242}Update for UnitDelay: '<S14>/Unit Delay' */
+/*@>11a70*/DW_l./*@>12b08*/UnitDelay_DSTATE_n/*@>4979*/ = /*@>da23*/UnitDelay7;
+/* {S!d2244}Update for UnitDelay: '<S14>/Unit Delay1' */
+/*@>11a82*/DW_l./*@>12b11*/UnitDelay1_DSTATE/*@>499b*/ = %<SLibCG_DumpSSCode("/*@[124ae*/",(SLibCG_SE(SLibCG_BOCSC(1, 1, "", -1, "", 0))),"/*@]*/")>;
+/* {S!d2246}Update for UnitDelay: '<S5>/Unit Delay1' */
+/*@>11a88*/DW_l./*@>12b14*/UnitDelay1_DSTATE_g/*@>49ac*/ = %<SLibCG_DumpSSCode("/*@[12492*/",(SLibCG_SE(SLibCG_BOCSC(1, 1, "", -1, "", 0))),"/*@]*/")>;
+/* {S!d2248}Update for UnitDelay: '<S5>/Unit Delay3' */
+/*@>11a94*/DW_l./*@>12b1a*/UnitDelay3_DSTATE/*@>49bd*/ = /*@>da17*/UnitDelay1_h;
+/* {S!d2250}Update for UnitDelay: '<S5>/Unit Delay4' incorporates:
+ *  UnitDelay: '<S5>/Unit Delay5'
+ */
+/*@>11aa0*/DW_l./*@>12b20*/UnitDelay4_DSTATE/*@>49ce*/ = /*@>11aa6*/DW_l./*@>12b23*/UnitDelay5_DSTATE;
+/* {S!d2252}Update for UnitDelay: '<S5>/Unit Delay2' */
+/*@>11ab8*/DW_l./*@>12b2c*/UnitDelay2_DSTATE/*@>49df*/ = /*@>da0f*/LogicalOperator_n;
+/* {S!d2254}Update for UnitDelay: '<S5>/Unit Delay5' incorporates:
+ *  UnitDelay: '<S5>/Unit Delay6'
+ */
+/*@>11aca*/DW_l./*@>12b35*/UnitDelay5_DSTATE/*@>49f0*/ = /*@>11ad0*/DW_l./*@>12b38*/UnitDelay6_DSTATE;
+/* {S!d2256}Update for UnitDelay: '<S5>/Unit Delay6' */
+/*@>11adc*/DW_l./*@>12b3e*/UnitDelay6_DSTATE/*@>4a01*/ = /*@>da07*/UnitDelay7;
+%closefile cfgTxt
+%<cfgTxt>
+%<LibSetSystemField(system, "CachedOutputLocalVars", localVarDecl)>
+%endfunction
+%function OutputsFcnProtoType(block, system) Output
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Outputs(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(2, 3, fcnProtoType)>
+%endfunction

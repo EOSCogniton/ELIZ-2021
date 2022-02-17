@@ -1,0 +1,38 @@
+%implements s21_b0_b1oqc_2_SystemInitialize "C"
+
+%function SystemInitialize(block, system) Output
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+DW_l.PowerOffManagement_PREV_T = %<(SLibCG_SE(LibGetClockTick(1)))>;
+/* {S!d2120}InitializeConditions for UnitDelay: '<S5>/Unit Delay7' */
+/*@>1197a*/DW_l./*@>12867*/UnitDelay7_DSTATE/*@>4f07*/ = /*@>d8ef*/true;
+/* {S!d2122}InitializeConditions for UnitDelay: '<S5>/Unit Delay4' */
+/*@>11980*/DW_l./*@>1286a*/UnitDelay4_DSTATE/*@>4f18*/ = /*@>d8f0*/true;
+/* {S!d2124}InitializeConditions for UnitDelay: '<S5>/Unit Delay5' */
+/*@>11986*/DW_l./*@>1286d*/UnitDelay5_DSTATE/*@>4f29*/ = /*@>d8f1*/true;
+/* {S!d2126}InitializeConditions for UnitDelay: '<S5>/Unit Delay6' */
+/*@>1198c*/DW_l./*@>12870*/UnitDelay6_DSTATE/*@>4f3a*/ = /*@>d8f2*/true;
+/* {S!d2113}SystemInitialize for Enabled SubSystem: '<S5>/KeyCycle' */
+/* {S!d2114}SystemInitialize for Atomic SubSystem: '<S8>/ER_xxxx' */
+/* {S!d2128}InitializeConditions for UnitDelay: '<S17>/Unit Delay' */
+/*@>11992*/DW_l./*@>12873*/UnitDelay_DSTATE_k/*@>4f7b*/ = /*@>d8f3*/true;
+/* {E!d2114}End of SystemInitialize for SubSystem: '<S8>/ER_xxxx' */
+
+/* {S!d2116}SystemInitialize for Atomic SubSystem: '<S8>/ER_xxxx1' */
+/* {S!d2130}InitializeConditions for UnitDelay: '<S18>/Unit Delay' */
+/*@>11998*/DW_l./*@>12876*/UnitDelay_DSTATE_m/*@>4f8c*/ = /*@>d8f4*/true;
+/* {E!d2116}End of SystemInitialize for SubSystem: '<S8>/ER_xxxx1' */
+/* {E!d2113}End of SystemInitialize for SubSystem: '<S5>/KeyCycle' */
+%closefile cfgTxt
+%<cfgTxt>
+%<LibSetSystemField(system, "CachedSystemInitializeLocalVars", localVarDecl)>
+%endfunction
+%function SystemInitializeFcnProtoType(block, system) Output
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void SystemInitialize(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(2, 1, fcnProtoType)>
+%endfunction

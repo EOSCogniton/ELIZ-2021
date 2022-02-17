@@ -1,0 +1,32 @@
+%implements s21_b0_b1oqc_4_Outputs "C"
+
+%function Outputs(block, system) Output
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%assign tlcOutputsFcnOfS19B0 = OpaqueTLCBlockFcn("Outputs", 19, 0, 4, 0, 0)
+%assign tlcOutputsFcnOfS19B1 = OpaqueTLCBlockFcn("Outputs", 19, 1, 4, 0, 1)
+%if !WHITE_SPACE(tlcOutputsFcnOfS19B0)
+/* S-Function (CoderCAN_PackBit2Data): '<S31>/Pack Signals To CAN Data' incorporates:
+ *  Constant: '<S31>/Constant'
+ *  Constant: '<S31>/Constant1'
+ *  Constant: '<S31>/Constant2'
+ */
+%<SLibCG_DumpSSCode("/*@[1414e*/",tlcOutputsFcnOfS19B0,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS19B1)
+/* S-Function (CAN_TxData): '<S31>/Send CAN Data' */
+%<SLibCG_DumpSSCode("/*@[14150*/",tlcOutputsFcnOfS19B1,"/*@]*/")>\
+%endif
+%closefile cfgTxt
+%<cfgTxt>
+%<LibSetSystemField(system, "CachedOutputLocalVars", localVarDecl)>
+%endfunction
+%function OutputsFcnProtoType(block, system) Output
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Outputs(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(4, 0, fcnProtoType)>
+%endfunction

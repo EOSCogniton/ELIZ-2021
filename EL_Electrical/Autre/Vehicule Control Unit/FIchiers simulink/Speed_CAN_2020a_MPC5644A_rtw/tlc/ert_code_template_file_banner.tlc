@@ -1,0 +1,23 @@
+%assign CodeGenSettings_backup = CodeGenSettings
+%if !ISEMPTY(CodeGenSettings)
+%assign CodeGenSettings = SLibCodeGenSettings()
+%endif
+%openfile regionBuf
+Academic License - for use in teaching, academic research, and meeting
+course requirements at degree granting institutions only.  Not for
+government, commercial, or other organizational use.
+
+File: %<FileName>
+ 
+Code generated for Simulink model '%<ModelName>'.
+
+Model version                  : %<ModelVersion>
+Simulink Coder version         : %<RTWFileVersion>
+C/C++ source code generated on : %<SourceGeneratedOn>
+%<CodeGenSettings>
+%closefile regionBuf
+%assign regionBuf = FEVAL("rtwprivate", "rtw_format_banner", ...
+"formatBanner", regionBuf,"classic", 0)
+%<regionBuf>
+%assign CodeGenSettings = CodeGenSettings_backup
+

@@ -1,0 +1,45 @@
+%function FcnLoadCodeIRInfo() Output 
+codeIRInfoStruct = load('C:\Users\Thibault NOUVELLON\Documents\EPSA\Github\ELIZ-2021\EL_Electrical\Autre\Vehicule Control Unit\FIchiers simulink\Speed_CAN_2020a_MPC5644A_rtw\tlc\codeIRInfo.mat');
+codeInfo = codeIRInfoStruct.codeInfo;
+%endfunction
+
+%function FcnGetIsInheritedSampleTime() void
+%assign tmpIdx = 0
+%return tmpIdx 
+%endfunction
+
+%function FcnGetUnsetDSMIdxFromIRInfo() void
+%assign tmpIdx = []
+%return tmpIdx 
+%endfunction
+
+%function FcnGetUnsetEIIdxFromIRInfo() void
+%assign tmpIdx = []
+%return tmpIdx 
+%endfunction
+
+%function FcnGetRootInportsMapFromIRInfo() void
+%assign tmpIdx = []
+%return tmpIdx 
+%endfunction
+
+%function FcnGetUnsetEOIdxFromIRInfo() void
+%assign tmpIdx = []
+%return tmpIdx 
+%endfunction
+
+%function FcnGetUnsetParamIdxFromIRInfo() void
+%assign tmpIdx = []
+%return tmpIdx 
+%endfunction
+
+%function FcnGetArSharedParamIdxFromIRInfo() void
+%assign tmpIdx = []
+%return tmpIdx 
+%endfunction
+
+%function FcnGetInstanceSpecificParamIdxFromIRInfo() void
+%assign tmpIdx = []
+%return tmpIdx 
+%endfunction
+

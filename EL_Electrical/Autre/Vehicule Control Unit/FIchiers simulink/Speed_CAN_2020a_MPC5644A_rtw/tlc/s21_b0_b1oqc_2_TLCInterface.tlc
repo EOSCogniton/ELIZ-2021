@@ -1,0 +1,52 @@
+%implements s21_b0_b1oqc_2_TLCInterface "C"
+
+%function getOutputAddr_17_15_2_0_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<126f7*//*@>126f1*/B_n./*@>126fd*/SwitchInput_ReadKeyOn"
+%endfunction
+
+%function getOutput_17_15_2_0_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>1270d*/B_n./*@>1271a*/SwitchInput_ReadKeyOn"
+%endfunction
+
+%function getInputAddr_5_0_2_3_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<12749*//*@>12743*/B_n./*@>1274f*/LogicAND1"
+%endfunction
+
+%function getInput_5_0_2_3_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>1275f*/B_n./*@>1276c*/LogicAND1"
+%endfunction
+
+%function getInputAddr_13_1_2_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGIR_PVAddr(34, 0, 17, 1, "", -1, ucv, sigIdx)
+%endfunction
+
+%function getInput_13_1_2_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGIR_PV(34, 0, 17, 1, "", -1, ucv, sigIdx)
+%endfunction
+
+%function getInputAddr_15_1_2_3_4_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGIR_PVAddr(36, 0, 17, 1, "", -1, ucv, sigIdx)
+%endfunction
+
+%function getInput_15_1_2_3_4_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGIR_PV(36, 0, 17, 1, "", -1, ucv, sigIdx)
+%endfunction
+
+%function getOutputAddr_17_15_2_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<127ed*//*@>127e7*/B_n./*@>127f3*/SwitchInput_ReadKeyOn"
+%endfunction
+
+%function getOutput_17_15_2_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>12803*/B_n./*@>12810*/SwitchInput_ReadKeyOn"
+%endfunction
+

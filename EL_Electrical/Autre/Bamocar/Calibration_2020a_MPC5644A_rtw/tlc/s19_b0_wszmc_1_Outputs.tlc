@@ -1,0 +1,42 @@
+%implements s19_b0_wszmc_1_Outputs "C"
+
+%function Outputs(block, system) Output
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%assign tlcOutputsFcnOfS1B1 = OpaqueTLCBlockFcn("Outputs", 1, 1, 1, 0, 0)
+%assign tlcOutputsFcnOfS2B2 = OpaqueTLCBlockFcn("Outputs", 2, 2, 1, 0, 1)
+/* Outputs for Enabled SubSystem: '<S6>/Restore NVM Data' incorporates:
+ *  EnablePort: '<S29>/Enable'
+ */
+/* Logic: '<S29>/Logical Operator' incorporates:
+ *  Logic: '<S29>/LogicNOT1'
+ *  UnitDelay: '<S29>/Unit Delay'
+ */
+/*@>78bd*/B_n./*@>7a74*/LogicalOperator_e/*@>3e27*/ = !/*@<72f8*//*@>7921*/DW_l./*@>7a77*/UnitDelay_DSTATE_g;
+%if !WHITE_SPACE(tlcOutputsFcnOfS1B1)
+/* S-Function (WriteBackData): '<S29>/Restore NVM Data' */
+%<SLibCG_DumpSSCode("/*@[79bb*/",tlcOutputsFcnOfS1B1,"/*@]*/")>\
+%endif
+/* Update for UnitDelay: '<S29>/Unit Delay' incorporates:
+ *  Constant: '<S29>/Constant'
+ */
+/*@>7927*/DW_l./*@>7a7a*/UnitDelay_DSTATE_g/*@>3e6e*/ = /*@>7627*/true;
+/* End of Outputs for SubSystem: '<S6>/Restore NVM Data' */
+%if !WHITE_SPACE(tlcOutputsFcnOfS2B2)
+
+/* S-Function (ecocoder_power_on): '<S6>/Power On' */
+%<SLibCG_DumpSSCode("/*@[79bc*/",tlcOutputsFcnOfS2B2,"/*@]*/")>\
+%endif
+%closefile cfgTxt
+%<cfgTxt>
+%<LibSetSystemField(system, "CachedOutputLocalVars", localVarDecl)>
+%endfunction
+%function OutputsFcnProtoType(block, system) Output
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Outputs(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(1, 0, fcnProtoType)>
+%endfunction

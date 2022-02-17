@@ -1,0 +1,12 @@
+%implements s18_b0_bzq0b_1_TLCInterface "C"
+
+%function getInputAddr_1_1_1_0_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<753a*//*@>7534*/B./*@>7540*/LogicalOperator_e"
+%endfunction
+
+%function getInput_1_1_1_0_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>7550*/B./*@>755d*/LogicalOperator_e"
+%endfunction
+
