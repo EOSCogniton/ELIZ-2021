@@ -1,0 +1,22 @@
+%implements s52_b0_boxcd_11_Start "C"
+
+%function Start(block, system) Output
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%assign tlcStartFcnOfS51B16 = OpaqueTLCBlockFcn("Start", 51, 16, 11, 0, 0)
+%if !WHITE_SPACE(tlcStartFcnOfS51B16)
+/* Start for S-Function (DI_Key_In): '<S118>/SwitchInput_ReadKeyOn' */
+%<SLibCG_DumpSSCode("/*@[37ad4*/",tlcStartFcnOfS51B16,"/*@]*/")>\
+%endif
+%closefile cfgTxt
+%<cfgTxt>
+%endfunction
+%function StartFcnProtoType(block, system) Output
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Start(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(11, 0, fcnProtoType)>
+%endfunction

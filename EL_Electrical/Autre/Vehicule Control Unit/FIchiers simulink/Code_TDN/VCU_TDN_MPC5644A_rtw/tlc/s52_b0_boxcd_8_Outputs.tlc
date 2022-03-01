@@ -1,0 +1,57 @@
+%implements s52_b0_boxcd_8_Outputs "C"
+
+%function Outputs(block, system) Output
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%openfile localVarDecl
+
+int_T i;
+%closefile localVarDecl
+%assign tlcOutputsFcnOfS33B0 = OpaqueTLCBlockFcn("Outputs", 33, 0, 8, 2, 0)
+%assign tlcOutputsFcnOfS33B1 = OpaqueTLCBlockFcn("Outputs", 33, 1, 8, 2, 1)
+%assign tlcOutputsFcnOfS33B2 = OpaqueTLCBlockFcn("Outputs", 33, 2, 8, 2, 2)
+/* {S!d344}Logic: '<S6>/Logical Operator1' incorporates:
+ *  S-Function (sfix_udelay): '<S6>/Tapped Delay'
+ */
+%<SLibCG_DumpSSCode("/*@[2cef8*/",SLibCG_SetBOCSC(37, 1, "", -1, "", 0, "/*@>2d210*/DW_l./*@>2d20f*/TappedDelay_X/*@>2d20e*/[/*@>2d212*/0]"),"/*@]*/")>\
+/*@>2bb95*/for (/*@>2d13e*/i = /*@>2bf98*/0; /*@>2d146*/i < /*@>2bf99*/489; /*@>2d143*/i/*@>2d14a*/++) {
+%<SLibCG_DumpSSCode("/*@[2cf30*/",SLibCG_SetBOCSC(37, 1, "", -1, "", 0, "(%<SLibCG_DumpSSCode("/*@[2d225*/",(SLibCG_SE(SLibCG_BOCSC(37, 1, "", -1, "", 0))),"/*@]*/")>/*@>2d224*/ && /*@>2d232*/DW_l./*@>2d231*/TappedDelay_X/*@>2d230*/[/*@>2d235*/i/*@>2d234*/ + /*@>2d236*/1])"),"/*@]*/")>\
+}
+/* {E!d344}End of Logic: '<S6>/Logical Operator1' */
+%if !WHITE_SPACE(tlcOutputsFcnOfS33B0)
+
+/* {S!d346}S-Function (EcoCoder_NVM_VarWrite): '<S6>/Write NVM' */
+%<SLibCG_DumpSSCode("/*@[2ced3*/",tlcOutputsFcnOfS33B0,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS33B1)
+/* {S!d348}S-Function (ecocoder_nvm_read): '<S6>/Read NVM' */
+%<SLibCG_DumpSSCode("/*@[2ced7*/",tlcOutputsFcnOfS33B1,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS33B2)
+/* {S!d350}S-Function (ecocoder_nvm_read): '<S6>/Read NVM1' */
+%<SLibCG_DumpSSCode("/*@[2cedb*/",tlcOutputsFcnOfS33B2,"/*@]*/")>\
+%endif
+/* {S!d352}Logic: '<S6>/Logical Operator' incorporates:
+ *  Constant: '<S39>/Constant'
+ *  RelationalOperator: '<S39>/Compare'
+ */
+/*@>2cbad*/B_n./*@>2d19f*/LogicalOperator_n/*@>9a08*/ = ((/*@>2cbb3*/B_n./*@>2d1a2*/ReadNVM/*@>2b329*/ >= /*@>2bf92*/5.0F)/*@>9a07*/ && /*@>2cbb9*/B_n./*@>2d1a5*/ReadNVM1_g);
+/* {S!d354}Update for S-Function (sfix_udelay): '<S6>/Tapped Delay' */
+/*@>2bb7e*/for (/*@>2d130*/i = /*@>2bf93*/0; /*@>2d138*/i < /*@>2bf94*/489; /*@>2d135*/i/*@>2d14b*/++) {
+    /*@>2cd0f*/DW_l./*@>2d1b4*/TappedDelay_X/*@>2b970*/[/*@>2c435*/i]/*@>9a98*/ = /*@>2cd15*/DW_l./*@>2d1b7*/TappedDelay_X/*@>2ca58*/[/*@>2ca54*/i/*@>2ca52*/ + /*@>2ca55*/1];
+}
+/*@>2cd09*/DW_l./*@>2d1b1*/TappedDelay_X/*@>9aa7*/[/*@>2bf7d*/489]/*@>9aad*/ = /*@>2cbbf*/B_n./*@>2d1a8*/LogicalOperator_n;
+/* {E!d354}End of Update for S-Function (sfix_udelay): '<S6>/Tapped Delay' */
+%closefile cfgTxt
+%<cfgTxt>
+%<LibSetSystemField(system, "CachedOutputLocalVars", localVarDecl)>
+%endfunction
+%function OutputsFcnProtoType(block, system) Output
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Outputs(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(8, 2, fcnProtoType)>
+%endfunction

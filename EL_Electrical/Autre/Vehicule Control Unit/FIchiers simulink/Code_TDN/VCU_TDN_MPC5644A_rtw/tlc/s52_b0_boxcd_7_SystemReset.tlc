@@ -1,0 +1,19 @@
+%implements s52_b0_boxcd_7_SystemReset "C"
+
+%function SystemReset(block, system) Output
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+/* InitializeConditions for S-Function (sfix_udelay): '<S10>/Tapped Delay' */
+/*@>28dc9*/memset(&/*@>29a8c*/DW_l./*@>2aad3*/TappedDelay_X_i/*@>28554*/[/*@>28550*/0], /*@>2aac7*/0, /*@>28552*/1000U/*@>2855a*/ * /*@>28559*/sizeof(boolean_T));
+%closefile cfgTxt
+%<cfgTxt>
+%endfunction
+%function SystemResetFcnProtoType(block, system) Output
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void SystemReset(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(7, 2, fcnProtoType)>
+%endfunction

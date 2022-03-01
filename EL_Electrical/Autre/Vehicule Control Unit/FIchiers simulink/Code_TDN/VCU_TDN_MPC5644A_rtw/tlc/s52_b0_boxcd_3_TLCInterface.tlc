@@ -1,0 +1,212 @@
+%implements s52_b0_boxcd_3_TLCInterface "C"
+
+%function getOutputAddr_23_0_3_0_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<1deac*//*@>1dea6*/B_n./*@>1deb2*/BatteryfanON"
+%endfunction
+
+%function getOutput_23_0_3_0_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>1dec2*/B_n./*@>1decf*/BatteryfanON"
+%endfunction
+
+%function getOutputAddr_23_2_3_0_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<1def8*//*@>1def2*/B_n./*@>1defe*/PumpON"
+%endfunction
+
+%function getOutput_23_2_3_0_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>1df0e*/B_n./*@>1df1b*/PumpON"
+%endfunction
+
+%function getOutputAddr_23_3_3_0_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<1df44*//*@>1df3e*/B_n./*@>1df4a*/PumpandFanON"
+%endfunction
+
+%function getOutput_23_3_3_0_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>1df5a*/B_n./*@>1df67*/PumpandFanON"
+%endfunction
+
+%function getInputAddr_23_6_3_0_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGB_BOCSCAddr(block, 41, 1, "", lcv, ucv, sigIdx, reim)
+%endfunction
+
+%function getInput_23_6_3_0_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGB_BOCSC(block, 41, 1, "", lcv, ucv, sigIdx, reim)
+%endfunction
+
+%function getInputAddr_23_7_3_0_4_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGB_BOCSCAddr(block, 42, 1, "", lcv, ucv, sigIdx, reim)
+%endfunction
+
+%function getInput_23_7_3_0_4_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGB_BOCSC(block, 42, 1, "", lcv, ucv, sigIdx, reim)
+%endfunction
+
+%function getInputAddr_23_8_3_0_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGB_BOCSCAddr(block, 43, 1, "", lcv, ucv, sigIdx, reim)
+%endfunction
+
+%function getInput_23_8_3_0_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGB_BOCSC(block, 43, 1, "", lcv, ucv, sigIdx, reim)
+%endfunction
+
+%function getOutputAddr_23_0_3_1_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<1dfd7*//*@>1dfd1*/B_n./*@>1dfdd*/BatteryfanON"
+%endfunction
+
+%function getOutput_23_0_3_1_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>1dfed*/B_n./*@>1dffa*/BatteryfanON"
+%endfunction
+
+%function getInputAddr_23_1_3_1_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGB_BOCSCAddr(block, 41, 1, "", lcv, ucv, sigIdx, reim)
+%endfunction
+
+%function getInput_23_1_3_1_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGB_BOCSC(block, 41, 1, "", lcv, ucv, sigIdx, reim)
+%endfunction
+
+%function getDWorkAddr_23_1_3_1_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<1e025*//*@>1e01f*/DW_l./*@>1e02b*/WriteNVM2_DWORK0_k"
+%endfunction
+
+%function getDWork_23_1_3_1_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>1e03b*/DW_l./*@>1e048*/WriteNVM2_DWORK0_k"
+%endfunction
+
+%function getDSMAddr_23_1_3_1_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGB_CSCDWAddr(block, 111, 1, "", lcv, ucv, sigIdx, reim)
+%endfunction
+
+%function getDSM_23_1_3_1_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGB_CSCDW(block, 111, 1, "", lcv, ucv, sigIdx, reim)
+%endfunction
+
+%function getOutputAddr_23_2_3_1_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<1e073*//*@>1e06d*/B_n./*@>1e079*/PumpON"
+%endfunction
+
+%function getOutput_23_2_3_1_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>1e089*/B_n./*@>1e096*/PumpON"
+%endfunction
+
+%function getOutputAddr_23_3_3_1_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<1e0bf*//*@>1e0b9*/B_n./*@>1e0c5*/PumpandFanON"
+%endfunction
+
+%function getOutput_23_3_3_1_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>1e0d5*/B_n./*@>1e0e2*/PumpandFanON"
+%endfunction
+
+%function getInputAddr_23_4_3_1_4_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGB_BOCSCAddr(block, 43, 1, "", lcv, ucv, sigIdx, reim)
+%endfunction
+
+%function getInput_23_4_3_1_4_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGB_BOCSC(block, 43, 1, "", lcv, ucv, sigIdx, reim)
+%endfunction
+
+%function getDWorkAddr_23_4_3_1_4_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<1e10d*//*@>1e107*/DW_l./*@>1e113*/WriteNVM_DWORK0_hn"
+%endfunction
+
+%function getDWork_23_4_3_1_4_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>1e123*/DW_l./*@>1e130*/WriteNVM_DWORK0_hn"
+%endfunction
+
+%function getDSMAddr_23_4_3_1_4_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGB_CSCDWAddr(block, 113, 1, "", lcv, ucv, sigIdx, reim)
+%endfunction
+
+%function getDSM_23_4_3_1_4_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGB_CSCDW(block, 113, 1, "", lcv, ucv, sigIdx, reim)
+%endfunction
+
+%function getInputAddr_23_5_3_1_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGB_BOCSCAddr(block, 42, 1, "", lcv, ucv, sigIdx, reim)
+%endfunction
+
+%function getInput_23_5_3_1_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGB_BOCSC(block, 42, 1, "", lcv, ucv, sigIdx, reim)
+%endfunction
+
+%function getDWorkAddr_23_5_3_1_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<1e15d*//*@>1e157*/DW_l./*@>1e163*/WriteNVM1_DWORK0_cc"
+%endfunction
+
+%function getDWork_23_5_3_1_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>1e173*/DW_l./*@>1e180*/WriteNVM1_DWORK0_cc"
+%endfunction
+
+%function getDSMAddr_23_5_3_1_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGB_CSCDWAddr(block, 112, 1, "", lcv, ucv, sigIdx, reim)
+%endfunction
+
+%function getDSM_23_5_3_1_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGB_CSCDW(block, 112, 1, "", lcv, ucv, sigIdx, reim)
+%endfunction
+
+%function getInputAddr_23_6_3_1_6_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGB_BOCSCAddr(block, 41, 1, "", lcv, ucv, sigIdx, reim)
+%endfunction
+
+%function getInput_23_6_3_1_6_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGB_BOCSC(block, 41, 1, "", lcv, ucv, sigIdx, reim)
+%endfunction
+
+%function getInputAddr_23_7_3_1_7_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGB_BOCSCAddr(block, 42, 1, "", lcv, ucv, sigIdx, reim)
+%endfunction
+
+%function getInput_23_7_3_1_7_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGB_BOCSC(block, 42, 1, "", lcv, ucv, sigIdx, reim)
+%endfunction
+
+%function getInputAddr_23_8_3_1_8_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGB_BOCSCAddr(block, 43, 1, "", lcv, ucv, sigIdx, reim)
+%endfunction
+
+%function getInput_23_8_3_1_8_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGB_BOCSC(block, 43, 1, "", lcv, ucv, sigIdx, reim)
+%endfunction
+

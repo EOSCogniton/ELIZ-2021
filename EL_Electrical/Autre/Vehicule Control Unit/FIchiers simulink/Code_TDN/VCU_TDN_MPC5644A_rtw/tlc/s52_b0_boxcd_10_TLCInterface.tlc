@@ -1,0 +1,12 @@
+%implements s52_b0_boxcd_10_TLCInterface "C"
+
+%function getInputAddr_35_1_10_0_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<2dc0d*//*@>2dc07*/B_n./*@>2dc13*/LogicalOperator_e"
+%endfunction
+
+%function getInput_35_1_10_0_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>2dc23*/B_n./*@>2dc30*/LogicalOperator_e"
+%endfunction
+

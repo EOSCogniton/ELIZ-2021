@@ -1,0 +1,137 @@
+%implements s52_b0_boxcd_2_Outputs "C"
+
+%function Outputs(block, system) Output
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%openfile localVarDecl
+
+int64m_T tmp;
+int64m_T tmp_p;
+uint32_T tmp_e;
+uint32_T tmp_i;
+int64m_T tmp_m;
+%closefile localVarDecl
+%assign tlcOutputsFcnOfS22B0 = OpaqueTLCBlockFcn("Outputs", 22, 0, 2, 0, 0)
+%assign tlcOutputsFcnOfS22B1 = OpaqueTLCBlockFcn("Outputs", 22, 1, 2, 0, 1)
+%assign tlcOutputsFcnOfS22B2 = OpaqueTLCBlockFcn("Outputs", 22, 2, 2, 0, 2)
+%assign tlcOutputsFcnOfS22B3 = OpaqueTLCBlockFcn("Outputs", 22, 3, 2, 0, 3)
+%assign tlcOutputsFcnOfS22B4 = OpaqueTLCBlockFcn("Outputs", 22, 4, 2, 0, 4)
+%assign tlcOutputsFcnOfS22B5 = OpaqueTLCBlockFcn("Outputs", 22, 5, 2, 0, 5)
+%assign tlcOutputsFcnOfS22B6 = OpaqueTLCBlockFcn("Outputs", 22, 6, 2, 0, 6)
+%assign tlcOutputsFcnOfS22B7 = OpaqueTLCBlockFcn("Outputs", 22, 7, 2, 0, 7)
+%assign tlcOutputsFcnOfS22B8 = OpaqueTLCBlockFcn("Outputs", 22, 8, 2, 0, 8)
+%assign tlcOutputsFcnOfS22B9 = OpaqueTLCBlockFcn("Outputs", 22, 9, 2, 0, 9)
+%assign tlcOutputsFcnOfS22B10 = OpaqueTLCBlockFcn("Outputs", 22, 10, 2, 0, 10)
+%assign tlcOutputsFcnOfS22B11 = OpaqueTLCBlockFcn("Outputs", 22, 11, 2, 0, 11)
+%assign tlcOutputsFcnOfS22B12 = OpaqueTLCBlockFcn("Outputs", 22, 12, 2, 0, 12)
+%assign tlcOutputsFcnOfS22B13 = OpaqueTLCBlockFcn("Outputs", 22, 13, 2, 0, 13)
+%assign tlcOutputsFcnOfS22B14 = OpaqueTLCBlockFcn("Outputs", 22, 14, 2, 0, 14)
+%assign tlcOutputsFcnOfS22B15 = OpaqueTLCBlockFcn("Outputs", 22, 15, 2, 0, 15)
+%if !WHITE_SPACE(tlcOutputsFcnOfS22B0)
+/* S-Function (ecocoder_nvm_read): '<S41>/Read NVM3' */
+%<SLibCG_DumpSSCode("/*@[1b3eb*/",tlcOutputsFcnOfS22B0,"/*@]*/")>\
+%endif
+/* Lookup_n-D: '<S41>/1-D Lookup Table2' */
+%<SLibCG_DumpSSCode("/*@[1b4f8*/",SLibCG_SetBOCSC(7, 1, "", -1, "", 0, "/*@>1c09e*/look1_is16lu32n32ys16D_604HKI8a(/*@>1c0a0*/B_n./*@>1c09f*/ReadNVM3, %<SLibCG_DumpSSCode("/*@[1c0a2*/",(SLibCGIR_CSCPAddr(174, 0, 42, "", -1, "", 0, -1)),"/*@]*/")>, %<SLibCG_DumpSSCode("/*@[1c0ad*/",(SLibCGIR_CSCPAddr(175, 0, 42, "", -1, "", 0, -1)),"/*@]*/")>, /*@>1c0b8*/41U)"),"/*@]*/")>\
+%if !WHITE_SPACE(tlcOutputsFcnOfS22B1)
+/* S-Function (EcoCoder_NVM_VarWrite): '<S41>/Write NVM2' */
+%<SLibCG_DumpSSCode("/*@[1b3ef*/",tlcOutputsFcnOfS22B1,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS22B2)
+/* S-Function (ecocoder_nvm_read): '<S41>/Read NVM' */
+%<SLibCG_DumpSSCode("/*@[1b3f3*/",tlcOutputsFcnOfS22B2,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS22B3)
+/* S-Function (ecocoder_nvm_read): '<S41>/Read NVM1' */
+%<SLibCG_DumpSSCode("/*@[1b3f7*/",tlcOutputsFcnOfS22B3,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS22B4)
+/* S-Function (ecocoder_nvm_read): '<S41>/Read NVM2' */
+%<SLibCG_DumpSSCode("/*@[1b3fb*/",tlcOutputsFcnOfS22B4,"/*@]*/")>\
+%endif
+/* Product: '<S41>/Product1' incorporates:
+ *  Gain: '<S41>/Gain1'
+ *  Product: '<S41>/Divide'
+ */
+/*@>19d25*/tmp_e/*@>19d27*/ = /*@>19d24*/(uint32_T)(/*@>19dcf*/26214/*@>197f9*/ * /*@>1ae89*/B_n./*@>1bf48*/ReadNVM_m);
+/*@>19d2f*/tmp_i/*@>19d31*/ = /*@>19d2e*/(uint32_T)/*@>1a7a9*/div_s16s32_floor(/*@>1ae8f*/B_n./*@>1bf4b*/ReadNVM1, /*@>1ae95*/B_n./*@>1bf4e*/ReadNVM2);
+/*@>1a7ab*/sMultiWordMul(&/*@>19d22*/tmp_e, /*@>1be71*/1, &/*@>19d2c*/tmp_i, /*@>1be74*/1, &/*@>19d38*/tmp_p./*@>1bf2d*/chunks/*@>19d40*/[/*@>19d3f*/0U], /*@>1be77*/2);
+/* DataTypeConversion: '<S41>/Data Type Conversion1' */
+/*@>1a7ad*/sMultiWordShr(&/*@>19a6f*/tmp_p./*@>1bf30*/chunks/*@>19d4d*/[/*@>19d4c*/0U], /*@>1be7a*/2, /*@>19dd3*/17U, &/*@>19d53*/tmp./*@>1bf33*/chunks/*@>19d5b*/[/*@>19d5a*/0U], /*@>1be7d*/2);
+%<SLibCG_DumpSSCode("/*@[1b444*/",SLibCG_SetBOCSC(8, 1, "", -1, "", 0, "/*@>1c0ee*/(int16_T)/*@>1c0f0*/MultiWord2sLong(&/*@>1c0f4*/tmp./*@>1c0f3*/chunks/*@>1c0f2*/[/*@>1c0f6*/0U])"),"/*@]*/")>\
+%if !WHITE_SPACE(tlcOutputsFcnOfS22B5)
+/* S-Function (EcoCoder_NVM_VarWrite): '<S41>/Write NVM' */
+%<SLibCG_DumpSSCode("/*@[1b3ff*/",tlcOutputsFcnOfS22B5,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS22B6)
+/* S-Function (ecocoder_nvm_read): '<S42>/Read NVM' */
+%<SLibCG_DumpSSCode("/*@[1b403*/",tlcOutputsFcnOfS22B6,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS22B7)
+/* S-Function (ecocoder_nvm_read): '<S42>/Read NVM1' */
+%<SLibCG_DumpSSCode("/*@[1b407*/",tlcOutputsFcnOfS22B7,"/*@]*/")>\
+%endif
+/* Product: '<S42>/Product' incorporates:
+ *  Gain: '<S42>/Gain'
+ */
+/*@>19d85*/tmp_e/*@>19d87*/ = /*@>19d84*/(uint32_T)/*@>1aea7*/B_n./*@>1bf51*/ReadNVM_p;
+/*@>19d8e*/tmp_i/*@>19d90*/ = /*@>19d8d*/(uint32_T)(/*@>19dd7*/16385/*@>197e3*/ * /*@>1aead*/B_n./*@>1bf54*/ReadNVM1_k);
+/*@>1a7b7*/sMultiWordMul(&/*@>19d82*/tmp_e, /*@>1be80*/1, &/*@>19d8b*/tmp_i, /*@>1be83*/1, &/*@>19d95*/tmp_m./*@>1bf39*/chunks/*@>19d9d*/[/*@>19d9c*/0U], /*@>1be86*/2);
+/* DataTypeConversion: '<S42>/Data Type Conversion' */
+/*@>1a7b9*/sMultiWordShr(&/*@>19d79*/tmp_m./*@>1bf3c*/chunks/*@>19daa*/[/*@>19da9*/0U], /*@>1be89*/2, /*@>19ddb*/29U, &/*@>19db0*/tmp_p./*@>1bf3f*/chunks/*@>19db8*/[/*@>19db7*/0U], /*@>1be8c*/2);
+%<SLibCG_DumpSSCode("/*@[1b460*/",SLibCG_SetBOCSC(9, 1, "", -1, "", 0, "/*@>1c123*/(int16_T)/*@>1c125*/MultiWord2sLong(&/*@>1c129*/tmp_p./*@>1c128*/chunks/*@>1c127*/[/*@>1c12b*/0U])"),"/*@]*/")>\
+/* DataTypeConversion: '<S42>/Data Type Conversion1' incorporates:
+ *  Gain: '<S42>/Gain1'
+ */
+%<SLibCG_DumpSSCode("/*@[1b498*/",SLibCG_SetBOCSC(10, 1, "", -1, "", 0, "/*@>1c13d*/(int16_T)((/*@>1c140*/28760/*@>1c13f*/ * %<SLibCG_DumpSSCode("/*@[1c141*/",(SLibCG_SE(SLibCG_BOCSC(9, 1, "", -1, "", 0))),"/*@]*/")>)/*@>1c13e*/ >> /*@>1c14c*/20)"),"/*@]*/")>\
+%if !WHITE_SPACE(tlcOutputsFcnOfS22B8)
+/* S-Function (EcoCoder_NVM_VarWrite): '<S42>/Write NVM' */
+%<SLibCG_DumpSSCode("/*@[1b40b*/",tlcOutputsFcnOfS22B8,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS22B9)
+/* S-Function (EcoCoder_NVM_VarWrite): '<S42>/Write NVM1' */
+%<SLibCG_DumpSSCode("/*@[1b40f*/",tlcOutputsFcnOfS22B9,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS22B10)
+/* S-Function (ecocoder_nvm_read): '<S43>/Read NVM2' */
+%<SLibCG_DumpSSCode("/*@[1b413*/",tlcOutputsFcnOfS22B10,"/*@]*/")>\
+%endif
+/* Lookup_n-D: '<S43>/1-D Lookup Table2' */
+%<SLibCG_DumpSSCode("/*@[1b558*/",SLibCG_SetBOCSC(11, 1, "", -1, "", 0, "/*@>1c17a*/look1_is16lu32n32ys16D_604HKI8a(/*@>1c17c*/B_n./*@>1c17b*/ReadNVM2_a, %<SLibCG_DumpSSCode("/*@[1c17e*/",(SLibCGIR_CSCPAddr(170, 0, 29, "", -1, "", 0, -1)),"/*@]*/")>, %<SLibCG_DumpSSCode("/*@[1c189*/",(SLibCGIR_CSCPAddr(171, 0, 29, "", -1, "", 0, -1)),"/*@]*/")>, /*@>1c194*/28U)"),"/*@]*/")>\
+%if !WHITE_SPACE(tlcOutputsFcnOfS22B11)
+/* S-Function (EcoCoder_NVM_VarWrite): '<S43>/Write NVM2' */
+%<SLibCG_DumpSSCode("/*@[1b417*/",tlcOutputsFcnOfS22B11,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS22B12)
+/* S-Function (ecocoder_nvm_read): '<S43>/Read NVM1' */
+%<SLibCG_DumpSSCode("/*@[1b41b*/",tlcOutputsFcnOfS22B12,"/*@]*/")>\
+%endif
+/* Lookup_n-D: '<S43>/1-D Lookup Table1' */
+%<SLibCG_DumpSSCode("/*@[1b5b8*/",SLibCG_SetBOCSC(12, 1, "", -1, "", 0, "/*@>1c1b9*/look1_is16lu32n32ys16D_604HKI8a(/*@>1c1bb*/B_n./*@>1c1ba*/ReadNVM1_f, %<SLibCG_DumpSSCode("/*@[1c1bd*/",(SLibCGIR_CSCPAddr(172, 0, 39, "", -1, "", 0, -1)),"/*@]*/")>, %<SLibCG_DumpSSCode("/*@[1c1c8*/",(SLibCGIR_CSCPAddr(173, 0, 39, "", -1, "", 0, -1)),"/*@]*/")>, /*@>1c1d3*/38U)"),"/*@]*/")>\
+%if !WHITE_SPACE(tlcOutputsFcnOfS22B13)
+/* S-Function (EcoCoder_NVM_VarWrite): '<S43>/Write NVM1' */
+%<SLibCG_DumpSSCode("/*@[1b41f*/",tlcOutputsFcnOfS22B13,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS22B14)
+/* S-Function (ecocoder_nvm_read): '<S43>/Read NVM' */
+%<SLibCG_DumpSSCode("/*@[1b423*/",tlcOutputsFcnOfS22B14,"/*@]*/")>\
+%endif
+/* Lookup_n-D: '<S43>/1-D Lookup Table' */
+%<SLibCG_DumpSSCode("/*@[1b618*/",SLibCG_SetBOCSC(13, 1, "", -1, "", 0, "/*@>1c1f8*/look1_is16lu32n32ys16D_604HKI8a(/*@>1c1fa*/B_n./*@>1c1f9*/ReadNVM_f, %<SLibCG_DumpSSCode("/*@[1c1fc*/",(SLibCGIR_CSCPAddr(168, 0, 39, "", -1, "", 0, -1)),"/*@]*/")>, %<SLibCG_DumpSSCode("/*@[1c207*/",(SLibCGIR_CSCPAddr(169, 0, 39, "", -1, "", 0, -1)),"/*@]*/")>, /*@>1c212*/38U)"),"/*@]*/")>\
+%if !WHITE_SPACE(tlcOutputsFcnOfS22B15)
+/* S-Function (EcoCoder_NVM_VarWrite): '<S43>/Write NVM' */
+%<SLibCG_DumpSSCode("/*@[1b427*/",tlcOutputsFcnOfS22B15,"/*@]*/")>\
+%endif
+%closefile cfgTxt
+%<cfgTxt>
+%<LibSetSystemField(system, "CachedOutputLocalVars", localVarDecl)>
+%endfunction
+%function OutputsFcnProtoType(block, system) Output
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Outputs(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(2, 0, fcnProtoType)>
+%endfunction

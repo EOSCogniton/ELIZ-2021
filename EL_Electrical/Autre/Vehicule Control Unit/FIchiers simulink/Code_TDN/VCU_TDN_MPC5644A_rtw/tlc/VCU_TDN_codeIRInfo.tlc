@@ -1,0 +1,48 @@
+%function FcnLoadCodeIRInfo() Output 
+codeIRInfoStruct = load('C:\Users\Thibault NOUVELLON\Documents\EPSA\Github\ELIZ-2021\EL_Electrical\Autre\Vehicule Control Unit\FIchiers simulink\Nouveau dossier\VCU_TDN_MPC5644A_rtw\tlc\codeIRInfo.mat');
+codeInfo = codeIRInfoStruct.codeInfo;
+%endfunction
+
+%function FcnGetIsInheritedSampleTime() void
+%assign tmpIdx = 0
+%return tmpIdx 
+%endfunction
+
+%function FcnGetUnsetDSMIdxFromIRInfo() void
+%assign tmpIdx = [3, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, ...
+23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 72, 73, ...
+74, 75, 106, 107, 108, 109, 110, 111, 112, 113]
+%return tmpIdx 
+%endfunction
+
+%function FcnGetUnsetEIIdxFromIRInfo() void
+%assign tmpIdx = []
+%return tmpIdx 
+%endfunction
+
+%function FcnGetRootInportsMapFromIRInfo() void
+%assign tmpIdx = []
+%return tmpIdx 
+%endfunction
+
+%function FcnGetUnsetEOIdxFromIRInfo() void
+%assign tmpIdx = []
+%return tmpIdx 
+%endfunction
+
+%function FcnGetUnsetParamIdxFromIRInfo() void
+%assign tmpIdx = Matrix(8,2)[[168, 0]; [169, 1]; [170, 2]; [171, 3]; ...
+[172, 4]; [173, 5]; [174, 6]; [175, 7]; ]
+%return tmpIdx 
+%endfunction
+
+%function FcnGetArSharedParamIdxFromIRInfo() void
+%assign tmpIdx = []
+%return tmpIdx 
+%endfunction
+
+%function FcnGetInstanceSpecificParamIdxFromIRInfo() void
+%assign tmpIdx = []
+%return tmpIdx 
+%endfunction
+

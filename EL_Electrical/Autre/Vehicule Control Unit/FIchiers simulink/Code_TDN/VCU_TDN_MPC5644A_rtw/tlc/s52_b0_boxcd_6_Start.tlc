@@ -1,0 +1,31 @@
+%implements s52_b0_boxcd_6_Start "C"
+
+%function Start(block, system) Output
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%assign tlcStartFcnOfS26B0 = OpaqueTLCBlockFcn("Start", 26, 0, 6, 0, 0)
+%assign tlcStartFcnOfS26B1 = OpaqueTLCBlockFcn("Start", 26, 1, 6, 0, 1)
+%if !WHITE_SPACE(tlcStartFcnOfS26B0)
+/* Start for S-Function (DIO_Out): '<S8>/RFE' incorporates:
+ *  Constant: '<S8>/Constant'
+ */
+%<SLibCG_DumpSSCode("/*@[23ad7*/",tlcStartFcnOfS26B0,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcStartFcnOfS26B1)
+/* Start for S-Function (DIO_Out): '<S8>/FRG//RUN' incorporates:
+ *  Constant: '<S8>/Constant1'
+ */
+%<SLibCG_DumpSSCode("/*@[23ad9*/",tlcStartFcnOfS26B1,"/*@]*/")>\
+%endif
+%closefile cfgTxt
+%<cfgTxt>
+%endfunction
+%function StartFcnProtoType(block, system) Output
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Start(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(6, 0, fcnProtoType)>
+%endfunction

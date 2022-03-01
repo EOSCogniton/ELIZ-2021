@@ -1,0 +1,803 @@
+%implements s52_b0_boxcd_Outputs "C"
+
+%function OutputsForTID(block, system, tid) Output
+%if tid == 0
+%assign ::GlobalCurrentTID = 0
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%assign tlcOutputsFcnOfS52B0 = OpaqueTLCBlockFcn("Outputs", 52, 0, 12, 1, 0)
+%assign tlcOutputsFcnOfS52B2 = OpaqueTLCBlockFcn("Outputs", 52, 2, 12, 1, 1)
+%assign tlcOutputsFcnOfS52B3 = OpaqueTLCBlockFcn("Outputs", 52, 3, 12, 1, 2)
+%assign tlcOutputsFcnOfS52B4 = OpaqueTLCBlockFcn("Outputs", 52, 4, 12, 1, 3)
+%assign tlcOutputsFcnOfS52B5 = OpaqueTLCBlockFcn("Outputs", 52, 5, 12, 1, 4)
+%assign tlcOutputsFcnOfS52B6 = OpaqueTLCBlockFcn("Outputs", 52, 6, 12, 1, 5)
+%assign tlcOutputsFcnOfS52B8 = OpaqueTLCBlockFcn("Outputs", 52, 8, 12, 1, 6)
+%assign tlcOutputsFcnOfS52B10 = OpaqueTLCBlockFcn("Outputs", 52, 10, 12, 1, 7)
+%assign tlcOutputsFcnOfS52B12 = OpaqueTLCBlockFcn("Outputs", 52, 12, 12, 1, 8)
+%assign tlcOutputsFcnOfS52B14 = OpaqueTLCBlockFcn("Outputs", 52, 14, 12, 1, 9)
+%assign tlcOutputsFcnOfS52B16 = OpaqueTLCBlockFcn("Outputs", 52, 16, 12, 1, 10)
+%assign tlcOutputsFcnOfS52B18Tid0 = OpaqueTLCBlockFcnForTID("Outputs", 52, 18, 0, 12, 1, 11)
+%assign tlcOutputsFcnOfS52B19 = OpaqueTLCBlockFcn("Outputs", 52, 19, 12, 1, 12)
+%assign   Outputs_open_Task_Call_52_0 = ""
+%openfile Outputs_open_Task_Call_52_0
+
+/* S-Function (EcoCoder_Task): '<S3>/Task_Call' */
+%closefile Outputs_open_Task_Call_52_0
+
+%assign    Outputs_body_Task_Call_52_0 = ""
+%openfile  Outputs_body_Task_Call_52_0
+
+%<SLibCG_DumpSSCode("/*@[4678a*/",tlcOutputsFcnOfS52B0,"/*@]*/")>\
+%closefile Outputs_body_Task_Call_52_0
+
+%assign    Outputs_close_Task_Call_52_0 = ""
+%openfile  Outputs_close_Task_Call_52_0
+
+/* End of Outputs for S-Function (EcoCoder_Task): '<S3>/Task_Call' */
+%closefile Outputs_close_Task_Call_52_0
+%<SLibCG_DumpSSCode(Outputs_open_Task_Call_52_0, Outputs_body_Task_Call_52_0, Outputs_close_Task_Call_52_0)>
+
+%if !WHITE_SPACE(tlcOutputsFcnOfS52B2)
+
+/* S-Function (EcoCoder_CAN_Def): '<Root>/CAN Channel Definition' */
+%<SLibCG_DumpSSCode("/*@[4678b*/",tlcOutputsFcnOfS52B2,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS52B3)
+/* S-Function (EcoCoder_CAN_Def): '<Root>/CAN Channel Definition1' */
+%<SLibCG_DumpSSCode("/*@[4678c*/",tlcOutputsFcnOfS52B3,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS52B4)
+/* S-Function (EcoCoder_CAN_Def): '<Root>/CAN Channel Definition2' */
+%<SLibCG_DumpSSCode("/*@[4678d*/",tlcOutputsFcnOfS52B4,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS52B5)
+/* S-Function (ecocoder_sfun_ccp21_def): '<Root>/Fixed CCP Slave Definiton' */
+%<SLibCG_DumpSSCode("/*@[4678e*/",tlcOutputsFcnOfS52B5,"/*@]*/")>\
+%endif
+%assign   Outputs_open_TaskTrigger_52_6 = ""
+%openfile Outputs_open_TaskTrigger_52_6
+
+/* S-Function (EcoCoder_Task): '<S1>/Task Trigger' */
+%closefile Outputs_open_TaskTrigger_52_6
+
+%assign    Outputs_body_TaskTrigger_52_6 = ""
+%openfile  Outputs_body_TaskTrigger_52_6
+
+%<SLibCG_DumpSSCode("/*@[46790*/",tlcOutputsFcnOfS52B6,"/*@]*/")>\
+%closefile Outputs_body_TaskTrigger_52_6
+
+%assign    Outputs_close_TaskTrigger_52_6 = ""
+%openfile  Outputs_close_TaskTrigger_52_6
+
+/* End of Outputs for S-Function (EcoCoder_Task): '<S1>/Task Trigger' */
+%closefile Outputs_close_TaskTrigger_52_6
+%<SLibCG_DumpSSCode(Outputs_open_TaskTrigger_52_6, Outputs_body_TaskTrigger_52_6, Outputs_close_TaskTrigger_52_6)>
+
+
+%assign   Outputs_open_TaskTrigger5_52_8 = ""
+%openfile Outputs_open_TaskTrigger5_52_8
+
+/* S-Function (EcoCoder_Task): '<S1>/Task Trigger5' */
+%closefile Outputs_open_TaskTrigger5_52_8
+
+%assign    Outputs_body_TaskTrigger5_52_8 = ""
+%openfile  Outputs_body_TaskTrigger5_52_8
+
+%<SLibCG_DumpSSCode("/*@[46793*/",tlcOutputsFcnOfS52B8,"/*@]*/")>\
+%closefile Outputs_body_TaskTrigger5_52_8
+
+%assign    Outputs_close_TaskTrigger5_52_8 = ""
+%openfile  Outputs_close_TaskTrigger5_52_8
+
+/* End of Outputs for S-Function (EcoCoder_Task): '<S1>/Task Trigger5' */
+%closefile Outputs_close_TaskTrigger5_52_8
+%<SLibCG_DumpSSCode(Outputs_open_TaskTrigger5_52_8, Outputs_body_TaskTrigger5_52_8, Outputs_close_TaskTrigger5_52_8)>
+
+
+%assign   Outputs_open_TaskTrigger4_52_10 = ""
+%openfile Outputs_open_TaskTrigger4_52_10
+
+/* S-Function (EcoCoder_Task): '<S1>/Task Trigger4' */
+%closefile Outputs_open_TaskTrigger4_52_10
+
+%assign    Outputs_body_TaskTrigger4_52_10 = ""
+%openfile  Outputs_body_TaskTrigger4_52_10
+
+%<SLibCG_DumpSSCode("/*@[46796*/",tlcOutputsFcnOfS52B10,"/*@]*/")>\
+%closefile Outputs_body_TaskTrigger4_52_10
+
+%assign    Outputs_close_TaskTrigger4_52_10 = ""
+%openfile  Outputs_close_TaskTrigger4_52_10
+
+/* End of Outputs for S-Function (EcoCoder_Task): '<S1>/Task Trigger4' */
+%closefile Outputs_close_TaskTrigger4_52_10
+%<SLibCG_DumpSSCode(Outputs_open_TaskTrigger4_52_10, Outputs_body_TaskTrigger4_52_10, Outputs_close_TaskTrigger4_52_10)>
+
+
+%assign   Outputs_open_TaskTrigger7_52_12 = ""
+%openfile Outputs_open_TaskTrigger7_52_12
+
+/* S-Function (EcoCoder_Task): '<S1>/Task Trigger7' */
+%closefile Outputs_open_TaskTrigger7_52_12
+
+%assign    Outputs_body_TaskTrigger7_52_12 = ""
+%openfile  Outputs_body_TaskTrigger7_52_12
+
+%<SLibCG_DumpSSCode("/*@[46798*/",tlcOutputsFcnOfS52B12,"/*@]*/")>\
+%closefile Outputs_body_TaskTrigger7_52_12
+
+%assign    Outputs_close_TaskTrigger7_52_12 = ""
+%openfile  Outputs_close_TaskTrigger7_52_12
+
+/* End of Outputs for S-Function (EcoCoder_Task): '<S1>/Task Trigger7' */
+%closefile Outputs_close_TaskTrigger7_52_12
+%<SLibCG_DumpSSCode(Outputs_open_TaskTrigger7_52_12, Outputs_body_TaskTrigger7_52_12, Outputs_close_TaskTrigger7_52_12)>
+
+
+%assign   Outputs_open_TaskTrigger6_52_14 = ""
+%openfile Outputs_open_TaskTrigger6_52_14
+
+/* S-Function (EcoCoder_Task): '<S1>/Task Trigger6' */
+%closefile Outputs_open_TaskTrigger6_52_14
+
+%assign    Outputs_body_TaskTrigger6_52_14 = ""
+%openfile  Outputs_body_TaskTrigger6_52_14
+
+%<SLibCG_DumpSSCode("/*@[4679a*/",tlcOutputsFcnOfS52B14,"/*@]*/")>\
+%closefile Outputs_body_TaskTrigger6_52_14
+
+%assign    Outputs_close_TaskTrigger6_52_14 = ""
+%openfile  Outputs_close_TaskTrigger6_52_14
+
+/* End of Outputs for S-Function (EcoCoder_Task): '<S1>/Task Trigger6' */
+%closefile Outputs_close_TaskTrigger6_52_14
+%<SLibCG_DumpSSCode(Outputs_open_TaskTrigger6_52_14, Outputs_body_TaskTrigger6_52_14, Outputs_close_TaskTrigger6_52_14)>
+
+
+%assign   Outputs_open_TaskTrigger_o_52_16 = ""
+%openfile Outputs_open_TaskTrigger_o_52_16
+
+/* S-Function (EcoCoder_Task): '<S2>/Task Trigger' */
+%closefile Outputs_open_TaskTrigger_o_52_16
+
+%assign    Outputs_body_TaskTrigger_o_52_16 = ""
+%openfile  Outputs_body_TaskTrigger_o_52_16
+
+%<SLibCG_DumpSSCode("/*@[4679d*/",tlcOutputsFcnOfS52B16,"/*@]*/")>\
+%closefile Outputs_body_TaskTrigger_o_52_16
+
+%assign    Outputs_close_TaskTrigger_o_52_16 = ""
+%openfile  Outputs_close_TaskTrigger_o_52_16
+
+/* End of Outputs for S-Function (EcoCoder_Task): '<S2>/Task Trigger' */
+%closefile Outputs_close_TaskTrigger_o_52_16
+%<SLibCG_DumpSSCode(Outputs_open_TaskTrigger_o_52_16, Outputs_body_TaskTrigger_o_52_16, Outputs_close_TaskTrigger_o_52_16)>
+
+%if !WHITE_SPACE(tlcOutputsFcnOfS52B18Tid0)
+
+/* S-Function (ASW_Schedule): '<S2>/ASWSchedule_Conf' */
+%<SLibCG_DumpSSCode("/*@[4679e*/",tlcOutputsFcnOfS52B18Tid0,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS52B19)
+/* S-Function (EcoCoder_LCF_Def): '<S2>/ecoder_sfun_lcf_def' */
+%<SLibCG_DumpSSCode("/*@[4679f*/",tlcOutputsFcnOfS52B19,"/*@]*/")>\
+%endif
+%<SLibInsertSolverResetCode()>\
+%closefile cfgTxt
+%<cfgTxt>
+%<LibSetSystemField(system, "CachedOutput0LocalVars", localVarDecl)>
+%assign ::GlobalCurrentTID = []
+%endif
+%if tid == 1
+%assign ::GlobalCurrentTID = 1
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%assign tlcOutputsFcnOfS52B20 = OpaqueTLCBlockFcn("Outputs", 52, 20, 12, 2, 0)
+%assign tlcOutputsFcnOfS52B18Tid1 = OpaqueTLCBlockFcnForTID("Outputs", 52, 18, 1, 12, 2, 1)
+%assign   Outputs_open_Task_Call1_52_28 = ""
+%openfile Outputs_open_Task_Call1_52_28
+
+/* S-Function (EcoCoder_Task): '<S3>/Task_Call1' */
+%closefile Outputs_open_Task_Call1_52_28
+
+%assign    Outputs_body_Task_Call1_52_28 = ""
+%openfile  Outputs_body_Task_Call1_52_28
+
+%<SLibCG_DumpSSCode("/*@[467d0*/",tlcOutputsFcnOfS52B20,"/*@]*/")>\
+%closefile Outputs_body_Task_Call1_52_28
+
+%assign    Outputs_close_Task_Call1_52_28 = ""
+%openfile  Outputs_close_Task_Call1_52_28
+
+/* End of Outputs for S-Function (EcoCoder_Task): '<S3>/Task_Call1' */
+%closefile Outputs_close_Task_Call1_52_28
+%<SLibCG_DumpSSCode(Outputs_open_Task_Call1_52_28, Outputs_body_Task_Call1_52_28, Outputs_close_Task_Call1_52_28)>
+
+%if !WHITE_SPACE(tlcOutputsFcnOfS52B18Tid1)
+
+/* S-Function (ASW_Schedule): '<S2>/ASWSchedule_Conf' */
+%<SLibCG_DumpSSCode("/*@[467d1*/",tlcOutputsFcnOfS52B18Tid1,"/*@]*/")>\
+%endif
+%closefile cfgTxt
+%<cfgTxt>
+%<LibSetSystemField(system, "CachedOutput1LocalVars", localVarDecl)>
+%assign ::GlobalCurrentTID = []
+%endif
+%if tid == 2
+%assign ::GlobalCurrentTID = 2
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%openfile localVarDecl
+
+uint32_T DataTypeConversion_k;
+%closefile localVarDecl
+%assign tlcOutputsFcnOfS52B22 = OpaqueTLCBlockFcn("Outputs", 52, 22, 12, 3, 0)
+%assign tlcOutputsFcnOfS0B0 = OpaqueTLCBlockFcn("Outputs", 0, 0, 12, 3, 1)
+%assign tlcOutputsFcnOfS1B0 = OpaqueTLCBlockFcn("Outputs", 1, 0, 12, 3, 2)
+%assign tlcOutputsFcnOfS2B0 = OpaqueTLCBlockFcn("Outputs", 2, 0, 12, 3, 3)
+%assign tlcOutputsFcnOfS3B0 = OpaqueTLCBlockFcn("Outputs", 3, 0, 12, 3, 4)
+%assign tlcOutputsFcnOfS4B0 = OpaqueTLCBlockFcn("Outputs", 4, 0, 12, 3, 5)
+%assign tlcOutputsFcnOfS4B1 = OpaqueTLCBlockFcn("Outputs", 4, 1, 12, 3, 6)
+%assign tlcOutputsFcnOfS5B0 = OpaqueTLCBlockFcn("Outputs", 5, 0, 12, 3, 7)
+%assign tlcOutputsFcnOfS5B1 = OpaqueTLCBlockFcn("Outputs", 5, 1, 12, 3, 8)
+%assign tlcOutputsFcnOfS6B0 = OpaqueTLCBlockFcn("Outputs", 6, 0, 12, 3, 9)
+%assign tlcOutputsFcnOfS7B0 = OpaqueTLCBlockFcn("Outputs", 7, 0, 12, 3, 10)
+%assign tlcOutputsFcnOfS8B0 = OpaqueTLCBlockFcn("Outputs", 8, 0, 12, 3, 11)
+%assign tlcOutputsFcnOfS9B0 = OpaqueTLCBlockFcn("Outputs", 9, 0, 12, 3, 12)
+%assign tlcOutputsFcnOfS10B0 = OpaqueTLCBlockFcn("Outputs", 10, 0, 12, 3, 13)
+%assign tlcOutputsFcnOfS11B0 = OpaqueTLCBlockFcn("Outputs", 11, 0, 12, 3, 14)
+%assign tlcOutputsFcnOfS12B0 = OpaqueTLCBlockFcn("Outputs", 12, 0, 12, 3, 15)
+%assign tlcOutputsFcnOfS13B0 = OpaqueTLCBlockFcn("Outputs", 13, 0, 12, 3, 16)
+%assign tlcOutputsFcnOfS14B0 = OpaqueTLCBlockFcn("Outputs", 14, 0, 12, 3, 17)
+%assign tlcOutputsFcnOfS15B0 = OpaqueTLCBlockFcn("Outputs", 15, 0, 12, 3, 18)
+%assign tlcOutputsFcnOfS16B0 = OpaqueTLCBlockFcn("Outputs", 16, 0, 12, 3, 19)
+%assign tlcOutputsFcnOfS17B0 = OpaqueTLCBlockFcn("Outputs", 17, 0, 12, 3, 20)
+%assign tlcOutputsFcnOfS18B0 = OpaqueTLCBlockFcn("Outputs", 18, 0, 12, 3, 21)
+%assign tlcOutputsFcnOfS52B18Tid2 = OpaqueTLCBlockFcnForTID("Outputs", 52, 18, 2, 12, 3, 22)
+%if !WHITE_SPACE(tlcOutputsFcnOfS52B22)
+/* {S!d582}S-Function (ecodoer_readMsg_float): '<S64>/Read CAN Message' */
+%<SLibCG_DumpSSCode("/*@[4681b*/",tlcOutputsFcnOfS52B22,"/*@]*/")>\
+%endif
+/* {S!d541}Outputs for Triggered SubSystem: '<S64>/Data saving' incorporates:
+ *  TriggerPort: '<S66>/Trigger'
+ */
+/*@>82a0*/if (/*@>45682*/B_n./*@>488bb*/ReadCANMessage_o1/*@>3abef*/ && (/*@>457bc*/PrevZCX_p./*@>488fd*/Datasaving_Trig_ZCE/*@>3abf2*/ != /*@>45922*/POS_ZCSIG)) {
+    /* {S!d672}SwitchCase: '<S66>/Switch Case' */
+/*@>40440*/    switch (/*@>3fcc2*/(int32_T)/*@>45688*/B_n./*@>488be*/ReadCANMessage_o2) {
+      case /*@>3f8d6*/200:
+        /* {S!d542}Outputs for IfAction SubSystem: '<S66>/N_100' incorporates:
+ *  ActionPort: '<S74>/Action Port'
+ */
+        /* {S!d584}DataTypeConversion: '<S74>/Data Type Conversion' */
+%<SLibCG_DumpSSCode("/*@[4688d*/",SLibCG_SetBOCSC(6, 1, "", -1, "", 0, "/*@>48aa1*/(uint16_T)/*@>48aa3*/B_n./*@>48aa2*/ReadCANMessage_o3"),"/*@]*/")>\
+%if !WHITE_SPACE(tlcOutputsFcnOfS0B0)
+        /* {S!d586}S-Function (EcoCoder_NVM_VarWrite): '<S74>/Write NVM' */
+%<SLibCG_DumpSSCode("/*@[4681f*/",tlcOutputsFcnOfS0B0,"/*@]*/")>\
+        /* {E!d542}End of Outputs for SubSystem: '<S66>/N_100' */
+%endif
+        break;
+      case /*@>3f8d7*/52:
+        /* {S!d544}Outputs for IfAction SubSystem: '<S66>/N_Lim' incorporates:
+ *  ActionPort: '<S75>/Action Port'
+ */
+        /* {S!d588}DataTypeConversion: '<S75>/Data Type Conversion' */
+%<SLibCG_DumpSSCode("/*@[468a9*/",SLibCG_SetBOCSC(5, 1, "", -1, "", 0, "/*@>48abf*/(uint16_T)/*@>48ac1*/B_n./*@>48ac0*/ReadCANMessage_o3"),"/*@]*/")>\
+%if !WHITE_SPACE(tlcOutputsFcnOfS1B0)
+        /* {S!d590}S-Function (EcoCoder_NVM_VarWrite): '<S75>/Write NVM' */
+%<SLibCG_DumpSSCode("/*@[46823*/",tlcOutputsFcnOfS1B0,"/*@]*/")>\
+        /* {E!d544}End of Outputs for SubSystem: '<S66>/N_Lim' */
+%endif
+        break;
+      case /*@>3f8d8*/63:
+        /* {S!d546}Outputs for IfAction SubSystem: '<S66>/N_Lim_pos' incorporates:
+ *  ActionPort: '<S77>/Action Port'
+ */
+        /* {S!d592}DataTypeConversion: '<S77>/Data Type Conversion' */
+%<SLibCG_DumpSSCode("/*@[468c5*/",SLibCG_SetBOCSC(34, 1, "", -1, "", 0, "/*@>48add*/(int16_T)/*@>48adf*/floor(/*@>48ae1*/B_n./*@>48ae0*/ReadCANMessage_o3)"),"/*@]*/")>\
+%if !WHITE_SPACE(tlcOutputsFcnOfS2B0)
+        /* {S!d594}S-Function (EcoCoder_NVM_VarWrite): '<S77>/Write NVM' */
+%<SLibCG_DumpSSCode("/*@[46827*/",tlcOutputsFcnOfS2B0,"/*@]*/")>\
+        /* {E!d546}End of Outputs for SubSystem: '<S66>/N_Lim_pos' */
+%endif
+        break;
+      case /*@>3f8d9*/62:
+        /* {S!d548}Outputs for IfAction SubSystem: '<S66>/N_Lim_neg' incorporates:
+ *  ActionPort: '<S76>/Action Port'
+ */
+        /* {S!d596}DataTypeConversion: '<S76>/Data Type Conversion' */
+%<SLibCG_DumpSSCode("/*@[468e1*/",SLibCG_SetBOCSC(33, 1, "", -1, "", 0, "/*@>48afd*/(int16_T)/*@>48aff*/floor(/*@>48b01*/B_n./*@>48b00*/ReadCANMessage_o3)"),"/*@]*/")>\
+%if !WHITE_SPACE(tlcOutputsFcnOfS3B0)
+        /* {S!d598}S-Function (EcoCoder_NVM_VarWrite): '<S76>/Write NVM' */
+%<SLibCG_DumpSSCode("/*@[4682b*/",tlcOutputsFcnOfS3B0,"/*@]*/")>\
+        /* {E!d548}End of Outputs for SubSystem: '<S66>/N_Lim_neg' */
+%endif
+        break;
+      case /*@>3f8da*/53:
+        /* {S!d550}Outputs for IfAction SubSystem: '<S66>/N_R_Acc | M R_Acc' incorporates:
+ *  ActionPort: '<S78>/Action Port'
+ */
+        /* {S!d600}DataTypeConversion: '<S78>/Data Type Conversion' */
+        /*@>3f93f*/DataTypeConversion_k/*@>a7a7*/ = /*@>3fc6b*/(uint32_T)/*@>456ac*/B_n./*@>488d0*/ReadCANMessage_o3;
+        /* {S!d602}DataTypeConversion: '<S78>/Data Type Conversion2' incorporates:
+ *  DataTypeConversion: '<S97>/Extract Desired Bits'
+ */
+%<SLibCG_DumpSSCode("/*@[468fd*/",SLibCG_SetBOCSC(31, 1, "", -1, "", 0, "/*@>48b1d*/(int16_T)/*@>48b1e*/DataTypeConversion_k"),"/*@]*/")>\
+%if !WHITE_SPACE(tlcOutputsFcnOfS4B0)
+        /* {S!d604}S-Function (EcoCoder_NVM_VarWrite): '<S78>/Write NVM' */
+%<SLibCG_DumpSSCode("/*@[4682f*/",tlcOutputsFcnOfS4B0,"/*@]*/")>\
+%endif
+        /* {S!d606}DataTypeConversion: '<S78>/Data Type Conversion1' incorporates:
+ *  DataTypeConversion: '<S98>/Extract Desired Bits'
+ */
+%<SLibCG_DumpSSCode("/*@[46919*/",SLibCG_SetBOCSC(32, 1, "", -1, "", 0, "/*@>48b39*/(int16_T)(/*@>48b3b*/DataTypeConversion_k/*@>48b3a*/ >> /*@>48b3c*/16)"),"/*@]*/")>\
+%if !WHITE_SPACE(tlcOutputsFcnOfS4B1)
+        /* {S!d608}S-Function (EcoCoder_NVM_VarWrite): '<S78>/Write NVM1' */
+%<SLibCG_DumpSSCode("/*@[46833*/",tlcOutputsFcnOfS4B1,"/*@]*/")>\
+        /* {E!d550}End of Outputs for SubSystem: '<S66>/N_R_Acc | M R_Acc' */
+%endif
+        break;
+      case /*@>3f8db*/237:
+        /* {S!d552}Outputs for IfAction SubSystem: '<S66>/N_R_Dec | M_R_Dec' incorporates:
+ *  ActionPort: '<S79>/Action Port'
+ */
+        /* {S!d610}DataTypeConversion: '<S79>/Data Type Conversion' */
+        /*@>3f969*/DataTypeConversion_k/*@>a7f1*/ = /*@>3fc7e*/(uint32_T)/*@>456b2*/B_n./*@>488d3*/ReadCANMessage_o3;
+        /* {S!d612}DataTypeConversion: '<S79>/Data Type Conversion2' incorporates:
+ *  DataTypeConversion: '<S101>/Extract Desired Bits'
+ */
+%<SLibCG_DumpSSCode("/*@[46935*/",SLibCG_SetBOCSC(29, 1, "", -1, "", 0, "/*@>48b57*/(int16_T)/*@>48b58*/DataTypeConversion_k"),"/*@]*/")>\
+%if !WHITE_SPACE(tlcOutputsFcnOfS5B0)
+        /* {S!d614}S-Function (EcoCoder_NVM_VarWrite): '<S79>/Write NVM' */
+%<SLibCG_DumpSSCode("/*@[46837*/",tlcOutputsFcnOfS5B0,"/*@]*/")>\
+%endif
+        /* {S!d616}DataTypeConversion: '<S79>/Data Type Conversion1' incorporates:
+ *  DataTypeConversion: '<S102>/Extract Desired Bits'
+ */
+%<SLibCG_DumpSSCode("/*@[46951*/",SLibCG_SetBOCSC(30, 1, "", -1, "", 0, "/*@>48b73*/(int16_T)(/*@>48b75*/DataTypeConversion_k/*@>48b74*/ >> /*@>48b76*/16)"),"/*@]*/")>\
+%if !WHITE_SPACE(tlcOutputsFcnOfS5B1)
+        /* {S!d618}S-Function (EcoCoder_NVM_VarWrite): '<S79>/Write NVM1' */
+%<SLibCG_DumpSSCode("/*@[4683b*/",tlcOutputsFcnOfS5B1,"/*@]*/")>\
+        /* {E!d552}End of Outputs for SubSystem: '<S66>/N_R_Dec | M_R_Dec' */
+%endif
+        break;
+      case /*@>3f8dc*/206:
+        /* {S!d554}Outputs for IfAction SubSystem: '<S66>/N_act_filt' incorporates:
+ *  ActionPort: '<S80>/Action Port'
+ */
+        /* {S!d620}DataTypeConversion: '<S80>/Data Type Conversion' */
+%<SLibCG_DumpSSCode("/*@[4696d*/",SLibCG_SetBOCSC(28, 1, "", -1, "", 0, "/*@>48b91*/(int16_T)/*@>48b93*/floor(/*@>48b95*/B_n./*@>48b94*/ReadCANMessage_o3)"),"/*@]*/")>\
+%if !WHITE_SPACE(tlcOutputsFcnOfS6B0)
+        /* {S!d622}S-Function (EcoCoder_NVM_VarWrite): '<S80>/Write NVM' */
+%<SLibCG_DumpSSCode("/*@[4683f*/",tlcOutputsFcnOfS6B0,"/*@]*/")>\
+        /* {E!d554}End of Outputs for SubSystem: '<S66>/N_act_filt' */
+%endif
+        break;
+      case /*@>3f8dd*/168:
+        /* {S!d556}Outputs for IfAction SubSystem: '<S66>/SpeedRPMmax' incorporates:
+ *  ActionPort: '<S81>/Action Port'
+ */
+        /* {S!d624}DataTypeConversion: '<S81>/Data Type Conversion' */
+%<SLibCG_DumpSSCode("/*@[46989*/",SLibCG_SetBOCSC(27, 1, "", -1, "", 0, "/*@>48bb1*/(int16_T)/*@>48bb3*/floor(/*@>48bb5*/B_n./*@>48bb4*/ReadCANMessage_o3)"),"/*@]*/")>\
+%if !WHITE_SPACE(tlcOutputsFcnOfS7B0)
+        /* {S!d626}S-Function (EcoCoder_NVM_VarWrite): '<S81>/Write NVM' */
+%<SLibCG_DumpSSCode("/*@[46843*/",tlcOutputsFcnOfS7B0,"/*@]*/")>\
+        /* {E!d556}End of Outputs for SubSystem: '<S66>/SpeedRPMmax' */
+%endif
+        break;
+      case /*@>3f8de*/77:
+        /* {S!d558}Outputs for IfAction SubSystem: '<S66>/I_max_eff' incorporates:
+ *  ActionPort: '<S71>/Action Port'
+ */
+        /* {S!d628}DataTypeConversion: '<S71>/Data Type Conversion' */
+%<SLibCG_DumpSSCode("/*@[469a5*/",SLibCG_SetBOCSC(26, 1, "", -1, "", 0, "/*@>48bd1*/(int16_T)/*@>48bd3*/floor(/*@>48bd5*/B_n./*@>48bd4*/ReadCANMessage_o3)"),"/*@]*/")>\
+%if !WHITE_SPACE(tlcOutputsFcnOfS8B0)
+        /* {S!d630}S-Function (EcoCoder_NVM_VarWrite): '<S71>/Write NVM' */
+%<SLibCG_DumpSSCode("/*@[46847*/",tlcOutputsFcnOfS8B0,"/*@]*/")>\
+        /* {E!d558}End of Outputs for SubSystem: '<S66>/I_max_eff' */
+%endif
+        break;
+      case /*@>3f8df*/78:
+        /* {S!d560}Outputs for IfAction SubSystem: '<S66>/I_nom_eff' incorporates:
+ *  ActionPort: '<S73>/Action Port'
+ */
+        /* {S!d632}DataTypeConversion: '<S73>/Data Type Conversion' */
+%<SLibCG_DumpSSCode("/*@[469c1*/",SLibCG_SetBOCSC(25, 1, "", -1, "", 0, "/*@>48bf1*/(int16_T)/*@>48bf3*/floor(/*@>48bf5*/B_n./*@>48bf4*/ReadCANMessage_o3)"),"/*@]*/")>\
+%if !WHITE_SPACE(tlcOutputsFcnOfS9B0)
+        /* {S!d634}S-Function (EcoCoder_NVM_VarWrite): '<S73>/Write NVM' */
+%<SLibCG_DumpSSCode("/*@[4684b*/",tlcOutputsFcnOfS9B0,"/*@]*/")>\
+        /* {E!d560}End of Outputs for SubSystem: '<S66>/I_nom_eff' */
+%endif
+        break;
+      case /*@>3f8e0*/196:
+        /* {S!d562}Outputs for IfAction SubSystem: '<S66>/I_max_pk' incorporates:
+ *  ActionPort: '<S72>/Action Port'
+ */
+        /* {S!d636}DataTypeConversion: '<S72>/Data Type Conversion' */
+%<SLibCG_DumpSSCode("/*@[469dd*/",SLibCG_SetBOCSC(24, 1, "", -1, "", 0, "/*@>48c11*/(int16_T)/*@>48c13*/floor(/*@>48c15*/B_n./*@>48c14*/ReadCANMessage_o3)"),"/*@]*/")>\
+%if !WHITE_SPACE(tlcOutputsFcnOfS10B0)
+        /* {S!d638}S-Function (EcoCoder_NVM_VarWrite): '<S72>/Write NVM' */
+%<SLibCG_DumpSSCode("/*@[4684f*/",tlcOutputsFcnOfS10B0,"/*@]*/")>\
+        /* {E!d562}End of Outputs for SubSystem: '<S66>/I_max_pk' */
+%endif
+        break;
+      case /*@>3f8e1*/198:
+        /* {S!d564}Outputs for IfAction SubSystem: '<S66>/I_device' incorporates:
+ *  ActionPort: '<S70>/Action Port'
+ */
+        /* {S!d640}DataTypeConversion: '<S70>/Data Type Conversion' */
+%<SLibCG_DumpSSCode("/*@[469f9*/",SLibCG_SetBOCSC(23, 1, "", -1, "", 0, "/*@>48c31*/(int16_T)/*@>48c33*/floor(/*@>48c35*/B_n./*@>48c34*/ReadCANMessage_o3)"),"/*@]*/")>\
+%if !WHITE_SPACE(tlcOutputsFcnOfS11B0)
+        /* {S!d642}S-Function (EcoCoder_NVM_VarWrite): '<S70>/Write NVM' */
+%<SLibCG_DumpSSCode("/*@[46853*/",tlcOutputsFcnOfS11B0,"/*@]*/")>\
+        /* {E!d564}End of Outputs for SubSystem: '<S66>/I_device' */
+%endif
+        break;
+      case /*@>3f8e2*/217:
+        /* {S!d566}Outputs for IfAction SubSystem: '<S66>/I_200' incorporates:
+ *  ActionPort: '<S67>/Action Port'
+ */
+        /* {S!d644}DataTypeConversion: '<S67>/Data Type Conversion' */
+%<SLibCG_DumpSSCode("/*@[46a15*/",SLibCG_SetBOCSC(22, 1, "", -1, "", 0, "/*@>48c51*/(int16_T)/*@>48c53*/floor(/*@>48c55*/B_n./*@>48c54*/ReadCANMessage_o3)"),"/*@]*/")>\
+%if !WHITE_SPACE(tlcOutputsFcnOfS12B0)
+        /* {S!d646}S-Function (EcoCoder_NVM_VarWrite): '<S67>/Write NVM' */
+%<SLibCG_DumpSSCode("/*@[46857*/",tlcOutputsFcnOfS12B0,"/*@]*/")>\
+        /* {E!d566}End of Outputs for SubSystem: '<S66>/I_200' */
+%endif
+        break;
+      case /*@>3f8e3*/235:
+        /* {S!d568}Outputs for IfAction SubSystem: '<S66>/Vdc_bus' incorporates:
+ *  ActionPort: '<S85>/Action Port'
+ */
+        /* {S!d648}DataTypeConversion: '<S85>/Data Type Conversion' */
+%<SLibCG_DumpSSCode("/*@[46a31*/",SLibCG_SetBOCSC(21, 1, "", -1, "", 0, "/*@>48c71*/(int16_T)/*@>48c73*/floor(/*@>48c75*/B_n./*@>48c74*/ReadCANMessage_o3)"),"/*@]*/")>\
+%if !WHITE_SPACE(tlcOutputsFcnOfS13B0)
+        /* {S!d650}S-Function (EcoCoder_NVM_VarWrite): '<S85>/Write NVM' */
+%<SLibCG_DumpSSCode("/*@[4685b*/",tlcOutputsFcnOfS13B0,"/*@]*/")>\
+        /* {E!d568}End of Outputs for SubSystem: '<S66>/Vdc_bus' */
+%endif
+        break;
+      case /*@>3f8e4*/95:
+        /* {S!d570}Outputs for IfAction SubSystem: '<S66>/I_act_filt' incorporates:
+ *  ActionPort: '<S68>/Action Port'
+ */
+        /* {S!d652}DataTypeConversion: '<S68>/Data Type Conversion' */
+%<SLibCG_DumpSSCode("/*@[46a4d*/",SLibCG_SetBOCSC(20, 1, "", -1, "", 0, "/*@>48c91*/(int16_T)/*@>48c93*/floor(/*@>48c95*/B_n./*@>48c94*/ReadCANMessage_o3)"),"/*@]*/")>\
+%if !WHITE_SPACE(tlcOutputsFcnOfS14B0)
+        /* {S!d654}S-Function (EcoCoder_NVM_VarWrite): '<S68>/Write NVM' */
+%<SLibCG_DumpSSCode("/*@[4685f*/",tlcOutputsFcnOfS14B0,"/*@]*/")>\
+        /* {E!d570}End of Outputs for SubSystem: '<S66>/I_act_filt' */
+%endif
+        break;
+      case /*@>3f8e5*/38:
+        /* {S!d572}Outputs for IfAction SubSystem: '<S66>/I_cmd' incorporates:
+ *  ActionPort: '<S69>/Action Port'
+ */
+        /* {S!d656}DataTypeConversion: '<S69>/Data Type Conversion' */
+%<SLibCG_DumpSSCode("/*@[46a69*/",SLibCG_SetBOCSC(19, 1, "", -1, "", 0, "/*@>48cb1*/(int16_T)/*@>48cb3*/floor(/*@>48cb5*/B_n./*@>48cb4*/ReadCANMessage_o3)"),"/*@]*/")>\
+%if !WHITE_SPACE(tlcOutputsFcnOfS15B0)
+        /* {S!d658}S-Function (EcoCoder_NVM_VarWrite): '<S69>/Write NVM' */
+%<SLibCG_DumpSSCode("/*@[46863*/",tlcOutputsFcnOfS15B0,"/*@]*/")>\
+        /* {E!d572}End of Outputs for SubSystem: '<S66>/I_cmd' */
+%endif
+        break;
+      case /*@>3f8e6*/74:
+        /* {S!d574}Outputs for IfAction SubSystem: '<S66>/T_IGBT' incorporates:
+ *  ActionPort: '<S82>/Action Port'
+ */
+        /* {S!d660}DataTypeConversion: '<S82>/Data Type Conversion' */
+%<SLibCG_DumpSSCode("/*@[46a85*/",SLibCG_SetBOCSC(18, 1, "", -1, "", 0, "/*@>48cd1*/(int16_T)/*@>48cd3*/floor(/*@>48cd5*/B_n./*@>48cd4*/ReadCANMessage_o3)"),"/*@]*/")>\
+%if !WHITE_SPACE(tlcOutputsFcnOfS16B0)
+        /* {S!d662}S-Function (EcoCoder_NVM_VarWrite): '<S82>/Write NVM' */
+%<SLibCG_DumpSSCode("/*@[46867*/",tlcOutputsFcnOfS16B0,"/*@]*/")>\
+        /* {E!d574}End of Outputs for SubSystem: '<S66>/T_IGBT' */
+%endif
+        break;
+      case /*@>3f8e7*/73:
+        /* {S!d576}Outputs for IfAction SubSystem: '<S66>/T_motor' incorporates:
+ *  ActionPort: '<S84>/Action Port'
+ */
+        /* {S!d664}DataTypeConversion: '<S84>/Data Type Conversion' */
+%<SLibCG_DumpSSCode("/*@[46aa1*/",SLibCG_SetBOCSC(17, 1, "", -1, "", 0, "/*@>48cf1*/(int16_T)/*@>48cf3*/floor(/*@>48cf5*/B_n./*@>48cf4*/ReadCANMessage_o3)"),"/*@]*/")>\
+%if !WHITE_SPACE(tlcOutputsFcnOfS17B0)
+        /* {S!d666}S-Function (EcoCoder_NVM_VarWrite): '<S84>/Write NVM' */
+%<SLibCG_DumpSSCode("/*@[4686b*/",tlcOutputsFcnOfS17B0,"/*@]*/")>\
+        /* {E!d576}End of Outputs for SubSystem: '<S66>/T_motor' */
+%endif
+        break;
+      case /*@>3f8e8*/75:
+        /* {S!d578}Outputs for IfAction SubSystem: '<S66>/T_air' incorporates:
+ *  ActionPort: '<S83>/Action Port'
+ */
+        /* {S!d668}DataTypeConversion: '<S83>/Data Type Conversion' */
+%<SLibCG_DumpSSCode("/*@[46abd*/",SLibCG_SetBOCSC(16, 1, "", -1, "", 0, "/*@>48d11*/(int16_T)/*@>48d13*/floor(/*@>48d15*/B_n./*@>48d14*/ReadCANMessage_o3)"),"/*@]*/")>\
+%if !WHITE_SPACE(tlcOutputsFcnOfS18B0)
+        /* {S!d670}S-Function (EcoCoder_NVM_VarWrite): '<S83>/Write NVM' */
+%<SLibCG_DumpSSCode("/*@[4686f*/",tlcOutputsFcnOfS18B0,"/*@]*/")>\
+        /* {E!d578}End of Outputs for SubSystem: '<S66>/T_air' */
+%endif
+        break;
+    }
+    /* {E!d672}End of SwitchCase: '<S66>/Switch Case' */
+}
+/*@>457c2*/PrevZCX_p./*@>48900*/Datasaving_Trig_ZCE/*@>82a6*/ = /*@>4568e*/B_n./*@>488c1*/ReadCANMessage_o1;
+/* {E!d541}End of Outputs for SubSystem: '<S64>/Data saving' */
+%if !WHITE_SPACE(tlcOutputsFcnOfS52B18Tid2)
+
+/* {S!d674}S-Function (ASW_Schedule): '<S2>/ASWSchedule_Conf' */
+%<SLibCG_DumpSSCode("/*@[46870*/",tlcOutputsFcnOfS52B18Tid2,"/*@]*/")>\
+%endif
+%closefile cfgTxt
+%<cfgTxt>
+%<LibSetSystemField(system, "CachedOutput2LocalVars", localVarDecl)>
+%assign ::GlobalCurrentTID = []
+%endif
+%if tid == 3
+%assign ::GlobalCurrentTID = 3
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%assign tlcOutputsFcnOfS52B18Tid3 = OpaqueTLCBlockFcnForTID("Outputs", 52, 18, 3, 12, 4, 0)
+%if !WHITE_SPACE(tlcOutputsFcnOfS52B18Tid3)
+/* S-Function (ASW_Schedule): '<S2>/ASWSchedule_Conf' */
+%<SLibCG_DumpSSCode("/*@[46abf*/",tlcOutputsFcnOfS52B18Tid3,"/*@]*/")>\
+%endif
+%closefile cfgTxt
+%<cfgTxt>
+%<LibSetSystemField(system, "CachedOutput3LocalVars", localVarDecl)>
+%assign ::GlobalCurrentTID = []
+%endif
+%if tid == 4
+%assign ::GlobalCurrentTID = 4
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%assign tlcOutputsFcnOfS52B18Tid4 = OpaqueTLCBlockFcnForTID("Outputs", 52, 18, 4, 12, 5, 0)
+%if !WHITE_SPACE(tlcOutputsFcnOfS52B18Tid4)
+/* S-Function (ASW_Schedule): '<S2>/ASWSchedule_Conf' */
+%<SLibCG_DumpSSCode("/*@[46ac2*/",tlcOutputsFcnOfS52B18Tid4,"/*@]*/")>\
+%endif
+%closefile cfgTxt
+%<cfgTxt>
+%<LibSetSystemField(system, "CachedOutput4LocalVars", localVarDecl)>
+%assign ::GlobalCurrentTID = []
+%endif
+%if tid == 5
+%assign ::GlobalCurrentTID = 5
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%assign tlcOutputsFcnOfS52B24 = OpaqueTLCBlockFcn("Outputs", 52, 24, 12, 6, 0)
+%assign tlcOutputsFcnOfS52B26 = OpaqueTLCBlockFcn("Outputs", 52, 26, 12, 6, 1)
+%assign tlcOutputsFcnOfS52B28 = OpaqueTLCBlockFcn("Outputs", 52, 28, 12, 6, 2)
+%assign tlcOutputsFcnOfS52B18Tid5 = OpaqueTLCBlockFcnForTID("Outputs", 52, 18, 5, 12, 6, 3)
+%assign   Outputs_open_TaskTrigger1_52_53 = ""
+%openfile Outputs_open_TaskTrigger1_52_53
+
+/* S-Function (EcoCoder_Task): '<S1>/Task Trigger1' */
+%closefile Outputs_open_TaskTrigger1_52_53
+
+%assign    Outputs_body_TaskTrigger1_52_53 = ""
+%openfile  Outputs_body_TaskTrigger1_52_53
+
+%<SLibCG_DumpSSCode("/*@[46b3b*/",tlcOutputsFcnOfS52B24,"/*@]*/")>\
+%closefile Outputs_body_TaskTrigger1_52_53
+
+%assign    Outputs_close_TaskTrigger1_52_53 = ""
+%openfile  Outputs_close_TaskTrigger1_52_53
+
+/* End of Outputs for S-Function (EcoCoder_Task): '<S1>/Task Trigger1' */
+%closefile Outputs_close_TaskTrigger1_52_53
+%<SLibCG_DumpSSCode(Outputs_open_TaskTrigger1_52_53, Outputs_body_TaskTrigger1_52_53, Outputs_close_TaskTrigger1_52_53)>
+
+
+%assign   Outputs_open_TaskTrigger3_52_55 = ""
+%openfile Outputs_open_TaskTrigger3_52_55
+
+/* S-Function (EcoCoder_Task): '<S1>/Task Trigger3' */
+%closefile Outputs_open_TaskTrigger3_52_55
+
+%assign    Outputs_body_TaskTrigger3_52_55 = ""
+%openfile  Outputs_body_TaskTrigger3_52_55
+
+%<SLibCG_DumpSSCode("/*@[46b3d*/",tlcOutputsFcnOfS52B26,"/*@]*/")>\
+%closefile Outputs_body_TaskTrigger3_52_55
+
+%assign    Outputs_close_TaskTrigger3_52_55 = ""
+%openfile  Outputs_close_TaskTrigger3_52_55
+
+/* End of Outputs for S-Function (EcoCoder_Task): '<S1>/Task Trigger3' */
+%closefile Outputs_close_TaskTrigger3_52_55
+%<SLibCG_DumpSSCode(Outputs_open_TaskTrigger3_52_55, Outputs_body_TaskTrigger3_52_55, Outputs_close_TaskTrigger3_52_55)>
+
+
+%assign   Outputs_open_TaskTrigger1_j_52_57 = ""
+%openfile Outputs_open_TaskTrigger1_j_52_57
+
+/* S-Function (EcoCoder_Task): '<S11>/Task Trigger1' */
+%closefile Outputs_open_TaskTrigger1_j_52_57
+
+%assign    Outputs_body_TaskTrigger1_j_52_57 = ""
+%openfile  Outputs_body_TaskTrigger1_j_52_57
+
+%<SLibCG_DumpSSCode("/*@[46b3f*/",tlcOutputsFcnOfS52B28,"/*@]*/")>\
+%closefile Outputs_body_TaskTrigger1_j_52_57
+
+%assign    Outputs_close_TaskTrigger1_j_52_57 = ""
+%openfile  Outputs_close_TaskTrigger1_j_52_57
+
+/* End of Outputs for S-Function (EcoCoder_Task): '<S11>/Task Trigger1' */
+%closefile Outputs_close_TaskTrigger1_j_52_57
+%<SLibCG_DumpSSCode(Outputs_open_TaskTrigger1_j_52_57, Outputs_body_TaskTrigger1_j_52_57, Outputs_close_TaskTrigger1_j_52_57)>
+
+%if !WHITE_SPACE(tlcOutputsFcnOfS52B18Tid5)
+
+/* S-Function (ASW_Schedule): '<S2>/ASWSchedule_Conf' */
+%<SLibCG_DumpSSCode("/*@[46b40*/",tlcOutputsFcnOfS52B18Tid5,"/*@]*/")>\
+%endif
+%closefile cfgTxt
+%<cfgTxt>
+%<LibSetSystemField(system, "CachedOutput5LocalVars", localVarDecl)>
+%assign ::GlobalCurrentTID = []
+%endif
+%if tid == 6
+%assign ::GlobalCurrentTID = 6
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%assign tlcOutputsFcnOfS52B18Tid6 = OpaqueTLCBlockFcnForTID("Outputs", 52, 18, 6, 12, 7, 0)
+%if !WHITE_SPACE(tlcOutputsFcnOfS52B18Tid6)
+/* S-Function (ASW_Schedule): '<S2>/ASWSchedule_Conf' */
+%<SLibCG_DumpSSCode("/*@[46b46*/",tlcOutputsFcnOfS52B18Tid6,"/*@]*/")>\
+%endif
+%closefile cfgTxt
+%<cfgTxt>
+%<LibSetSystemField(system, "CachedOutput6LocalVars", localVarDecl)>
+%assign ::GlobalCurrentTID = []
+%endif
+%if tid == 7
+%assign ::GlobalCurrentTID = 7
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%assign tlcOutputsFcnOfS52B18Tid7 = OpaqueTLCBlockFcnForTID("Outputs", 52, 18, 7, 12, 8, 0)
+%if !WHITE_SPACE(tlcOutputsFcnOfS52B18Tid7)
+/* S-Function (ASW_Schedule): '<S2>/ASWSchedule_Conf' */
+%<SLibCG_DumpSSCode("/*@[46b49*/",tlcOutputsFcnOfS52B18Tid7,"/*@]*/")>\
+%endif
+%closefile cfgTxt
+%<cfgTxt>
+%<LibSetSystemField(system, "CachedOutput7LocalVars", localVarDecl)>
+%assign ::GlobalCurrentTID = []
+%endif
+%if tid == 8
+%assign ::GlobalCurrentTID = 8
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%assign tlcOutputsFcnOfS52B30 = OpaqueTLCBlockFcn("Outputs", 52, 30, 12, 9, 0)
+%assign tlcOutputsFcnOfS52B18Tid8 = OpaqueTLCBlockFcnForTID("Outputs", 52, 18, 8, 12, 9, 1)
+%assign   Outputs_open_TaskTrigger2_52_66 = ""
+%openfile Outputs_open_TaskTrigger2_52_66
+
+/* S-Function (EcoCoder_Task): '<S1>/Task Trigger2' */
+%closefile Outputs_open_TaskTrigger2_52_66
+
+%assign    Outputs_body_TaskTrigger2_52_66 = ""
+%openfile  Outputs_body_TaskTrigger2_52_66
+
+%<SLibCG_DumpSSCode("/*@[46b74*/",tlcOutputsFcnOfS52B30,"/*@]*/")>\
+%closefile Outputs_body_TaskTrigger2_52_66
+
+%assign    Outputs_close_TaskTrigger2_52_66 = ""
+%openfile  Outputs_close_TaskTrigger2_52_66
+
+/* End of Outputs for S-Function (EcoCoder_Task): '<S1>/Task Trigger2' */
+%closefile Outputs_close_TaskTrigger2_52_66
+%<SLibCG_DumpSSCode(Outputs_open_TaskTrigger2_52_66, Outputs_body_TaskTrigger2_52_66, Outputs_close_TaskTrigger2_52_66)>
+
+%if !WHITE_SPACE(tlcOutputsFcnOfS52B18Tid8)
+
+/* S-Function (ASW_Schedule): '<S2>/ASWSchedule_Conf' */
+%<SLibCG_DumpSSCode("/*@[46b75*/",tlcOutputsFcnOfS52B18Tid8,"/*@]*/")>\
+%endif
+%closefile cfgTxt
+%<cfgTxt>
+%<LibSetSystemField(system, "CachedOutput8LocalVars", localVarDecl)>
+%assign ::GlobalCurrentTID = []
+%endif
+%endfunction
+%function OutputsFcnProtoTypeForTID(block, system, tid) Output
+%if tid == 0
+%assign ::GlobalCurrentTID = 0
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Outputs0(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(12, 1, fcnProtoType)>
+%assign ::GlobalCurrentTID = []
+%endif
+%if tid == 1
+%assign ::GlobalCurrentTID = 1
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Outputs1(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(12, 2, fcnProtoType)>
+%assign ::GlobalCurrentTID = []
+%endif
+%if tid == 2
+%assign ::GlobalCurrentTID = 2
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Outputs2(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(12, 3, fcnProtoType)>
+%assign ::GlobalCurrentTID = []
+%endif
+%if tid == 3
+%assign ::GlobalCurrentTID = 3
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Outputs3(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(12, 4, fcnProtoType)>
+%assign ::GlobalCurrentTID = []
+%endif
+%if tid == 4
+%assign ::GlobalCurrentTID = 4
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Outputs4(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(12, 5, fcnProtoType)>
+%assign ::GlobalCurrentTID = []
+%endif
+%if tid == 5
+%assign ::GlobalCurrentTID = 5
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Outputs5(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(12, 6, fcnProtoType)>
+%assign ::GlobalCurrentTID = []
+%endif
+%if tid == 6
+%assign ::GlobalCurrentTID = 6
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Outputs6(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(12, 7, fcnProtoType)>
+%assign ::GlobalCurrentTID = []
+%endif
+%if tid == 7
+%assign ::GlobalCurrentTID = 7
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Outputs7(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(12, 8, fcnProtoType)>
+%assign ::GlobalCurrentTID = []
+%endif
+%if tid == 8
+%assign ::GlobalCurrentTID = 8
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Outputs8(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(12, 9, fcnProtoType)>
+%assign ::GlobalCurrentTID = []
+%endif
+%endfunction

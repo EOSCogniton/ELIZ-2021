@@ -1,0 +1,32 @@
+%implements s52_b0_boxcd_4_TLCInterface "C"
+
+%function getOutputAddr_24_0_4_0_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<1e8bb*//*@>1e8b5*/B_n./*@>1e8c1*/ReadNVM_b"
+%endfunction
+
+%function getOutput_24_0_4_0_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>1e8d1*/B_n./*@>1e8de*/ReadNVM_b"
+%endfunction
+
+%function getDWorkAddr_24_0_4_0_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<1e8f2*//*@>1e8ec*/DW_l./*@>1e8f8*/ReadNVM_DWORK0_l"
+%endfunction
+
+%function getDWork_24_0_4_0_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>1e908*/DW_l./*@>1e915*/ReadNVM_DWORK0_l"
+%endfunction
+
+%function getDSMAddr_24_0_4_0_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGB_CSCDWAddr(block, 31, 1, "", lcv, ucv, sigIdx, reim)
+%endfunction
+
+%function getDSM_24_0_4_0_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGB_CSCDW(block, 31, 1, "", lcv, ucv, sigIdx, reim)
+%endfunction
+
