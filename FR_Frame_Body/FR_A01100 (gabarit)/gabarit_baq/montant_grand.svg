@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" 
+[ <!ATTLIST svg 
+  xmlns:dsy CDATA #FIXED "http://www.3ds.com/print"  
+    dsy:text-version CDATA #IMPLIED > 
+
+  <!ATTLIST text 
+  xmlns:dsy CDATA #FIXED "http://www.3ds.com/print" 
+    dsy:text-version CDATA #IMPLIED > 
+]><svg xmlns="http://www.w3.org/2000/svg" xmlns:dsy="http://www.3ds.com/print" dsy:text-version="18000" width="841" height="594" viewBox="0 0 841 594" version="1.1"><g stroke="rgb(0, 0, 0)" stroke-width="0.35" stroke-linecap="butt" stroke-linejoin="miter" fill="none"><path d="M 384.894 393.576 L 428.762 194.402"/><path d="M 428.762 194.402 A 14 14 0 1 0 456.106 200.424"/><path d="M 412.238 399.598 L 456.106 200.424"/><path d="M 399.189 382.601 A 14 14 0 0 0 384.894 393.576"/><path d="M 412.238 399.598 A 14 14 0 0 0 403.971 383.672"/><path d="M 412.623 344.389 L 403.971 383.672"/><path d="M 407.837 343.335 L 412.623 344.389"/><path d="M 399.189 382.601 L 407.837 343.335"/></g></svg>

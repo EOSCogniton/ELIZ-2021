@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" 
+[ <!ATTLIST svg 
+  xmlns:dsy CDATA #FIXED "http://www.3ds.com/print"  
+    dsy:text-version CDATA #IMPLIED > 
+
+  <!ATTLIST text 
+  xmlns:dsy CDATA #FIXED "http://www.3ds.com/print" 
+    dsy:text-version CDATA #IMPLIED > 
+]><svg xmlns="http://www.w3.org/2000/svg" xmlns:dsy="http://www.3ds.com/print" dsy:text-version="18000" width="841" height="594" viewBox="0 0 841 594" version="1.1"><g stroke="rgb(0, 0, 0)" stroke-width="0.35" stroke-linecap="butt" stroke-linejoin="miter" fill="none"><path d="M 317.691 245.089 L 317.691 348.911"/><path d="M 317.691 348.911 L 523.309 348.911"/><path d="M 523.309 348.911 L 523.309 268.704"/><path d="M 523.309 268.704 L 513.309 268.704"/><path d="M 513.309 268.704 L 513.309 308.704"/><path d="M 513.309 308.704 L 508.409 308.704"/><path d="M 508.409 308.704 L 508.409 268.704"/><path d="M 508.409 268.704 L 433.409 268.704"/><path d="M 433.409 268.704 L 433.409 283.704"/><path d="M 433.409 283.704 L 455.531 299.194"/><path d="M 455.531 299.194 L 452.721 303.208"/><path d="M 452.721 303.208 L 433.409 289.686"/><path d="M 433.409 289.686 L 433.409 308.686"/><path d="M 433.409 308.686 L 342.591 308.686"/><path d="M 342.591 245.089 L 342.591 308.686"/><path d="M 342.591 245.089 L 332.591 245.089"/><path d="M 332.591 308.686 L 332.591 245.089"/><path d="M 332.591 308.686 L 327.691 308.686"/><path d="M 327.691 308.686 L 327.691 245.089"/><path d="M 327.691 245.089 L 317.691 245.089"/></g></svg>
