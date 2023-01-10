@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" 
-[ <!ATTLIST svg 
-  xmlns:dsy CDATA #FIXED "http://www.3ds.com/print"  
-    dsy:text-version CDATA #IMPLIED > 
-
-  <!ATTLIST text 
-  xmlns:dsy CDATA #FIXED "http://www.3ds.com/print" 
-    dsy:text-version CDATA #IMPLIED > 
-]><svg xmlns="http://www.w3.org/2000/svg" xmlns:dsy="http://www.3ds.com/print" dsy:text-version="18000" width="1189" height="841" viewBox="0 0 1189 841" version="1.1"><g stroke="rgb(0, 0, 0)" stroke-width="0.35" stroke-linecap="butt" stroke-linejoin="miter" fill="none"><path d="M 64.6901 669.312 L 1064.69 669.312"/><path d="M 1064.69 69.3121 L 1064.69 669.312"/><path d="M 1064.69 69.3121 L 64.6901 69.3121"/><path d="M 64.6901 669.312 L 64.6901 69.3121"/><circle cx="593.457" cy="448.978" r="8.29999"/><circle cx="481.07" cy="450.346" r="8.29999"/><circle cx="198.195" cy="598.978" r="8.29999"/><circle cx="85.8089" cy="600.346" r="8.29999"/><circle cx="198.195" cy="298.978" r="8.29999"/><circle cx="85.8089" cy="300.346" r="8.29999"/><circle cx="124.794" cy="211.39" r="8.29999"/><circle cx="238.232" cy="211.959" r="8.29999"/><circle cx="427.239" cy="336.39" r="8.29999"/><circle cx="427.238" cy="86.3896" r="8.29999"/><circle cx="540.677" cy="336.959" r="8.29999"/><circle cx="540.677" cy="86.959" r="8.29999"/><circle cx="538.241" cy="279.921" r="8.29999"/><circle cx="540.07" cy="127.447" r="8.29999"/><circle cx="1000.55" cy="281.819" r="8.29999"/><circle cx="1002.38" cy="129.344" r="8.29999"/><circle cx="747.638" cy="239.905" r="4.48022"/><circle cx="745.339" cy="180.875" r="4.48022"/><circle cx="405.268" cy="239.905" r="4.48022"/><circle cx="402.969" cy="180.875" r="4.48022"/></g></svg>
