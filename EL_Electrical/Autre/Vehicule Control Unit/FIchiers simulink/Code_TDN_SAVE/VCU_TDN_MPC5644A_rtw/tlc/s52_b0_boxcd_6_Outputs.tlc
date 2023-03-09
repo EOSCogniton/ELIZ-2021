@@ -1,0 +1,50 @@
+%implements s52_b0_boxcd_6_Outputs "C"
+
+%function Outputs(block, system) Output
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%assign tlcOutputsFcnOfS26B0 = OpaqueTLCBlockFcn("Outputs", 26, 0, 6, 1, 0)
+%assign tlcOutputsFcnOfS26B1 = OpaqueTLCBlockFcn("Outputs", 26, 1, 6, 1, 1)
+%assign tlcOutputsFcnOfS26B2 = OpaqueTLCBlockFcn("Outputs", 26, 2, 6, 1, 2)
+%assign tlcOutputsFcnOfS26B3 = OpaqueTLCBlockFcn("Outputs", 26, 3, 6, 1, 3)
+%assign tlcOutputsFcnOfS26B4 = OpaqueTLCBlockFcn("Outputs", 26, 4, 6, 1, 4)
+%if !WHITE_SPACE(tlcOutputsFcnOfS26B0)
+/* S-Function (DIO_Out): '<S8>/RFE' incorporates:
+ *  Constant: '<S8>/Constant'
+ */
+%<SLibCG_DumpSSCode("/*@[23ae1*/",tlcOutputsFcnOfS26B0,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS26B1)
+/* S-Function (DIO_Out): '<S8>/FRG//RUN' incorporates:
+ *  Constant: '<S8>/Constant1'
+ */
+%<SLibCG_DumpSSCode("/*@[23ae3*/",tlcOutputsFcnOfS26B1,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS26B2)
+/* S-Function (CoderCAN_PackBit2Data): '<S51>/Pack Signals To CAN Data' incorporates:
+ *  Constant: '<S51>/Constant'
+ *  Constant: '<S51>/Constant1'
+ */
+%<SLibCG_DumpSSCode("/*@[23ae7*/",tlcOutputsFcnOfS26B2,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS26B3)
+/* S-Function (CAN_TxData): '<S51>/Send CAN Data' */
+%<SLibCG_DumpSSCode("/*@[23ae9*/",tlcOutputsFcnOfS26B3,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS26B4)
+/* S-Function (ecocoder_sfun_nvm_def): '<S8>/NVM Definition' */
+%<SLibCG_DumpSSCode("/*@[23aea*/",tlcOutputsFcnOfS26B4,"/*@]*/")>\
+%endif
+%closefile cfgTxt
+%<cfgTxt>
+%<LibSetSystemField(system, "CachedOutputLocalVars", localVarDecl)>
+%endfunction
+%function OutputsFcnProtoType(block, system) Output
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Outputs(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(6, 1, fcnProtoType)>
+%endfunction

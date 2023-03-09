@@ -1,0 +1,139 @@
+%implements s52_b0_boxcd_7_Start "C"
+
+%function Start(block, system) Output
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%assign tlcStartFcnOfS32B0 = OpaqueTLCBlockFcn("Start", 32, 0, 7, 0, 0)
+%assign tlcStartFcnOfS32B2 = OpaqueTLCBlockFcn("Start", 32, 2, 7, 0, 1)
+%assign tlcStartFcnOfS27B0 = OpaqueTLCBlockFcn("Start", 27, 0, 7, 0, 2)
+%assign tlcStartFcnOfS27B1 = OpaqueTLCBlockFcn("Start", 27, 1, 7, 0, 3)
+%assign tlcStartFcnOfS27B2 = OpaqueTLCBlockFcn("Start", 27, 2, 7, 0, 4)
+%assign tlcStartFcnOfS27B3 = OpaqueTLCBlockFcn("Start", 27, 3, 7, 0, 5)
+%assign tlcStartFcnOfS28B0 = OpaqueTLCBlockFcn("Start", 28, 0, 7, 0, 6)
+%assign tlcStartFcnOfS28B1 = OpaqueTLCBlockFcn("Start", 28, 1, 7, 0, 7)
+%assign tlcStartFcnOfS28B2 = OpaqueTLCBlockFcn("Start", 28, 2, 7, 0, 8)
+%assign tlcStartFcnOfS31B0 = OpaqueTLCBlockFcn("Start", 31, 0, 7, 0, 9)
+%if !WHITE_SPACE(tlcStartFcnOfS32B0)
+/* Start for S-Function (DIO_In): '<S10>/Brake contactor' */
+%<SLibCG_DumpSSCode("/*@[2a06c*/",tlcStartFcnOfS32B0,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcStartFcnOfS32B2)
+/* Start for S-Function (DIO_In): '<S10>/Ready to drive button' */
+%<SLibCG_DumpSSCode("/*@[2a06e*/",tlcStartFcnOfS32B2,"/*@]*/")>\
+%endif
+%assign   Start_open_ActivateReadytodrive_32_12 = ""
+%openfile Start_open_ActivateReadytodrive_32_12
+
+/* Start for Triggered SubSystem: '<S10>/Activate Ready to drive' */
+%closefile Start_open_ActivateReadytodrive_32_12
+
+%assign    Start_body_ActivateReadytodrive_32_12 = ""
+%openfile  Start_body_ActivateReadytodrive_32_12
+
+%if !WHITE_SPACE(tlcStartFcnOfS27B0)
+/* Start for S-Function (DIO_Out): '<S55>/RFE' incorporates:
+ *  Constant: '<S55>/Constant'
+ */
+%<SLibCG_DumpSSCode("/*@[2a070*/",tlcStartFcnOfS27B0,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcStartFcnOfS27B1)
+/* Start for S-Function (DIO_Out): '<S55>/FRG//RUN' incorporates:
+ *  Constant: '<S55>/Constant1'
+ */
+%<SLibCG_DumpSSCode("/*@[2a072*/",tlcStartFcnOfS27B1,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcStartFcnOfS27B2)
+/* Start for S-Function (DIO_Out): '<S55>/Ready to drive LED' incorporates:
+ *  Constant: '<S55>/Constant3'
+ */
+%<SLibCG_DumpSSCode("/*@[2a074*/",tlcStartFcnOfS27B2,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcStartFcnOfS27B3)
+/* Start for S-Function (DIO_Out): '<S55>/Ready to drive sound' incorporates:
+ *  Constant: '<S55>/Constant4'
+ */
+%<SLibCG_DumpSSCode("/*@[2a076*/",tlcStartFcnOfS27B3,"/*@]*/")>\
+%endif
+%closefile Start_body_ActivateReadytodrive_32_12
+
+%assign    Start_close_ActivateReadytodrive_32_12 = ""
+%openfile  Start_close_ActivateReadytodrive_32_12
+
+/* End of Start for SubSystem: '<S10>/Activate Ready to drive' */
+%closefile Start_close_ActivateReadytodrive_32_12
+%<SLibCG_DumpSSCode(Start_open_ActivateReadytodrive_32_12, Start_body_ActivateReadytodrive_32_12, Start_close_ActivateReadytodrive_32_12)>
+
+
+%assign   Start_open_DeactivateReadytodrive_32_13 = ""
+%openfile Start_open_DeactivateReadytodrive_32_13
+
+/* Start for Triggered SubSystem: '<S10>/Deactivate Ready to drive' */
+%closefile Start_open_DeactivateReadytodrive_32_13
+
+%assign    Start_body_DeactivateReadytodrive_32_13 = ""
+%openfile  Start_body_DeactivateReadytodrive_32_13
+
+%if !WHITE_SPACE(tlcStartFcnOfS28B0)
+/* Start for S-Function (DIO_Out): '<S56>/RFE' incorporates:
+ *  Constant: '<S56>/Constant'
+ */
+%<SLibCG_DumpSSCode("/*@[2a078*/",tlcStartFcnOfS28B0,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcStartFcnOfS28B1)
+/* Start for S-Function (DIO_Out): '<S56>/FRG//RUN' incorporates:
+ *  Constant: '<S56>/Constant1'
+ */
+%<SLibCG_DumpSSCode("/*@[2a07a*/",tlcStartFcnOfS28B1,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcStartFcnOfS28B2)
+/* Start for S-Function (DIO_Out): '<S56>/Ready to drive LED' incorporates:
+ *  Constant: '<S56>/Constant3'
+ */
+%<SLibCG_DumpSSCode("/*@[2a07c*/",tlcStartFcnOfS28B2,"/*@]*/")>\
+%endif
+%closefile Start_body_DeactivateReadytodrive_32_13
+
+%assign    Start_close_DeactivateReadytodrive_32_13 = ""
+%openfile  Start_close_DeactivateReadytodrive_32_13
+
+/* End of Start for SubSystem: '<S10>/Deactivate Ready to drive' */
+%closefile Start_close_DeactivateReadytodrive_32_13
+%<SLibCG_DumpSSCode(Start_open_DeactivateReadytodrive_32_13, Start_body_DeactivateReadytodrive_32_13, Start_close_DeactivateReadytodrive_32_13)>
+
+
+%assign   Start_open_StopRTDsound_32_15 = ""
+%openfile Start_open_StopRTDsound_32_15
+
+/* Start for Triggered SubSystem: '<S10>/Stop RTD sound' */
+%closefile Start_open_StopRTDsound_32_15
+
+%assign    Start_body_StopRTDsound_32_15 = ""
+%openfile  Start_body_StopRTDsound_32_15
+
+%if !WHITE_SPACE(tlcStartFcnOfS31B0)
+/* Start for S-Function (DIO_Out): '<S58>/Ready to drive sound' incorporates:
+ *  Constant: '<S58>/Constant4'
+ */
+%<SLibCG_DumpSSCode("/*@[2a07e*/",tlcStartFcnOfS31B0,"/*@]*/")>\
+%endif
+%closefile Start_body_StopRTDsound_32_15
+
+%assign    Start_close_StopRTDsound_32_15 = ""
+%openfile  Start_close_StopRTDsound_32_15
+
+/* End of Start for SubSystem: '<S10>/Stop RTD sound' */
+%closefile Start_close_StopRTDsound_32_15
+%<SLibCG_DumpSSCode(Start_open_StopRTDsound_32_15, Start_body_StopRTDsound_32_15, Start_close_StopRTDsound_32_15)>
+
+%closefile cfgTxt
+%<cfgTxt>
+%endfunction
+%function StartFcnProtoType(block, system) Output
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Start(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(7, 0, fcnProtoType)>
+%endfunction

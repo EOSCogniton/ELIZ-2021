@@ -1,0 +1,27 @@
+%implements s52_b0_boxcd_1_Start "C"
+
+%function Start(block, system) Output
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%assign tlcStartFcnOfS21B1 = OpaqueTLCBlockFcn("Start", 21, 1, 1, 0, 0)
+%assign tlcStartFcnOfS21B2 = OpaqueTLCBlockFcn("Start", 21, 2, 1, 0, 1)
+%if !WHITE_SPACE(tlcStartFcnOfS21B1)
+/* Start for S-Function (ADC): '<S4>/APPS 1' */
+%<SLibCG_DumpSSCode("/*@[17829*/",tlcStartFcnOfS21B1,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcStartFcnOfS21B2)
+/* Start for S-Function (ADC): '<S4>/APPS 2' */
+%<SLibCG_DumpSSCode("/*@[1782b*/",tlcStartFcnOfS21B2,"/*@]*/")>\
+%endif
+%closefile cfgTxt
+%<cfgTxt>
+%endfunction
+%function StartFcnProtoType(block, system) Output
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Start(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(1, 0, fcnProtoType)>
+%endfunction

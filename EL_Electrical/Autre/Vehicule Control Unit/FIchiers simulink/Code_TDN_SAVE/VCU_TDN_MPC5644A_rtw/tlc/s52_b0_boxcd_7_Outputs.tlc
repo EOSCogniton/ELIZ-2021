@@ -1,0 +1,210 @@
+%implements s52_b0_boxcd_7_Outputs "C"
+
+%function Outputs(block, system) Output
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%openfile localVarDecl
+
+int_T i;
+boolean_T tmp;
+boolean_T LogicalOperator3;
+%closefile localVarDecl
+%assign tlcOutputsFcnOfS32B0 = OpaqueTLCBlockFcn("Outputs", 32, 0, 7, 3, 0)
+%assign tlcOutputsFcnOfS32B1 = OpaqueTLCBlockFcn("Outputs", 32, 1, 7, 3, 1)
+%assign tlcOutputsFcnOfS32B2 = OpaqueTLCBlockFcn("Outputs", 32, 2, 7, 3, 2)
+%assign tlcOutputsFcnOfS32B3 = OpaqueTLCBlockFcn("Outputs", 32, 3, 7, 3, 3)
+%assign tlcOutputsFcnOfS32B4 = OpaqueTLCBlockFcn("Outputs", 32, 4, 7, 3, 4)
+%assign tlcOutputsFcnOfS32B5 = OpaqueTLCBlockFcn("Outputs", 32, 5, 7, 3, 5)
+%assign tlcOutputsFcnOfS32B7 = OpaqueTLCBlockFcn("Outputs", 32, 7, 7, 3, 6)
+%assign tlcOutputsFcnOfS27B0 = OpaqueTLCBlockFcn("Outputs", 27, 0, 7, 3, 7)
+%assign tlcOutputsFcnOfS27B1 = OpaqueTLCBlockFcn("Outputs", 27, 1, 7, 3, 8)
+%assign tlcOutputsFcnOfS27B2 = OpaqueTLCBlockFcn("Outputs", 27, 2, 7, 3, 9)
+%assign tlcOutputsFcnOfS27B3 = OpaqueTLCBlockFcn("Outputs", 27, 3, 7, 3, 10)
+%assign tlcOutputsFcnOfS27B4 = OpaqueTLCBlockFcn("Outputs", 27, 4, 7, 3, 11)
+%assign tlcOutputsFcnOfS27B5 = OpaqueTLCBlockFcn("Outputs", 27, 5, 7, 3, 12)
+%assign tlcOutputsFcnOfS28B0 = OpaqueTLCBlockFcn("Outputs", 28, 0, 7, 3, 13)
+%assign tlcOutputsFcnOfS28B1 = OpaqueTLCBlockFcn("Outputs", 28, 1, 7, 3, 14)
+%assign tlcOutputsFcnOfS28B2 = OpaqueTLCBlockFcn("Outputs", 28, 2, 7, 3, 15)
+%assign tlcOutputsFcnOfS28B3 = OpaqueTLCBlockFcn("Outputs", 28, 3, 7, 3, 16)
+%assign tlcOutputsFcnOfS28B4 = OpaqueTLCBlockFcn("Outputs", 28, 4, 7, 3, 17)
+%assign tlcOutputsFcnOfS31B0 = OpaqueTLCBlockFcn("Outputs", 31, 0, 7, 3, 18)
+%if !WHITE_SPACE(tlcOutputsFcnOfS32B0)
+/* {S!d284}S-Function (DIO_In): '<S10>/Brake contactor' */
+%<SLibCG_DumpSSCode("/*@[2a0b0*/",tlcOutputsFcnOfS32B0,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS32B1)
+/* {S!d286}S-Function (EcoCoder_NVM_VarWrite): '<S10>/Write NVM' */
+%<SLibCG_DumpSSCode("/*@[2a0b4*/",tlcOutputsFcnOfS32B1,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS32B2)
+/* {S!d288}S-Function (DIO_In): '<S10>/Ready to drive button' */
+%<SLibCG_DumpSSCode("/*@[2a0b6*/",tlcOutputsFcnOfS32B2,"/*@]*/")>\
+%endif
+/* {S!d290}Logic: '<S10>/Logical Operator' */
+%<SLibCG_DumpSSCode("/*@[2a0ff*/",SLibCG_SetBOCSC(39, 1, "", -1, "", 0, "!/*@<2add4*//*@>2add6*/B_n./*@>2add5*/Readytodrivebutton"),"/*@]*/")>\
+%if !WHITE_SPACE(tlcOutputsFcnOfS32B3)
+/* {S!d292}S-Function (EcoCoder_NVM_VarWrite): '<S10>/Write NVM1' */
+%<SLibCG_DumpSSCode("/*@[2a0ba*/",tlcOutputsFcnOfS32B3,"/*@]*/")>\
+%endif
+/* {S!d294}Logic: '<S10>/Logical Operator2' incorporates:
+ *  S-Function (sfix_udelay): '<S10>/Tapped Delay'
+ */
+/*@>27018*/tmp/*@>9ac6*/ = /*@>29a9e*/DW_l./*@>2ac3f*/TappedDelay_X_i/*@>294e7*/[/*@>294e4*/0];
+/*@>264b2*/for (/*@>2ab2c*/i = /*@>27158*/0; /*@>2ab34*/i < /*@>27159*/999; /*@>2ab31*/i/*@>2ab38*/++) {
+    /*@>2701c*/tmp/*@>9ad1*/ = (/*@>2701a*/tmp/*@>9ad0*/ && /*@>29aaa*/DW_l./*@>2ac42*/TappedDelay_X_i/*@>294ef*/[/*@>294eb*/i/*@>294e9*/ + /*@>294ec*/1]);
+}
+%if !WHITE_SPACE(tlcOutputsFcnOfS32B4)
+/* {S!d296}S-Function (ecocoder_nvm_read): '<S10>/Read NVM' */
+%<SLibCG_DumpSSCode("/*@[2a0be*/",tlcOutputsFcnOfS32B4,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS32B5)
+/* {S!d298}S-Function (ecocoder_nvm_read): '<S10>/Read NVM1' */
+%<SLibCG_DumpSSCode("/*@[2a0c2*/",tlcOutputsFcnOfS32B5,"/*@]*/")>\
+%endif
+/* {S!d300}Logic: '<S10>/Logical Operator3' */
+/*@>27042*/LogicalOperator3/*@>9ade*/ = (/*@>29918*/B_n./*@>2ac21*/ReadNVM_my/*@>9add*/ || /*@>2991e*/B_n./*@>2ac24*/ReadNVM1_d);
+/* {S!d275}Outputs for Atomic SubSystem: '<S10>/SR Flip Flop' */
+/* {S!d302}Switch: '<S57>/Switch' incorporates:
+ *  Constant: '<S57>/Constant2'
+ *  Logic: '<S10>/Logical Operator2'
+ *  UnitDelay: '<S57>/Unit Delay1'
+ */
+/*@>27e00*/if (/*@>27110*/LogicalOperator3) {
+%<SLibCG_DumpSSCode("/*@[2a18b*/",SLibCG_SetBOCSC(40, 1, "", -1, "", 0, "/*@>2ae04*/false"),"/*@]*/")>\
+} else {
+%<SLibCG_DumpSSCode("/*@[2a16f*/",SLibCG_SetBOCSC(40, 1, "", -1, "", 0, "(/*@>2ae17*/tmp || %<SLibCG_DumpSSCode("/*@[2ae18*/",(SLibCG_SE(SLibCG_BOCSC(40, 1, "", -1, "", 0))),"/*@]*/")>)"),"/*@]*/")>\
+}
+/* {E!d302}End of Switch: '<S57>/Switch' */
+/* {E!d275}End of Outputs for SubSystem: '<S10>/SR Flip Flop' */
+%if !WHITE_SPACE(tlcOutputsFcnOfS32B7)
+
+/* {S!d304}S-Function (EcoCoder_NVM_VarWrite): '<S10>/Write NVM2' */
+%<SLibCG_DumpSSCode("/*@[2a0c6*/",tlcOutputsFcnOfS32B7,"/*@]*/")>\
+%endif
+/* {S!d277}Outputs for Triggered SubSystem: '<S10>/Activate Ready to drive' incorporates:
+ *  TriggerPort: '<S55>/Trigger'
+ */
+/* {S!d318}Logic: '<S10>/Logical Operator2' */
+/*@>9af1*/if (/*@>2711e*/tmp/*@>24cc6*/ && (/*@>299fe*/PrevZCX_p./*@>2ac2d*/ActivateReadytodrive_Trig_ZCE/*@>24cc9*/ != /*@>29afd*/POS_ZCSIG)) {
+%if !WHITE_SPACE(tlcOutputsFcnOfS27B0)
+    /* {S!d306}S-Function (DIO_Out): '<S55>/RFE' incorporates:
+ *  Constant: '<S55>/Constant'
+ */
+%<SLibCG_DumpSSCode("/*@[2a0c8*/",tlcOutputsFcnOfS27B0,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS27B1)
+    /* {S!d308}S-Function (DIO_Out): '<S55>/FRG//RUN' incorporates:
+ *  Constant: '<S55>/Constant1'
+ */
+%<SLibCG_DumpSSCode("/*@[2a0ca*/",tlcOutputsFcnOfS27B1,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS27B2)
+    /* {S!d310}S-Function (DIO_Out): '<S55>/Ready to drive LED' incorporates:
+ *  Constant: '<S55>/Constant3'
+ */
+%<SLibCG_DumpSSCode("/*@[2a0cc*/",tlcOutputsFcnOfS27B2,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS27B3)
+    /* {S!d312}S-Function (DIO_Out): '<S55>/Ready to drive sound' incorporates:
+ *  Constant: '<S55>/Constant4'
+ */
+%<SLibCG_DumpSSCode("/*@[2a0ce*/",tlcOutputsFcnOfS27B3,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS27B4)
+    /* {S!d314}S-Function (CoderCAN_PackBit2Data): '<S62>/Pack Signals To CAN Data' incorporates:
+ *  Constant: '<S62>/Constant'
+ *  Constant: '<S62>/Constant1'
+ */
+%<SLibCG_DumpSSCode("/*@[2a0d2*/",tlcOutputsFcnOfS27B4,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS27B5)
+    /* {S!d316}S-Function (CAN_TxData): '<S62>/Send CAN Data' */
+%<SLibCG_DumpSSCode("/*@[2a0d4*/",tlcOutputsFcnOfS27B5,"/*@]*/")>\
+%endif
+}
+/*@>29a04*/PrevZCX_p./*@>2ac30*/ActivateReadytodrive_Trig_ZCE/*@>9af6*/ = /*@>27116*/tmp;
+/* {E!d277}End of Outputs for SubSystem: '<S10>/Activate Ready to drive' */
+
+/* {S!d279}Outputs for Triggered SubSystem: '<S10>/Deactivate Ready to drive' incorporates:
+ *  TriggerPort: '<S56>/Trigger'
+ */
+/*@>9aff*/if (/*@>27123*/LogicalOperator3/*@>24cd7*/ && (/*@>29a0a*/PrevZCX_p./*@>2ac33*/DeactivateReadytodrive_Trig_ZCE/*@>24cda*/ != /*@>29b00*/POS_ZCSIG)) {
+%if !WHITE_SPACE(tlcOutputsFcnOfS28B0)
+    /* {S!d320}S-Function (DIO_Out): '<S56>/RFE' incorporates:
+ *  Constant: '<S56>/Constant'
+ */
+%<SLibCG_DumpSSCode("/*@[2a0d6*/",tlcOutputsFcnOfS28B0,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS28B1)
+    /* {S!d322}S-Function (DIO_Out): '<S56>/FRG//RUN' incorporates:
+ *  Constant: '<S56>/Constant1'
+ */
+%<SLibCG_DumpSSCode("/*@[2a0d8*/",tlcOutputsFcnOfS28B1,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS28B2)
+    /* {S!d324}S-Function (DIO_Out): '<S56>/Ready to drive LED' incorporates:
+ *  Constant: '<S56>/Constant3'
+ */
+%<SLibCG_DumpSSCode("/*@[2a0da*/",tlcOutputsFcnOfS28B2,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS28B3)
+    /* {S!d326}S-Function (CoderCAN_PackBit2Data): '<S63>/Pack Signals To CAN Data' incorporates:
+ *  Constant: '<S63>/Constant'
+ *  Constant: '<S63>/Constant1'
+ */
+%<SLibCG_DumpSSCode("/*@[2a0de*/",tlcOutputsFcnOfS28B3,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS28B4)
+    /* {S!d328}S-Function (CAN_TxData): '<S63>/Send CAN Data' */
+%<SLibCG_DumpSSCode("/*@[2a0e0*/",tlcOutputsFcnOfS28B4,"/*@]*/")>\
+%endif
+}
+/*@>29a10*/PrevZCX_p./*@>2ac36*/DeactivateReadytodrive_Trig_ZCE/*@>9b04*/ = /*@>2705d*/LogicalOperator3;
+/* {E!d279}End of Outputs for SubSystem: '<S10>/Deactivate Ready to drive' */
+
+/* {S!d281}Outputs for Triggered SubSystem: '<S10>/Stop RTD sound' incorporates:
+ *  TriggerPort: '<S58>/Trigger'
+ */
+/* {S!d332}Delay: '<S10>/Delay1' */
+/*@>9b0d*/if (/*@>29abc*/DW_l./*@>2ac45*/Delay1_DSTATE/*@>294f4*/[/*@>294f1*/0U]/*@>24ce8*/ && (/*@>29a16*/PrevZCX_p./*@>2ac39*/StopRTDsound_Trig_ZCE/*@>24ced*/ != /*@>29b03*/POS_ZCSIG)) {
+%if !WHITE_SPACE(tlcOutputsFcnOfS31B0)
+    /* {S!d330}S-Function (DIO_Out): '<S58>/Ready to drive sound' incorporates:
+ *  Constant: '<S58>/Constant4'
+ */
+%<SLibCG_DumpSSCode("/*@[2a0e2*/",tlcOutputsFcnOfS31B0,"/*@]*/")>\
+%endif
+}
+/*@>29a1c*/PrevZCX_p./*@>2ac3c*/StopRTDsound_Trig_ZCE/*@>9b12*/ = /*@>29ac2*/DW_l./*@>2ac48*/Delay1_DSTATE/*@>294f9*/[/*@>294f6*/0];
+/* {E!d332}End of Delay: '<S10>/Delay1' */
+/* {E!d281}End of Outputs for SubSystem: '<S10>/Stop RTD sound' */
+
+/* {S!d334}Logic: '<S10>/Logical Operator1' */
+/*@>2993c*/B_n./*@>2ac27*/LogicalOperator1_p/*@>9ae6*/ = (%<SLibCG_DumpSSCode("/*@[2a135*/",(SLibCG_SE(SLibCG_BOCSC(38, 1, "", -1, "", 0))),"/*@]*/")>/*@>9ae5*/ && %<SLibCG_DumpSSCode("/*@[2a119*/",(SLibCG_SE(SLibCG_BOCSC(39, 1, "", -1, "", 0))),"/*@]*/")>);
+/* {S!d336}Update for S-Function (sfix_udelay): '<S10>/Tapped Delay' */
+/*@>2649b*/for (/*@>2ab1e*/i = /*@>27153*/0; /*@>2ab26*/i < /*@>27154*/999; /*@>2ab23*/i/*@>2ab39*/++) {
+    /*@>29ace*/DW_l./*@>2ac4e*/TappedDelay_X_i/*@>25e72*/[/*@>28220*/i]/*@>9d1a*/ = /*@>29ad4*/DW_l./*@>2ac51*/TappedDelay_X_i/*@>29501*/[/*@>294fd*/i/*@>294fb*/ + /*@>294fe*/1];
+}
+/*@>29ac8*/DW_l./*@>2ac4b*/TappedDelay_X_i/*@>9d29*/[/*@>2710b*/999]/*@>9d2f*/ = /*@>29942*/B_n./*@>2ac2a*/LogicalOperator1_p;
+/* {E!d336}End of Update for S-Function (sfix_udelay): '<S10>/Tapped Delay' */
+
+/* {S!d338}Update for Delay: '<S10>/Delay1' incorporates:
+ *  Logic: '<S10>/Logical Operator2'
+ */
+/*@>2647a*/for (/*@>2ab10*/i = /*@>2714e*/0; /*@>2ab18*/i < /*@>2714f*/1999; /*@>2ab15*/i/*@>2ab3a*/++) {
+    /*@>29ae0*/DW_l./*@>2ac57*/Delay1_DSTATE/*@>25eb2*/[/*@>28231*/i]/*@>9d62*/ = /*@>29ae6*/DW_l./*@>2ac5a*/Delay1_DSTATE/*@>29509*/[/*@>29505*/i/*@>29503*/ + /*@>29506*/1];
+}
+/*@>29ada*/DW_l./*@>2ac54*/Delay1_DSTATE/*@>9d7a*/[/*@>2710f*/1999]/*@>9d84*/ = /*@>27118*/tmp;
+/* {E!d338}End of Update for Delay: '<S10>/Delay1' */
+%closefile cfgTxt
+%<cfgTxt>
+%<LibSetSystemField(system, "CachedOutputLocalVars", localVarDecl)>
+%endfunction
+%function OutputsFcnProtoType(block, system) Output
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Outputs(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(7, 3, fcnProtoType)>
+%endfunction

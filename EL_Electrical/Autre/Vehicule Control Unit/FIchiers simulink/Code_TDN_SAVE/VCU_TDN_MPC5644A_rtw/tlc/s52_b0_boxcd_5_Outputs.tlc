@@ -1,0 +1,284 @@
+%implements s52_b0_boxcd_5_Outputs "C"
+
+%function Outputs(block, system) Output
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%assign tlcOutputsFcnOfS25B0 = OpaqueTLCBlockFcn("Outputs", 25, 0, 5, 0, 0)
+%assign tlcOutputsFcnOfS25B1 = OpaqueTLCBlockFcn("Outputs", 25, 1, 5, 0, 1)
+%assign tlcOutputsFcnOfS25B2 = OpaqueTLCBlockFcn("Outputs", 25, 2, 5, 0, 2)
+%assign tlcOutputsFcnOfS25B3 = OpaqueTLCBlockFcn("Outputs", 25, 3, 5, 0, 3)
+%assign tlcOutputsFcnOfS25B4 = OpaqueTLCBlockFcn("Outputs", 25, 4, 5, 0, 4)
+%assign tlcOutputsFcnOfS25B5 = OpaqueTLCBlockFcn("Outputs", 25, 5, 5, 0, 5)
+%assign tlcOutputsFcnOfS25B6 = OpaqueTLCBlockFcn("Outputs", 25, 6, 5, 0, 6)
+%assign tlcOutputsFcnOfS25B7 = OpaqueTLCBlockFcn("Outputs", 25, 7, 5, 0, 7)
+%assign tlcOutputsFcnOfS25B8 = OpaqueTLCBlockFcn("Outputs", 25, 8, 5, 0, 8)
+%assign tlcOutputsFcnOfS25B9 = OpaqueTLCBlockFcn("Outputs", 25, 9, 5, 0, 9)
+%assign tlcOutputsFcnOfS25B10 = OpaqueTLCBlockFcn("Outputs", 25, 10, 5, 0, 10)
+%assign tlcOutputsFcnOfS25B11 = OpaqueTLCBlockFcn("Outputs", 25, 11, 5, 0, 11)
+%assign tlcOutputsFcnOfS25B12 = OpaqueTLCBlockFcn("Outputs", 25, 12, 5, 0, 12)
+%assign tlcOutputsFcnOfS25B13 = OpaqueTLCBlockFcn("Outputs", 25, 13, 5, 0, 13)
+%assign tlcOutputsFcnOfS25B14 = OpaqueTLCBlockFcn("Outputs", 25, 14, 5, 0, 14)
+%assign tlcOutputsFcnOfS25B15 = OpaqueTLCBlockFcn("Outputs", 25, 15, 5, 0, 15)
+%assign tlcOutputsFcnOfS25B16 = OpaqueTLCBlockFcn("Outputs", 25, 16, 5, 0, 16)
+%assign tlcOutputsFcnOfS25B17 = OpaqueTLCBlockFcn("Outputs", 25, 17, 5, 0, 17)
+%assign tlcOutputsFcnOfS25B18 = OpaqueTLCBlockFcn("Outputs", 25, 18, 5, 0, 18)
+%assign tlcOutputsFcnOfS25B19 = OpaqueTLCBlockFcn("Outputs", 25, 19, 5, 0, 19)
+%assign tlcOutputsFcnOfS25B20 = OpaqueTLCBlockFcn("Outputs", 25, 20, 5, 0, 20)
+%assign tlcOutputsFcnOfS25B21 = OpaqueTLCBlockFcn("Outputs", 25, 21, 5, 0, 21)
+%assign tlcOutputsFcnOfS25B22 = OpaqueTLCBlockFcn("Outputs", 25, 22, 5, 0, 22)
+%assign tlcOutputsFcnOfS25B23 = OpaqueTLCBlockFcn("Outputs", 25, 23, 5, 0, 23)
+%assign tlcOutputsFcnOfS25B24 = OpaqueTLCBlockFcn("Outputs", 25, 24, 5, 0, 24)
+%assign tlcOutputsFcnOfS25B25 = OpaqueTLCBlockFcn("Outputs", 25, 25, 5, 0, 25)
+%assign tlcOutputsFcnOfS25B26 = OpaqueTLCBlockFcn("Outputs", 25, 26, 5, 0, 26)
+%assign tlcOutputsFcnOfS25B27 = OpaqueTLCBlockFcn("Outputs", 25, 27, 5, 0, 27)
+%assign tlcOutputsFcnOfS25B28 = OpaqueTLCBlockFcn("Outputs", 25, 28, 5, 0, 28)
+%assign tlcOutputsFcnOfS25B29 = OpaqueTLCBlockFcn("Outputs", 25, 29, 5, 0, 29)
+%assign tlcOutputsFcnOfS25B30 = OpaqueTLCBlockFcn("Outputs", 25, 30, 5, 0, 30)
+%assign tlcOutputsFcnOfS25B31 = OpaqueTLCBlockFcn("Outputs", 25, 31, 5, 0, 31)
+%assign tlcOutputsFcnOfS25B32 = OpaqueTLCBlockFcn("Outputs", 25, 32, 5, 0, 32)
+%assign tlcOutputsFcnOfS25B33 = OpaqueTLCBlockFcn("Outputs", 25, 33, 5, 0, 33)
+%assign tlcOutputsFcnOfS25B34 = OpaqueTLCBlockFcn("Outputs", 25, 34, 5, 0, 34)
+%assign tlcOutputsFcnOfS25B35 = OpaqueTLCBlockFcn("Outputs", 25, 35, 5, 0, 35)
+%assign tlcOutputsFcnOfS25B36 = OpaqueTLCBlockFcn("Outputs", 25, 36, 5, 0, 36)
+%assign tlcOutputsFcnOfS25B37 = OpaqueTLCBlockFcn("Outputs", 25, 37, 5, 0, 37)
+%if !WHITE_SPACE(tlcOutputsFcnOfS25B0)
+/* S-Function (CoderCAN_PackBit2Data): '<S21>/Pack Signals To CAN Data' incorporates:
+ *  Constant: '<S21>/Constant'
+ *  Constant: '<S21>/Constant1'
+ *  Constant: '<S5>/Constant1'
+ */
+%<SLibCG_DumpSSCode("/*@[21b8a*/",tlcOutputsFcnOfS25B0,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS25B1)
+/* S-Function (CAN_TxData): '<S21>/Send CAN Data' */
+%<SLibCG_DumpSSCode("/*@[21b8c*/",tlcOutputsFcnOfS25B1,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS25B2)
+/* S-Function (CoderCAN_PackBit2Data): '<S22>/Pack Signals To CAN Data' incorporates:
+ *  Constant: '<S22>/Constant'
+ *  Constant: '<S22>/Constant1'
+ *  Constant: '<S5>/Constant1'
+ */
+%<SLibCG_DumpSSCode("/*@[21b91*/",tlcOutputsFcnOfS25B2,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS25B3)
+/* S-Function (CAN_TxData): '<S22>/Send CAN Data' */
+%<SLibCG_DumpSSCode("/*@[21b93*/",tlcOutputsFcnOfS25B3,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS25B4)
+/* S-Function (CoderCAN_PackBit2Data): '<S33>/Pack Signals To CAN Data' incorporates:
+ *  Constant: '<S33>/Constant'
+ *  Constant: '<S33>/Constant1'
+ *  Constant: '<S5>/Constant1'
+ */
+%<SLibCG_DumpSSCode("/*@[21b98*/",tlcOutputsFcnOfS25B4,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS25B5)
+/* S-Function (CAN_TxData): '<S33>/Send CAN Data' */
+%<SLibCG_DumpSSCode("/*@[21b9a*/",tlcOutputsFcnOfS25B5,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS25B6)
+/* S-Function (CoderCAN_PackBit2Data): '<S35>/Pack Signals To CAN Data' incorporates:
+ *  Constant: '<S35>/Constant'
+ *  Constant: '<S35>/Constant1'
+ *  Constant: '<S5>/Constant1'
+ */
+%<SLibCG_DumpSSCode("/*@[21b9f*/",tlcOutputsFcnOfS25B6,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS25B7)
+/* S-Function (CAN_TxData): '<S35>/Send CAN Data' */
+%<SLibCG_DumpSSCode("/*@[21ba1*/",tlcOutputsFcnOfS25B7,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS25B8)
+/* S-Function (CoderCAN_PackBit2Data): '<S36>/Pack Signals To CAN Data' incorporates:
+ *  Constant: '<S36>/Constant'
+ *  Constant: '<S36>/Constant1'
+ *  Constant: '<S5>/Constant1'
+ */
+%<SLibCG_DumpSSCode("/*@[21ba6*/",tlcOutputsFcnOfS25B8,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS25B9)
+/* S-Function (CAN_TxData): '<S36>/Send CAN Data' */
+%<SLibCG_DumpSSCode("/*@[21ba8*/",tlcOutputsFcnOfS25B9,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS25B10)
+/* S-Function (CoderCAN_PackBit2Data): '<S37>/Pack Signals To CAN Data' incorporates:
+ *  Constant: '<S37>/Constant'
+ *  Constant: '<S37>/Constant1'
+ *  Constant: '<S5>/Constant1'
+ */
+%<SLibCG_DumpSSCode("/*@[21bad*/",tlcOutputsFcnOfS25B10,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS25B11)
+/* S-Function (CAN_TxData): '<S37>/Send CAN Data' */
+%<SLibCG_DumpSSCode("/*@[21baf*/",tlcOutputsFcnOfS25B11,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS25B12)
+/* S-Function (CoderCAN_PackBit2Data): '<S38>/Pack Signals To CAN Data' incorporates:
+ *  Constant: '<S38>/Constant'
+ *  Constant: '<S38>/Constant1'
+ *  Constant: '<S5>/Constant1'
+ */
+%<SLibCG_DumpSSCode("/*@[21bb4*/",tlcOutputsFcnOfS25B12,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS25B13)
+/* S-Function (CAN_TxData): '<S38>/Send CAN Data' */
+%<SLibCG_DumpSSCode("/*@[21bb6*/",tlcOutputsFcnOfS25B13,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS25B14)
+/* S-Function (CoderCAN_PackBit2Data): '<S20>/Pack Signals To CAN Data' incorporates:
+ *  Constant: '<S20>/Constant'
+ *  Constant: '<S20>/Constant1'
+ *  Constant: '<S5>/Constant2'
+ */
+%<SLibCG_DumpSSCode("/*@[21bbb*/",tlcOutputsFcnOfS25B14,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS25B15)
+/* S-Function (CAN_TxData): '<S20>/Send CAN Data' */
+%<SLibCG_DumpSSCode("/*@[21bbd*/",tlcOutputsFcnOfS25B15,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS25B16)
+/* S-Function (CoderCAN_PackBit2Data): '<S23>/Pack Signals To CAN Data' incorporates:
+ *  Constant: '<S23>/Constant'
+ *  Constant: '<S23>/Constant1'
+ *  Constant: '<S5>/Constant2'
+ */
+%<SLibCG_DumpSSCode("/*@[21bc2*/",tlcOutputsFcnOfS25B16,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS25B17)
+/* S-Function (CAN_TxData): '<S23>/Send CAN Data' */
+%<SLibCG_DumpSSCode("/*@[21bc4*/",tlcOutputsFcnOfS25B17,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS25B18)
+/* S-Function (CoderCAN_PackBit2Data): '<S24>/Pack Signals To CAN Data' incorporates:
+ *  Constant: '<S24>/Constant'
+ *  Constant: '<S24>/Constant1'
+ *  Constant: '<S5>/Constant2'
+ */
+%<SLibCG_DumpSSCode("/*@[21bc9*/",tlcOutputsFcnOfS25B18,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS25B19)
+/* S-Function (CAN_TxData): '<S24>/Send CAN Data' */
+%<SLibCG_DumpSSCode("/*@[21bcb*/",tlcOutputsFcnOfS25B19,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS25B20)
+/* S-Function (CoderCAN_PackBit2Data): '<S25>/Pack Signals To CAN Data' incorporates:
+ *  Constant: '<S25>/Constant'
+ *  Constant: '<S25>/Constant1'
+ *  Constant: '<S5>/Constant2'
+ */
+%<SLibCG_DumpSSCode("/*@[21bd0*/",tlcOutputsFcnOfS25B20,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS25B21)
+/* S-Function (CAN_TxData): '<S25>/Send CAN Data' */
+%<SLibCG_DumpSSCode("/*@[21bd2*/",tlcOutputsFcnOfS25B21,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS25B22)
+/* S-Function (CoderCAN_PackBit2Data): '<S26>/Pack Signals To CAN Data' incorporates:
+ *  Constant: '<S26>/Constant'
+ *  Constant: '<S26>/Constant1'
+ *  Constant: '<S5>/Constant2'
+ */
+%<SLibCG_DumpSSCode("/*@[21bd7*/",tlcOutputsFcnOfS25B22,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS25B23)
+/* S-Function (CAN_TxData): '<S26>/Send CAN Data' */
+%<SLibCG_DumpSSCode("/*@[21bd9*/",tlcOutputsFcnOfS25B23,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS25B24)
+/* S-Function (CoderCAN_PackBit2Data): '<S27>/Pack Signals To CAN Data' incorporates:
+ *  Constant: '<S27>/Constant'
+ *  Constant: '<S27>/Constant1'
+ *  Constant: '<S5>/Constant2'
+ */
+%<SLibCG_DumpSSCode("/*@[21bde*/",tlcOutputsFcnOfS25B24,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS25B25)
+/* S-Function (CAN_TxData): '<S27>/Send CAN Data' */
+%<SLibCG_DumpSSCode("/*@[21be0*/",tlcOutputsFcnOfS25B25,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS25B26)
+/* S-Function (CoderCAN_PackBit2Data): '<S28>/Pack Signals To CAN Data' incorporates:
+ *  Constant: '<S28>/Constant'
+ *  Constant: '<S28>/Constant1'
+ *  Constant: '<S5>/Constant2'
+ */
+%<SLibCG_DumpSSCode("/*@[21be5*/",tlcOutputsFcnOfS25B26,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS25B27)
+/* S-Function (CAN_TxData): '<S28>/Send CAN Data' */
+%<SLibCG_DumpSSCode("/*@[21be7*/",tlcOutputsFcnOfS25B27,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS25B28)
+/* S-Function (CoderCAN_PackBit2Data): '<S29>/Pack Signals To CAN Data' incorporates:
+ *  Constant: '<S29>/Constant'
+ *  Constant: '<S29>/Constant1'
+ *  Constant: '<S5>/Constant2'
+ */
+%<SLibCG_DumpSSCode("/*@[21bec*/",tlcOutputsFcnOfS25B28,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS25B29)
+/* S-Function (CAN_TxData): '<S29>/Send CAN Data' */
+%<SLibCG_DumpSSCode("/*@[21bee*/",tlcOutputsFcnOfS25B29,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS25B30)
+/* S-Function (CoderCAN_PackBit2Data): '<S30>/Pack Signals To CAN Data' incorporates:
+ *  Constant: '<S30>/Constant'
+ *  Constant: '<S30>/Constant1'
+ *  Constant: '<S5>/Constant2'
+ */
+%<SLibCG_DumpSSCode("/*@[21bf3*/",tlcOutputsFcnOfS25B30,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS25B31)
+/* S-Function (CAN_TxData): '<S30>/Send CAN Data' */
+%<SLibCG_DumpSSCode("/*@[21bf5*/",tlcOutputsFcnOfS25B31,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS25B32)
+/* S-Function (CoderCAN_PackBit2Data): '<S31>/Pack Signals To CAN Data' incorporates:
+ *  Constant: '<S31>/Constant'
+ *  Constant: '<S31>/Constant1'
+ *  Constant: '<S5>/Constant2'
+ */
+%<SLibCG_DumpSSCode("/*@[21bfa*/",tlcOutputsFcnOfS25B32,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS25B33)
+/* S-Function (CAN_TxData): '<S31>/Send CAN Data' */
+%<SLibCG_DumpSSCode("/*@[21bfc*/",tlcOutputsFcnOfS25B33,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS25B34)
+/* S-Function (CoderCAN_PackBit2Data): '<S32>/Pack Signals To CAN Data' incorporates:
+ *  Constant: '<S32>/Constant'
+ *  Constant: '<S32>/Constant1'
+ *  Constant: '<S5>/Constant2'
+ */
+%<SLibCG_DumpSSCode("/*@[21c01*/",tlcOutputsFcnOfS25B34,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS25B35)
+/* S-Function (CAN_TxData): '<S32>/Send CAN Data' */
+%<SLibCG_DumpSSCode("/*@[21c03*/",tlcOutputsFcnOfS25B35,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS25B36)
+/* S-Function (CoderCAN_PackBit2Data): '<S34>/Pack Signals To CAN Data' incorporates:
+ *  Constant: '<S34>/Constant'
+ *  Constant: '<S34>/Constant1'
+ *  Constant: '<S5>/Constant2'
+ */
+%<SLibCG_DumpSSCode("/*@[21c08*/",tlcOutputsFcnOfS25B36,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS25B37)
+/* S-Function (CAN_TxData): '<S34>/Send CAN Data' */
+%<SLibCG_DumpSSCode("/*@[21c0a*/",tlcOutputsFcnOfS25B37,"/*@]*/")>\
+%endif
+%closefile cfgTxt
+%<cfgTxt>
+%<LibSetSystemField(system, "CachedOutputLocalVars", localVarDecl)>
+%endfunction
+%function OutputsFcnProtoType(block, system) Output
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Outputs(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(5, 0, fcnProtoType)>
+%endfunction

@@ -1,0 +1,82 @@
+%implements s52_b0_boxcd_0_TLCInterface "C"
+
+%function getOutputAddr_20_0_0_0_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<136d3*//*@>136cd*/B_n./*@>136d9*/Currentsensorchannel1"
+%endfunction
+
+%function getOutput_20_0_0_0_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>136e9*/B_n./*@>136f6*/Currentsensorchannel1"
+%endfunction
+
+%function getOutputAddr_20_1_0_0_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<1371f*//*@>13719*/B_n./*@>13725*/Currentsensorchannel2"
+%endfunction
+
+%function getOutput_20_1_0_0_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>13735*/B_n./*@>13742*/Currentsensorchannel2"
+%endfunction
+
+%function getOutputAddr_20_2_0_0_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<1376b*//*@>13765*/B_n./*@>13771*/Frontbrakepressure"
+%endfunction
+
+%function getOutput_20_2_0_0_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>13781*/B_n./*@>1378e*/Frontbrakepressure"
+%endfunction
+
+%function getOutputAddr_20_3_0_0_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<137b7*//*@>137b1*/B_n./*@>137bd*/Rearbrakepressure"
+%endfunction
+
+%function getOutput_20_3_0_0_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>137cd*/B_n./*@>137da*/Rearbrakepressure"
+%endfunction
+
+%function getOutputAddr_20_0_0_1_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<13805*//*@>137ff*/B_n./*@>1380b*/Currentsensorchannel1"
+%endfunction
+
+%function getOutput_20_0_0_1_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>1381b*/B_n./*@>13828*/Currentsensorchannel1"
+%endfunction
+
+%function getOutputAddr_20_1_0_1_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<13851*//*@>1384b*/B_n./*@>13857*/Currentsensorchannel2"
+%endfunction
+
+%function getOutput_20_1_0_1_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>13867*/B_n./*@>13874*/Currentsensorchannel2"
+%endfunction
+
+%function getOutputAddr_20_2_0_1_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<1389d*//*@>13897*/B_n./*@>138a3*/Frontbrakepressure"
+%endfunction
+
+%function getOutput_20_2_0_1_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>138b3*/B_n./*@>138c0*/Frontbrakepressure"
+%endfunction
+
+%function getOutputAddr_20_3_0_1_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<138e9*//*@>138e3*/B_n./*@>138ef*/Rearbrakepressure"
+%endfunction
+
+%function getOutput_20_3_0_1_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>138ff*/B_n./*@>1390c*/Rearbrakepressure"
+%endfunction
+

@@ -1,0 +1,47 @@
+%implements s52_b0_boxcd_3_Start "C"
+
+%function Start(block, system) Output
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%assign tlcStartFcnOfS23B0 = OpaqueTLCBlockFcn("Start", 23, 0, 3, 0, 0)
+%assign tlcStartFcnOfS23B2 = OpaqueTLCBlockFcn("Start", 23, 2, 3, 0, 1)
+%assign tlcStartFcnOfS23B3 = OpaqueTLCBlockFcn("Start", 23, 3, 3, 0, 2)
+%assign tlcStartFcnOfS23B6 = OpaqueTLCBlockFcn("Start", 23, 6, 3, 0, 3)
+%assign tlcStartFcnOfS23B7 = OpaqueTLCBlockFcn("Start", 23, 7, 3, 0, 4)
+%assign tlcStartFcnOfS23B8 = OpaqueTLCBlockFcn("Start", 23, 8, 3, 0, 5)
+%if !WHITE_SPACE(tlcStartFcnOfS23B0)
+/* Start for S-Function (DIO_In): '<S9>/Battery fan ON' */
+%<SLibCG_DumpSSCode("/*@[1dcb1*/",tlcStartFcnOfS23B0,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcStartFcnOfS23B2)
+/* Start for S-Function (DIO_In): '<S9>/Pump ON' */
+%<SLibCG_DumpSSCode("/*@[1dcb3*/",tlcStartFcnOfS23B2,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcStartFcnOfS23B3)
+/* Start for S-Function (DIO_In): '<S9>/Pump and Fan ON' */
+%<SLibCG_DumpSSCode("/*@[1dcb5*/",tlcStartFcnOfS23B3,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcStartFcnOfS23B6)
+/* Start for S-Function (DIO_Out): '<S9>/Battery fan activation' */
+%<SLibCG_DumpSSCode("/*@[1dcb7*/",tlcStartFcnOfS23B6,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcStartFcnOfS23B7)
+/* Start for S-Function (DIO_Out): '<S9>/Fan activation' */
+%<SLibCG_DumpSSCode("/*@[1dcb9*/",tlcStartFcnOfS23B7,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcStartFcnOfS23B8)
+/* Start for S-Function (DIO_Out): '<S9>/Pump activation' */
+%<SLibCG_DumpSSCode("/*@[1dcbb*/",tlcStartFcnOfS23B8,"/*@]*/")>\
+%endif
+%closefile cfgTxt
+%<cfgTxt>
+%endfunction
+%function StartFcnProtoType(block, system) Output
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Start(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(3, 0, fcnProtoType)>
+%endfunction

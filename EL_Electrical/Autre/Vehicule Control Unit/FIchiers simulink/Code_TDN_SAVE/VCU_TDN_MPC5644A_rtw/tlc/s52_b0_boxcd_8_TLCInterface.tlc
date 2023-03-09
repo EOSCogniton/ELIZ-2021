@@ -1,0 +1,92 @@
+%implements s52_b0_boxcd_8_TLCInterface "C"
+
+%function getInputAddr_33_0_8_2_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGB_BOCSCAddr(block, 37, 1, "", lcv, ucv, sigIdx, reim)
+%endfunction
+
+%function getInput_33_0_8_2_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGB_BOCSC(block, 37, 1, "", lcv, ucv, sigIdx, reim)
+%endfunction
+
+%function getDWorkAddr_33_0_8_2_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<2cfbd*//*@>2cfb7*/DW_l./*@>2cfc3*/WriteNVM_DWORK0_fc"
+%endfunction
+
+%function getDWork_33_0_8_2_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>2cfd3*/DW_l./*@>2cfe0*/WriteNVM_DWORK0_fc"
+%endfunction
+
+%function getDSMAddr_33_0_8_2_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGB_CSCDWAddr(block, 108, 1, "", lcv, ucv, sigIdx, reim)
+%endfunction
+
+%function getDSM_33_0_8_2_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGB_CSCDW(block, 108, 1, "", lcv, ucv, sigIdx, reim)
+%endfunction
+
+%function getOutputAddr_33_1_8_2_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<2d00b*//*@>2d005*/B_n./*@>2d011*/ReadNVM"
+%endfunction
+
+%function getOutput_33_1_8_2_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>2d021*/B_n./*@>2d02e*/ReadNVM"
+%endfunction
+
+%function getDWorkAddr_33_1_8_2_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<2d042*//*@>2d03c*/DW_l./*@>2d048*/ReadNVM_DWORK0"
+%endfunction
+
+%function getDWork_33_1_8_2_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>2d058*/DW_l./*@>2d065*/ReadNVM_DWORK0"
+%endfunction
+
+%function getDSMAddr_33_1_8_2_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGB_CSCDWAddr(block, 3, 1, "", lcv, ucv, sigIdx, reim)
+%endfunction
+
+%function getDSM_33_1_8_2_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGB_CSCDW(block, 3, 1, "", lcv, ucv, sigIdx, reim)
+%endfunction
+
+%function getOutputAddr_33_2_8_2_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<2d090*//*@>2d08a*/B_n./*@>2d096*/ReadNVM1_g"
+%endfunction
+
+%function getOutput_33_2_8_2_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>2d0a6*/B_n./*@>2d0b3*/ReadNVM1_g"
+%endfunction
+
+%function getDWorkAddr_33_2_8_2_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<2d0c7*//*@>2d0c1*/DW_l./*@>2d0cd*/ReadNVM1_DWORK0_a"
+%endfunction
+
+%function getDWork_33_2_8_2_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>2d0dd*/DW_l./*@>2d0ea*/ReadNVM1_DWORK0_a"
+%endfunction
+
+%function getDSMAddr_33_2_8_2_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGB_CSCDWAddr(block, 107, 1, "", lcv, ucv, sigIdx, reim)
+%endfunction
+
+%function getDSM_33_2_8_2_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return SLibCGB_CSCDW(block, 107, 1, "", lcv, ucv, sigIdx, reim)
+%endfunction
+

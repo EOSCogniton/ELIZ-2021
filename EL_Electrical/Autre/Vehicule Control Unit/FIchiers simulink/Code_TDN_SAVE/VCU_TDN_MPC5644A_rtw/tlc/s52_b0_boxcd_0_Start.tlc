@@ -1,0 +1,37 @@
+%implements s52_b0_boxcd_0_Start "C"
+
+%function Start(block, system) Output
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%assign tlcStartFcnOfS20B0 = OpaqueTLCBlockFcn("Start", 20, 0, 0, 0, 0)
+%assign tlcStartFcnOfS20B1 = OpaqueTLCBlockFcn("Start", 20, 1, 0, 0, 1)
+%assign tlcStartFcnOfS20B2 = OpaqueTLCBlockFcn("Start", 20, 2, 0, 0, 2)
+%assign tlcStartFcnOfS20B3 = OpaqueTLCBlockFcn("Start", 20, 3, 0, 0, 3)
+%if !WHITE_SPACE(tlcStartFcnOfS20B0)
+/* Start for S-Function (ADC): '<S65>/Current sensor channel 1' */
+%<SLibCG_DumpSSCode("/*@[13575*/",tlcStartFcnOfS20B0,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcStartFcnOfS20B1)
+/* Start for S-Function (ADC): '<S65>/Current sensor channel 2' */
+%<SLibCG_DumpSSCode("/*@[13577*/",tlcStartFcnOfS20B1,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcStartFcnOfS20B2)
+/* Start for S-Function (ADC): '<S65>/Front brake pressure' */
+%<SLibCG_DumpSSCode("/*@[13579*/",tlcStartFcnOfS20B2,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcStartFcnOfS20B3)
+/* Start for S-Function (ADC): '<S65>/Rear brake pressure' */
+%<SLibCG_DumpSSCode("/*@[1357b*/",tlcStartFcnOfS20B3,"/*@]*/")>\
+%endif
+%closefile cfgTxt
+%<cfgTxt>
+%endfunction
+%function StartFcnProtoType(block, system) Output
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Start(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 0, fcnProtoType)>
+%endfunction

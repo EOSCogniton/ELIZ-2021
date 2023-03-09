@@ -1,0 +1,110 @@
+%implements s52_b0_boxcd_1_Outputs "C"
+
+%function Outputs(block, system) Output
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%openfile localVarDecl
+
+int_T i;
+real32_T Gain2;
+%closefile localVarDecl
+%assign tlcOutputsFcnOfS21B0 = OpaqueTLCBlockFcn("Outputs", 21, 0, 1, 3, 0)
+%assign tlcOutputsFcnOfS21B1 = OpaqueTLCBlockFcn("Outputs", 21, 1, 1, 3, 1)
+%assign tlcOutputsFcnOfS21B2 = OpaqueTLCBlockFcn("Outputs", 21, 2, 1, 3, 2)
+%assign tlcOutputsFcnOfS21B3 = OpaqueTLCBlockFcn("Outputs", 21, 3, 1, 3, 3)
+%assign tlcOutputsFcnOfS21B4 = OpaqueTLCBlockFcn("Outputs", 21, 4, 1, 3, 4)
+%assign tlcOutputsFcnOfS21B5 = OpaqueTLCBlockFcn("Outputs", 21, 5, 1, 3, 5)
+%assign tlcOutputsFcnOfS21B6 = OpaqueTLCBlockFcn("Outputs", 21, 6, 1, 3, 6)
+%assign tlcOutputsFcnOfS21B7 = OpaqueTLCBlockFcn("Outputs", 21, 7, 1, 3, 7)
+/* {S!d34}Logic: '<S13>/Logical Operator1' incorporates:
+ *  S-Function (sfix_udelay): '<S13>/Tapped Delay'
+ */
+%<SLibCG_DumpSSCode("/*@[17881*/",SLibCG_SetBOCSC(44, 1, "", -1, "", 0, "/*@>17eac*/DW_l./*@>17eab*/TappedDelay_X_i5/*@>17eaa*/[/*@>17eae*/0]"),"/*@]*/")>\
+/*@>15315*/for (/*@>17d62*/i = /*@>15ac8*/0; /*@>17d6a*/i < /*@>15ac9*/89; /*@>17d67*/i/*@>17d6e*/++) {
+%<SLibCG_DumpSSCode("/*@[178b9*/",SLibCG_SetBOCSC(44, 1, "", -1, "", 0, "(%<SLibCG_DumpSSCode("/*@[17ec1*/",(SLibCG_SE(SLibCG_BOCSC(44, 1, "", -1, "", 0))),"/*@]*/")>/*@>17ec0*/ && /*@>17ece*/DW_l./*@>17ecd*/TappedDelay_X_i5/*@>17ecc*/[/*@>17ed1*/i/*@>17ed0*/ + /*@>17ed2*/1])"),"/*@]*/")>\
+}
+/* {E!d34}End of Logic: '<S13>/Logical Operator1' */
+%if !WHITE_SPACE(tlcOutputsFcnOfS21B0)
+
+/* {S!d36}S-Function (EcoCoder_NVM_VarWrite): '<S13>/Write NVM' */
+%<SLibCG_DumpSSCode("/*@[1784e*/",tlcOutputsFcnOfS21B0,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS21B1)
+/* {S!d38}S-Function (ADC): '<S4>/APPS 1' */
+%<SLibCG_DumpSSCode("/*@[17850*/",tlcOutputsFcnOfS21B1,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS21B2)
+/* {S!d40}S-Function (ADC): '<S4>/APPS 2' */
+%<SLibCG_DumpSSCode("/*@[17852*/",tlcOutputsFcnOfS21B2,"/*@]*/")>\
+%endif
+/* {S!d42}RelationalOperator: '<S17>/Compare' incorporates:
+ *  Constant: '<S17>/Constant'
+ *  Sum: '<S13>/Subtract'
+ */
+/*@>173b6*/B_n./*@>17dea*/Compare_g/*@>959f*/ = (/*@>15b17*/(uint16_T)(%<SLibCG_DumpSSCode("/*@[178ef*/",(SLibCG_SE(SLibCG_BOCSC(3, 1, "", -1, "", 0))),"/*@]*/")>/*@>143cb*/ - %<SLibCG_DumpSSCode("/*@[178d3*/",(SLibCG_SE(SLibCG_BOCSC(4, 1, "", -1, "", 0))),"/*@]*/")>)/*@>959e*/ >= /*@>15ab9*/369);
+/* {S!d44}Gain: '<S14>/Gain1' incorporates:
+ *  DataTypeConversion: '<S14>/Data Type Conversion2'
+ *  Sum: '<S14>/Add'
+ */
+/*@>15a2c*/Gain2/*@>95af*/ = /*@>15d1e*/(real32_T)/*@>15b11*/(uint16_T)(/*@>15d1b*/(uint32_T)%<SLibCG_DumpSSCode("/*@[17927*/",(SLibCG_SE(SLibCG_BOCSC(3, 1, "", -1, "", 0))),"/*@]*/")>/*@>15b0d*/ + %<SLibCG_DumpSSCode("/*@[1790b*/",(SLibCG_SE(SLibCG_BOCSC(4, 1, "", -1, "", 0))),"/*@]*/")>)/*@>15b05*/ * /*@>15aba*/0.5F;
+/* {S!d46}DeadZone: '<S14>/Dead Zone1' */
+/*@>162a4*/if (/*@>15a90*/Gain2/*@>96b5*/ > /*@>15abb*/5.0F) {
+    /*@>162a8*/Gain2/*@>17d6f*/ -= /*@>15abc*/5.0F;
+} else {
+    /*@>15ace*/Gain2/*@>1571e*/ = /*@>15a98*/0.0F;
+}
+/* {E!d46}End of DeadZone: '<S14>/Dead Zone1' */
+
+/* {S!d48}Saturate: '<S14>/Saturation' */
+/*@>162a9*/if (/*@>16112*/Gain2/*@>15df7*/ > /*@>15eb1*/4096.0F) {
+    /*@>162ad*/Gain2/*@>162ac*/ = /*@>15eb5*/4096.0F;
+}
+/* {E!d48}End of Saturate: '<S14>/Saturation' */
+
+/* {S!d50}Gain: '<S14>/Gain3' */
+%<SLibCG_DumpSSCode("/*@[17945*/",SLibCG_SetBOCSC(0, 1, "", -1, "", 0, "/*@>17f00*/0.0244140625F/*@>17eff*/ * /*@>17f01*/Gain2"),"/*@]*/")>\
+%if !WHITE_SPACE(tlcOutputsFcnOfS21B3)
+/* {S!d52}S-Function (EcoCoder_NVM_VarWrite): '<S14>/Write NVM' */
+%<SLibCG_DumpSSCode("/*@[17856*/",tlcOutputsFcnOfS21B3,"/*@]*/")>\
+%endif
+/* {S!d54}Gain: '<S14>/Gain2' */
+/*@>15a49*/Gain2/*@>17d70*/ *= /*@>15ac2*/7.99975586F;
+/* {S!d56}DataTypeConversion: '<S14>/Data Type Conversion1' */
+/*@>173bc*/B_n./*@>17ded*/DataTypeConversion1/*@>95ca*/ = /*@>15d2d*/(int16_T)/*@>16a00*/(real32_T)/*@>16e00*/floor(/*@>15a4b*/Gain2);
+%if !WHITE_SPACE(tlcOutputsFcnOfS21B4)
+/* {S!d58}S-Function (CoderCAN_PackBit2Data): '<S14>/Pack Signals To CAN Data1' incorporates:
+ *  Constant: '<S14>/Constant1'
+ */
+%<SLibCG_DumpSSCode("/*@[1785a*/",tlcOutputsFcnOfS21B4,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS21B5)
+/* {S!d60}S-Function (CAN_TxData): '<S14>/Send CAN Data1' */
+%<SLibCG_DumpSSCode("/*@[1785c*/",tlcOutputsFcnOfS21B5,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS21B6)
+/* {S!d62}S-Function (EcoCoder_NVM_VarWrite): '<S4>/Write NVM' */
+%<SLibCG_DumpSSCode("/*@[17860*/",tlcOutputsFcnOfS21B6,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcOutputsFcnOfS21B7)
+/* {S!d64}S-Function (EcoCoder_NVM_VarWrite): '<S4>/Write NVM1' */
+%<SLibCG_DumpSSCode("/*@[17864*/",tlcOutputsFcnOfS21B7,"/*@]*/")>\
+%endif
+/* {S!d66}Update for S-Function (sfix_udelay): '<S13>/Tapped Delay' */
+/*@>152fe*/for (/*@>17d54*/i = /*@>15ac3*/0; /*@>17d5c*/i < /*@>15ac4*/89; /*@>17d59*/i/*@>17d71*/++) {
+    /*@>1752a*/DW_l./*@>17dfc*/TappedDelay_X_i5/*@>14f1e*/[/*@>1665d*/i]/*@>96f3*/ = /*@>17530*/DW_l./*@>17dff*/TappedDelay_X_i5/*@>1719f*/[/*@>1719b*/i/*@>17199*/ + /*@>1719c*/1];
+}
+/*@>17524*/DW_l./*@>17df9*/TappedDelay_X_i5/*@>9702*/[/*@>15a9d*/89]/*@>9708*/ = /*@>173d4*/B_n./*@>17df0*/Compare_g;
+/* {E!d66}End of Update for S-Function (sfix_udelay): '<S13>/Tapped Delay' */
+%closefile cfgTxt
+%<cfgTxt>
+%<LibSetSystemField(system, "CachedOutputLocalVars", localVarDecl)>
+%endfunction
+%function OutputsFcnProtoType(block, system) Output
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Outputs(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(1, 3, fcnProtoType)>
+%endfunction

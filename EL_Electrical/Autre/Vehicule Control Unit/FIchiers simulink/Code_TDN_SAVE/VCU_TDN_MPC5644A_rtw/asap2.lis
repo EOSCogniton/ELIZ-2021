@@ -1,0 +1,92 @@
+    Vdc_bus_V_cur    
+        Vdc_bus_V_bp
+    T_IGBT_conversion_cur    
+        T_IGBT_conversion_bp
+    T_motor_conversion_cur    
+        T_motor_conversion_bp
+    T_air_conversion_cur    
+        T_air_conversion_bp
+APPS_M
+FR_BRK_PRESSURE
+RR_BRAKE_PRESSURE
+APPS_1
+APPS_2
+N_lim
+N_100
+Vdc_bus_V
+I_act_filt_A
+N_act_filt_RPM
+Speed
+T_air_deg
+T_motor_deg
+T_IGBT_deg
+CURRENT_CH_1
+CURRENT_CH_2
+T_air
+T_motor
+T_IGBT
+I_cmd
+I_act_filt
+Vdc_bus
+I_200
+I_device
+I_max_pk
+I_nom_eff
+I_max_eff
+SpeedRPMmax
+N_act_filt
+N_R_Dec
+M_R_Dec
+N_R_Acc
+M_R_Acc
+N_lim_neg
+N_lim_pos
+PwrM_flgKeyOnDelay
+PwrM_flgKeyOnRaw
+BRK_PDL_FAULT
+BRK_CONTACTOR
+RDY_DRV_BUTTON
+RDY_DRV
+BATT_FAN_ON
+FAN_ON
+PUMP_ON
+APPS_FAULT
+nvmAPPS_M
+nvmI_200
+nvmI_act_filt
+nvmI_cmd
+nvmI_device
+nvmI_max_eff
+nvmI_max_pk
+nvmI_nom_eff
+nvmM_R_Acc
+nvmM_R_Dec
+nvmN_R_Acc
+nvmN_R_Dec
+nvmN_act_filt
+nvmN_lim_neg
+nvmN_lim_pos
+nvmSpeedRPMmax
+nvmT_IGBT
+nvmT_air
+nvmT_motor
+nvmVdc_bus
+nvmI_act_filt_A
+nvmN_act_filt_RPM
+nvmSpeed
+nvmT_IGBT_deg
+nvmT_air_deg
+nvmT_motor_deg
+nvmVdc_bus_V
+nvmAPPS_1
+nvmAPPS_2
+nvmN_100
+nvmN_lim
+nvmAPPS_FAULT
+nvmBRK_CONTACTOR
+nvmBRK_PDL_FAULT
+nvmRDY_DRV
+nvmRDY_DRV_BUTTON
+nvmBATT_FAN_ON
+nvmFAN_ON
+nvmPUMP_ON
